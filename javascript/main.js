@@ -1873,7 +1873,7 @@
         Blancediv();
         swClick();
         goTop();          
-        retinaLogos(); 
+        // retinaLogos();
         parallax();
         flatTeam();
         flatAccordion();
