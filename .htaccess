@@ -5,9 +5,8 @@
 
     RewriteEngine On
     
-    RewriteCond %{HTTP_HOST} !localhost
-    RewriteCond %{HTTP_HOST} !^(.+)\.(.+)\.(.+)
-    RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [L,R=301]
+    RewriteCond %{HTTP_HOST} ^nationaldesignaward.org [NC]
+    RewriteRule ^(.*)$ http://www.nationaldesignaward.org/$1 [L,R=301]
     
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
