@@ -1,7 +1,7 @@
 <?php
 
-if (env('APP_ENV') === 'production') {
-    \Illuminate\Support\Facades\URL::forceScheme('https');
+if (!request()->secure() && env('APP_ENV') === 'production') {
+    redirect()->secure(request()->getRequestUri());
 }
 
 /*
