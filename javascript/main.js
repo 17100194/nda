@@ -1796,10 +1796,10 @@
       var retina = window.devicePixelRatio > 1 ? true : false;
 
         if(retina) {
+            $('.header .logo').find('img').attr({src:'./images/logo@2x.png',width:'88',height:'20'});
             if ( $('.header').hasClass('.logo-style2') ) {
                 $('.header .logo').find('img').attr({src:'./images/logo2@2x.png',width:'88',height:'20'});
             }
-            $('.header .logo').find('img').attr({src:'./images/logo@2x.png',width:'88',height:'20'});
             $('.logo-footer').find('img').attr({src:'./images/logo@2x.png',width:'88',height:'20'});
         }
     };    
