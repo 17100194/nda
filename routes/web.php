@@ -1,6 +1,6 @@
 <?php
 
-if (env('APP_ENV') === 'production' && !request()->isSecure()) {
+if (env('APP_ENV') === 'production') {
     \Illuminate\Support\Facades\URL::forceScheme('https');
 }
 
