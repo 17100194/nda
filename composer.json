@@ -65,5 +65,9 @@
             "type": "path",
             "url": "hooks/"
         }
-    }
+    },
+    "warmup": [
+        "php artisan config:cache",
+        "php artisan route:cache"
+    ]
 }
