@@ -1,9 +1,5 @@
 <?php
 
-if (!request()->secure() && env('APP_ENV') === 'production') {
-    redirect()->secure(request()->getRequestUri());
-}
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
