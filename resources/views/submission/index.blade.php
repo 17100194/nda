@@ -23,12 +23,12 @@
             @endif
             <div class="title-section text-center">
                 <h1 class="title">Early Bird Pricing</h1>
-                <p class="sub-title"><span style="text-decoration: underline">Student:</span> 1000 PKR / Submission<br> <span style="text-decoration: underline">Professional:</span> 2000 PKR / Submission</p>
+                <p class="sub-title fontsize24"><span style="text-decoration: underline">Student:</span> 1000 PKR / Submission<br> <span style="text-decoration: underline">Professional:</span> 2000 PKR / Submission</p>
             </div>
-                <div class="divider"></div>
-                <div class="text-center">
-                    <a href="{{url('/submissions/professional')}}" class="flat-button border-radius-none style-left-right bg-white border-black">Make a Professional Entry</a> <span>OR</span> <a href="{{url('/submissions/student')}}" class="flat-button border-radius-none style-left-right bg-white border-black">Make a Student Entry</a>
-                </div>
+                {{--<div class="divider"></div>--}}
+                {{--<div class="text-center">--}}
+                    {{--<a href="{{url('/submissions/professional')}}" class="flat-button border-radius-none style-left-right bg-white border-black">Make a Professional Entry</a> <span>OR</span> <a href="{{url('/submissions/student')}}" class="flat-button border-radius-none style-left-right bg-white border-black">Make a Student Entry</a>--}}
+                {{--</div>--}}
             <div class="divider"></div>
             <div class="title-section line bg-gray after-width158">
                 <div class="container-fluid2">
