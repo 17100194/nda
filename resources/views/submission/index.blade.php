@@ -84,10 +84,12 @@
                     </div>
                     <div id="modal">
                         <input type="hidden" id="submissionid">
-                        <form action="{{url('upload-payment')}}" class="dropzone" id="payment">
+                        <form action="{{url('upload-payment')}}" class="dropzone" id="payment" style="margin: 15px;">
                             {{csrf_field()}}
                         </form>
-                        <button class="flat-button save float-right">Save Changes</button>
+                        <div class="text-center">
+                            <button class="flat-button save">Submit</button>
+                        </div>
                     </div>
                 @endif
             </div>

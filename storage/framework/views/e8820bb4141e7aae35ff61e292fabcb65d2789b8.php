@@ -21,7 +21,7 @@
             <?php endif; ?>
             <div class="title-section text-center">
                 <h1 class="title">Early Bird Pricing</h1>
-                <p class="sub-title"><span style="text-decoration: underline">Student:</span> 1000 PKR / Submission<br> <span style="text-decoration: underline">Professional:</span> 2000 PKR / Submission</p>
+                <p class="sub-title fontsize24"><span style="text-decoration: underline">Student:</span> 1000 PKR / Submission<br> <span style="text-decoration: underline">Professional:</span> 2000 PKR / Submission</p>
             </div>
                 
                 
@@ -82,11 +82,13 @@
                     </div>
                     <div id="modal">
                         <input type="hidden" id="submissionid">
-                        <form action="<?php echo e(url('upload-payment')); ?>" class="dropzone" id="payment">
+                        <form action="<?php echo e(url('upload-payment')); ?>" class="dropzone" id="payment" style="margin: 15px;">
                             <?php echo e(csrf_field()); ?>
 
                         </form>
-                        <button class="flat-button save float-right">Save Changes</button>
+                        <div class="text-center">
+                            <button class="flat-button save">Submit</button>
+                        </div>
                     </div>
                 <?php endif; ?>
             </div>
