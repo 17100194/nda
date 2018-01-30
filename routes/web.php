@@ -49,26 +49,26 @@ Route::get('/category/{category}', function (\Illuminate\Http\Request $request){
 
 Route::get('/submissions', 'SubmissionController@index')->middleware('auth');
 
-Route::get('/submissions/professional', function (){
-    return view('submission.create');
-})->middleware('auth');
-
-Route::get('/submissions/student', function (){
-    return view('submission.create');
-})->middleware('auth');
-
-Route::post('/upload-images', 'SubmissionController@uploadImages')->middleware('auth');
-Route::post('/upload-pdf', 'SubmissionController@uploadPDF')->middleware('auth');
-Route::post('/upload-thumbnail', 'SubmissionController@uploadThumbnail')->middleware('auth');
-Route::post('/upload-payment', 'SubmissionController@uploadPayment')->middleware('auth');
-
-Route::get('/remove-file', 'SubmissionController@removeFile')->middleware('auth');
-
-Route::get('/remove-payment', 'SubmissionController@removePaymentProof')->middleware('auth');
-
-Route::post('/submit-entry', 'SubmissionController@submitEntry')->middleware('auth');
-
-Route::get('/delete-entry', 'SubmissionController@deleteEntry')->middleware('auth');
+//Route::get('/submissions/professional', function (){
+//    return view('submission.create');
+//})->middleware('auth');
+//
+//Route::get('/submissions/student', function (){
+//    return view('submission.create');
+//})->middleware('auth');
+//
+//Route::post('/upload-images', 'SubmissionController@uploadImages')->middleware('auth');
+//Route::post('/upload-pdf', 'SubmissionController@uploadPDF')->middleware('auth');
+//Route::post('/upload-thumbnail', 'SubmissionController@uploadThumbnail')->middleware('auth');
+//Route::post('/upload-payment', 'SubmissionController@uploadPayment')->middleware('auth');
+//
+//Route::get('/remove-file', 'SubmissionController@removeFile')->middleware('auth');
+//
+//Route::get('/remove-payment', 'SubmissionController@removePaymentProof')->middleware('auth');
+//
+//Route::post('/submit-entry', 'SubmissionController@submitEntry')->middleware('auth');
+//
+//Route::get('/delete-entry', 'SubmissionController@deleteEntry')->middleware('auth');
 
 Auth::routes();
 
