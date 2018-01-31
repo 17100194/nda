@@ -36,6 +36,8 @@
     <!-- REVOLUTION LAYERS STYLES -->
     <link rel="stylesheet" type="text/css" href="{{asset('revolution/css/layers.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('revolution/css/settings.css')}}">
+
+    <link href="{{asset('icon/favicon.png')}}" rel="shortcut icon">
 </head>
 <body>
 
