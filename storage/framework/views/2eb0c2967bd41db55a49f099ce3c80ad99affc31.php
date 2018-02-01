@@ -63,10 +63,10 @@
                             <ul>
                                 <li>
                                     <?php if(Auth::guest()): ?>
-                                        <?php if (request()->is('/')):?><img src="<?php echo e(asset('images/NIC-Logo.png')); ?>" class="logo padding-top-10"><?php else:?><a href="<?php echo e(url('login')); ?>">Enter Now</a><?php endif;?>
+                                        <?php if (request()->is('/')):?><img src="<?php echo e(asset('images/NIC-Logo.png')); ?>" class="logo padding-top-20"><?php else:?><a href="<?php echo e(url('login')); ?>">Enter Now</a><?php endif;?>
                                     <?php else: ?>
                                         <?php if (request()->is('/')):?>
-                                            <img src="<?php echo e(asset('images/NIC-Logo.png')); ?>" class="logo padding-top-10">
+                                            <img src="<?php echo e(asset('images/NIC-Logo.png')); ?>" class="logo padding-top-20">
                                             <?php else:?>
                                             <a href="<?php echo e(url('submissions')); ?>">Participate Now</a>
                                             <?php endif;?>

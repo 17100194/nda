@@ -131,7 +131,7 @@ class SubmissionController extends Controller
 
         $submission->save();
 
-        $email = new SuccessfulSubmission();
+        $email = new SuccessfulSubmission($submission);
         Mail::to(Auth::user()->email)->send($email);
 
         session(['message'=>'<strong>Submission Successfull!</strong> Our team will analyse your entry and update you of the results via email so keep checking your email for further instructions']);

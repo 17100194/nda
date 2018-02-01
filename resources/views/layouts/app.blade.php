@@ -63,10 +63,10 @@
                             <ul>
                                 <li>
                                     @if(Auth::guest())
-                                        <?php if (request()->is('/')):?><img src="{{asset('images/NIC-Logo.png')}}" class="logo padding-top-10"><?php else:?><a href="{{url('login')}}">Enter Now</a><?php endif;?>
+                                        <?php if (request()->is('/')):?><img src="{{asset('images/NIC-Logo.png')}}" class="logo padding-top-20"><?php else:?><a href="{{url('login')}}">Enter Now</a><?php endif;?>
                                     @else
                                         <?php if (request()->is('/')):?>
-                                            <img src="{{asset('images/NIC-Logo.png')}}" class="logo padding-top-10">
+                                            <img src="{{asset('images/NIC-Logo.png')}}" class="logo padding-top-20">
                                             <?php else:?>
                                             <a href="{{url('submissions')}}">Participate Now</a>
                                             <?php endif;?>
