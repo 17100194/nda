@@ -76,7 +76,7 @@
 .flat-button.button-color { padding: 18px 44px 17px 47px; }
 .flat-button.button-gradient { padding: 18px 30px 17px 32px; }
 /*  hover */
-.flat-button:hover, .page-planding .btn-purchase a:hover { background-color: #2b2e2f; }
+.flat-button:hover, .page-planding .btn-purchase a:hover { background-color: #0B4869; }
 .flat-button.bg-black:hover, .flat-button.bg-white:hover, .flat-button.bg-white-default:hover, .flat-button.bg-white2:hover { background-color: #66bfd7; }
 .flat-button.border-black:hover, .flat-button.border-white:hover { border-color: #66bfd7; background-color: #66bfd7; }
 

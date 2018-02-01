@@ -25,7 +25,7 @@
             </div>
                 <div class="divider"></div>
                 <div class="text-center">
-                    <a href="<?php echo e(url('/submissions/professional')); ?>" class="flat-button border-radius-none style-left-right bg-white border-black">Make a Professional Entry</a> <span>OR</span> <a href="<?php echo e(url('/submissions/student')); ?>" class="flat-button border-radius-none style-left-right bg-white border-black">Make a Student Entry</a>
+                    <a href="<?php echo e(url('/submissions/professional')); ?>" class="flat-button color-white">Make a Professional Entry</a> <span>OR</span> <a href="<?php echo e(url('/submissions/student')); ?>" class="flat-button color-white">Make a Student Entry</a>
                 </div>
             <div class="divider"></div>
             <div class="title-section line bg-gray after-width158">
