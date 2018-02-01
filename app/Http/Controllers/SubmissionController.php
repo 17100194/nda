@@ -66,7 +66,8 @@ class SubmissionController extends Controller
         }
         $filename = str_random('10').'_'.$file->getClientOriginalName();
         $file->storeAs('public/uploads', $filename);
-        Submission::where('id',$request->submissionid)->update(['payment_proof'=>$filename,'payment_status'=>'Submitted']);
+        Submission::where('id',$request->submissionid)->update(['payment_proof'=>$filename,'payment_status'=>'Verifying']);
+        session(['message' => '<strong>Payment Proof Submitted!</strong> Our team will verify your payment proof and update the status to paid if valid']);
         return response()->json($filename, 200);
     }
 
