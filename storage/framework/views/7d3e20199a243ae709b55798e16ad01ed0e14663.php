@@ -154,8 +154,6 @@
                                 <label for="print">Print & Published Media</label>
                                 <input type="checkbox" name="categories[]" value="Service Design" id="service_design">
                                 <label for="service_design">Service Design</label>
-                                <input type="checkbox" name="categories[]" value="Visual Communication Design" id="visual_communication">
-                                <label for="visual_communication">Visual Communication Design</label>
                             </div>
                         </div>
                         <div class="<?php echo e($errors->has('categories') ? ' has-error' : ''); ?> padding-top-20">

@@ -330,6 +330,7 @@
                 dictDefaultMessage: '<strong>Project Images</strong><br>You must include at least one image, maximum of 10',
                 maxFiles: 10,
                 acceptedFiles: 'image/*',
+                RemoveLinkTemplate: "<div class=\"remove\" data-dz-remove><i class=\"icon-cross\"></i></div>",
                 init: function () {
                     imagesDropzone = this;
                     imagesDropzone.on("maxfilesexceeded", function(file) {

@@ -23,10 +23,10 @@
                 <h1 class="title">Early Bird Pricing</h1>
                 <p class="sub-title fontsize24"><span style="text-decoration: underline">Student:</span> 1000 PKR / Submission<br> <span style="text-decoration: underline">Professional:</span> 2000 PKR / Submission</p>
             </div>
-                
-                
-                    
-                
+                <div class="divider"></div>
+                <div class="text-center">
+                    <a href="<?php echo e(url('/submissions/professional')); ?>" class="flat-button border-radius-none style-left-right bg-white border-black">Make a Professional Entry</a> <span>OR</span> <a href="<?php echo e(url('/submissions/student')); ?>" class="flat-button border-radius-none style-left-right bg-white border-black">Make a Student Entry</a>
+                </div>
             <div class="divider"></div>
             <div class="title-section line bg-gray after-width158">
                 <div class="container-fluid2">
@@ -74,7 +74,7 @@
                                 <p style="font-weight: bold;"><?php echo e($submission->type); ?> Entry</p>
                                 <p><span style="font-weight: bold">Submission ID:</span> <?php echo e($submission->id); ?></p>
                                 <p><span style="font-weight: bold">Status:</span> <?php echo e($submission->status); ?></p>
-                                <p><span style="font-weight: bold">Payment Status:</span> <?php if ($submission->payment_status == 'Not Paid'):?><span style="color: red;"><i class="ti-close"></i> <?php echo e($submission->payment_status); ?></span><?php elseif ($submission->payment_status == 'Submitted'):?><span style="color: green;"><i class="ti-info"></i> <?php echo e($submission->payment_status); ?></span><?php else:?><span style="color: green;"><i class="ti-check-box"></i> <?php echo e($submission->payment_status); ?></span><?php endif?></p>
+                                <p><span style="font-weight: bold">Payment Status:</span> <?php if ($submission->payment_status == 'Not Paid'):?><span style="color: red;"><i class="ti-close"></i> <?php echo e($submission->payment_status); ?></span><?php elseif ($submission->payment_status == 'Verifying'):?><span style="color: blue;"><i class="ti-info"></i> <?php echo e($submission->payment_status); ?> Payment</span><?php else:?><span style="color: green;"><i class="ti-check-box"></i> <?php echo e($submission->payment_status); ?></span><?php endif?></p>
                                 <br>
                                 <?php if ($submission->payment_status == 'Not Paid'):?><p><a href="#" data-id="<?php echo e($submission->id); ?>" data-izimodal-open="#modal" data-izimodal-transitionin="bounceInUp" class="flat-button color-white">Upload Payment Receipt</a><br><a class="font-raleway" href="javascript:void(0)" style="color: red" data-id="<?php echo e($submission->id); ?>" onclick="deleteEntry($(this).data('id'));">Delete Entry</a></p><?php endif?>
                             </div>
