@@ -100,6 +100,15 @@
                         @endif
                     </div>
 
+                    <div class="form-group {{ $errors->has('video_url') ? ' has-error' : '' }}">
+                        <label>Payment Method</label>
+                        <select id="payment_mthod" name="payment_method">
+                            <option value="Easy Paisa">Easy Paisa</option>
+                            <option value="Cash On Campus">Cash On Campus</option>
+                            <option value="Bank Transfer">Bank Transfer</option>
+                        </select>
+                    </div>
+
                     <h4>Award Categories* <br><small>You must select at least one category, <span style="font-weight: bold">Maximum of 3</span></small></h4>
                     <div class="form-group">
                         <div class="row">

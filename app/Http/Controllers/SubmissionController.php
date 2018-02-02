@@ -67,7 +67,7 @@ class SubmissionController extends Controller
         $filename = str_random('10').'_'.$file->getClientOriginalName();
         $file->storeAs('public/uploads', $filename);
         Submission::where('id',$request->submissionid)->update(['payment_proof'=>$filename,'payment_status'=>'Verifying']);
-        session(['message' => '<strong>Payment Proof Submitted!</strong> Our team will verify your payment proof and update the status to paid if valid']);
+        session(['message' => '<strong>Payment Proof Submitted Successfully!</strong> Our team will verify your payment and update payment status if valid. Thank you for your patience']);
         return response()->json($filename, 200);
     }
 
@@ -94,7 +94,7 @@ class SubmissionController extends Controller
             'team' => 'max:800',
             'image_files' => 'required',
             'thumbnail_file' => 'required',
-            'pdf_file' => 'required|sometimes',
+            'pdf_file' => 'required|sometimes'
         ]);
 
         if ($validator->fails()){
@@ -140,13 +140,14 @@ class SubmissionController extends Controller
         if($request->member4){
             $submission->team_member4 = $request->member4;
         }
+        $submission->payment_method = $request->payment_method;
 
         $submission->save();
 
         $email = new SuccessfulSubmission($submission);
         Mail::to(Auth::user()->email)->send($email);
 
-        session(['message'=>'<strong>Submission Successfull!</strong> Our team will analyse your entry and update you of the results via email so keep checking your email for further instructions']);
+        session(['message'=>'<strong>Congratulations!</strong> You have successfully submitted your entry. Please check your email for further instructions regarding the payment and what happens next']);
         return response()->json('success', 200);
     }
 
@@ -186,7 +187,7 @@ class SubmissionController extends Controller
             }
             Storage::delete('public/uploads/'.$submission->thumbnail);
             Submission::where('id', $request->submissionid)->delete();
-            session(['message'=>'<strong>Entry deleted successfully!</strong> All your files and data associated with the entry has been removed.']);
+            session(['message'=>'<strong>Entry deleted successfully!</strong> All the files and data associated with the entry has been removed.']);
             return response()->json('success',200);
         } else {
             return response()->json('Unauthorized Command', 400);

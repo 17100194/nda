@@ -228,7 +228,7 @@
                         paymentDropzone = this;
                         paymentDropzone.on("success",function (file,response) {
                             paymentFilename = response;
-                            window.location.reload();
+                            window.location.href(<?php echo e(url('submissions')); ?>);
                         });
                         paymentDropzone.on("sending", function(file, xhr, formData){
                             formData.append("submissionid", submissionid);
@@ -271,7 +271,7 @@
                     dataType: 'json',
                     success: function (data) {
                         if (data === 'success'){
-                            window.location.reload();
+                            window.location.href(<?php echo e(url('submissions')); ?>);
                         }
                     },
                     error: function (data) {

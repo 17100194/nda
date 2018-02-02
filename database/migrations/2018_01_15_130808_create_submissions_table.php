@@ -43,6 +43,7 @@ class CreateSubmissionsTable extends Migration
             $table->string('team_member4')->nullable();
             $table->string('status')->default('Evaluation In Process');
             $table->string('payment_status')->default('Not Paid');
+            $table->string('payment_method');
             $table->string('payment_proof')->nullable();
             $table->timestamps();
         });
