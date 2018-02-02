@@ -19,7 +19,7 @@
                     {{ csrf_field() }}
                     <input type="hidden" id="type" name="type" value="<?php if (request()->is('submissions/professional')):?>Professional<?php else:?>Student<?php endif?>">
                     <div class="form-group {{ $errors->has('title') ? ' has-error' : '' }}">
-                        <label>Project Title</label>
+                        <label>Project Title*</label>
                         <input id="title" type="text" name="title" value="{{ old('title') }}" required autofocus>
                         @if ($errors->has('title'))
                             <span class="help-block">
@@ -29,7 +29,7 @@
                     </div>
 
                     <div class="form-group {{ $errors->has('by') ? ' has-error' : '' }}">
-                        <label><?php if (request()->is('submissions/professional')):?>Designer/Firm<?php else:?>Your Name<?php endif?></label>
+                        <label><?php if (request()->is('submissions/professional')):?>Designer/Firm*<?php else:?>Your Name*<?php endif?></label>
                         <input id="by" type="text" name="by" value="{{old('by')}}" required>
                         @if ($errors->has('by'))
                             <span class="help-block">
@@ -49,7 +49,7 @@
                     </div>
 
                     <div class="form-group {{ $errors->has('overview') ? ' has-error' : '' }}">
-                        <label>Project Overview</label>
+                        <label>Project Overview*<br><span style="font-size: 13px;">An overview of your project with the high level description and working of your project</span></label>
                         <textarea id="overview" name="overview" style="resize: none; height: 150px;" required>{{old('overview')}}</textarea>
                         <div class="text-right" style="margin-top: -50px;">
                             <span id="display_count_overview">500</span> words remaining
@@ -62,7 +62,7 @@
                     </div>
 
                     <div class="form-group {{ $errors->has('details') ? ' has-error' : '' }}">
-                        <label>Project Details</label>
+                        <label>Project Details*<br><span style="font-size: 13px;">In depth description of your project, describing every aspect of it in detail</span></label>
                         <textarea id="details" name="details" style="resize: none; height: 150px;" required>{{old('details')}}</textarea>
                         <div class="text-right" style="margin-top: -50px;">
                             <span id="display_count_details">1500</span> words remaining
@@ -75,18 +75,14 @@
                     </div>
 
                     <div class="form-group {{ $errors->has('team') ? ' has-error' : '' }}">
-                        <label>Team Members Names and Titles, Maximum of 4 (Optional)</label>
-                        <textarea id="team" name="team" maxlength="800" style="resize: none; height: 150px;" >{{old('team')}}</textarea>
-                        @if ($errors->has('team'))
-                            <span class="help-block">
-                                        <strong>{{ $errors->first('team') }}</strong>
-                                </span>
-                        @endif
+                        <h4>Team Members Names and Titles (Optional)<br>
+                            <small>Maximum of 4</small></h4> <button class="btn btn-primary" id="add-member">+ Add Team Member</button>
+
                     </div>
 
                     <div class="form-group {{ $errors->has('url') ? ' has-error' : '' }}">
-                        <label>External Link For Project (Optional)</label>
-                        <input id="url" type="url" value="{{old('url')}}" name="url" required>
+                        <label>External Link For Project (Optional but highly recommended)</label>
+                        <input id="url" type="url" value="{{old('url')}}" name="url">
                         @if ($errors->has('url'))
                             <span class="help-block">
                                         <strong>{{ $errors->first('url') }}</strong>
@@ -95,8 +91,8 @@
                     </div>
 
                     <div class="form-group {{ $errors->has('video_url') ? ' has-error' : '' }}">
-                        <label>Video Link (Optional)</label>
-                        <input id="video_url" type="url" value="{{old('video_url')}}" name="video_url" required>
+                        <label>Video Link (Optional but highly recommended)</label>
+                        <input id="video_url" type="url" value="{{old('video_url')}}" name="video_url">
                         @if ($errors->has('video_url'))
                             <span class="help-block">
                                         <strong>{{ $errors->first('video_url') }}</strong>
@@ -104,7 +100,7 @@
                         @endif
                     </div>
 
-                    <h4>Award Categories <small>You must select at least one category, Max 3</small></h4>
+                    <h4>Award Categories* <br><small>You must select at least one category, <span style="font-weight: bold">Maximum of 3</span></small></h4>
                     <div class="form-group">
                         <div class="row">
                             <div class="col-sm-6">
@@ -137,6 +133,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="divider"></div>
+                                <div class="divider"></div>
                                 <input type="checkbox" name="categories[]" value="Concept Design" id="concept_design">
                                 <label for="concept_design">Concept Design</label>
                                 <input type="checkbox" name="categories[]" value="Design For Social Impact" id="design_social">
@@ -167,15 +164,17 @@
                     </div>
                 </form>
                 <div class="col-md-6">
-                    <br><br>
+                    <label>Project Images*</label>
                     <form action="{{url('upload-images')}}" class="dropzone" id="images">
                         {{csrf_field()}}
                     </form>
                     <br><br>
+                    <label>Project PDF (Optional)</label>
                     <form action="{{url('upload-pdf')}}" class="dropzone" id="pdf">
                         {{csrf_field()}}
                     </form>
                     <br><br>
+                    <label>Project Thumbnail*</label>
                     <form action="{{url('upload-thumbnail')}}" class="dropzone" id="thumbnail">
                         {{csrf_field()}}
                     </form>

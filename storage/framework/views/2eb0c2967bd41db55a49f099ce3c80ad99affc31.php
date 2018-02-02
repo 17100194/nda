@@ -86,6 +86,7 @@
                                             <li class="<?php echo e(request()->is('how-to-enter') ? 'active' : ''); ?>"><a href="<?php echo e(url('how-to-enter')); ?>">How To Enter</a></li>
                                             <li class="<?php echo e(request()->is('pricing-timeline') ? 'active' : ''); ?>"><a href="<?php echo e(url('pricing-timeline')); ?>">Pricing & Timeline</a></li>
                                             <li class="<?php echo e(request()->is('eligibility-criteria') ? 'active' : ''); ?>"><a href="<?php echo e(url('eligibility-criteria')); ?>">Eligibility & Criteria</a></li>
+                                            <li class="<?php echo e(request()->is('submissions') || request()->is('login') ? 'active' : ''); ?>"><a href="<?php echo e(url('submissions')); ?>">Enter Now</a></li>
                                         </ul>
                                     </li>
                                     <li class="<?php echo e(strpos(request()->url(),'category') ? 'home' : ''); ?>">
@@ -135,7 +136,7 @@
                             <br>
                             <p class="sub-title"><i class="icon-Map-Marker2" style="color: #FEBD21;"></i> Lahore University of Management Sciences (LUMS), Lahore, Pakistan</p>
                             <br>
-                            <p class="sub-title"><i class="icon-Mail" style="color: #FEBD21"></i> <a href="mailto:ndapakistan@gmail.com">ndapakistan@gmail.com</a></p>
+                            <p class="sub-title"><i class="icon-Mail" style="color: #FEBD21"></i> <a href="mailto:info@ndapakistan.com">info@ndapakistan.com</a></p>
                         </div><!-- /.widget -->
                     </div><!-- /.col-md-4 -->
                 </div><!-- /.row -->
@@ -330,7 +331,6 @@
                 dictDefaultMessage: '<strong>Project Images</strong><br>You must include at least one image, maximum of 10',
                 maxFiles: 10,
                 acceptedFiles: 'image/*',
-                RemoveLinkTemplate: "<div class=\"remove\" data-dz-remove><i class=\"icon-cross\"></i></div>",
                 init: function () {
                     imagesDropzone = this;
                     imagesDropzone.on("maxfilesexceeded", function(file) {
@@ -440,6 +440,19 @@
                 }
             });
 
+            var member = 1;
+            $('#add-member').on('click',function (e) {
+                e.preventDefault();
+                if (member <= 4 && member > 0) {
+                    if(member === 1){
+                        $(this).after('<br><br><label>Team Member '+member+'</label><input id="member' + member + '" name="member' + member + '" type="text">')
+                    } else {
+                        $('#member' + (member - 1)).after('<br><label>Team Member ' + member + '</label><input id="member' + member + '" name="member' + member + '" type="text">');
+                    }
+                    member = member + 1;
+                }
+            });
+
             $('#entry_form').on('submit',function (e) {
                 e.preventDefault();
                 var data = $('#entry_form').serializeArray();
@@ -507,6 +520,7 @@
                                 }
                             });
                         } else {
+                            $('#entry_form').reset();
                             window.onbeforeunload = null;
                             window.location.href = "<?php echo e(url('submissions')); ?>";
                         }

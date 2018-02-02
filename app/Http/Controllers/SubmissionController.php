@@ -128,7 +128,18 @@ class SubmissionController extends Controller
         }
         Storage::move('temp/'.$request->thumbnail_file,'public/uploads/'.$request->thumbnail_file);
         $submission->thumbnail = $request->thumbnail_file;
-        $submission->team = $request->team;
+        if($request->member1){
+            $submission->team_member1 = $request->member1;
+        }
+        if($request->member2){
+            $submission->team_member2 = $request->member2;
+        }
+        if($request->member3){
+            $submission->team_member3 = $request->member3;
+        }
+        if($request->member4){
+            $submission->team_member4 = $request->member4;
+        }
 
         $submission->save();
 

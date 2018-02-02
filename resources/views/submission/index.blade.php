@@ -1,18 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="parallax page-title">
-        <div class="overlay-parallax "></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="page-title-heading">
-                        <h1 class="title">Get Started</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="flat-row">
         <div class="container">
             @if(session()->has('message'))
@@ -22,8 +10,12 @@
                 </div>
             @endif
             <div class="title-section text-center">
-                <h1 class="title">Early Bird Pricing</h1>
-                <p class="sub-title fontsize24"><span style="text-decoration: underline">Student:</span> 1000 PKR / Submission<br> <span style="text-decoration: underline">Professional:</span> 2000 PKR / Submission</p>
+                <h1 class="title">Get Started</h1>
+            </div>
+                <div class="divider"></div>
+            <div class="title-section text-center">
+                <h2>Early Bird Pricing</h2>
+                <p class="sub-title"><span style="text-decoration: underline; font-weight: bold">Student:</span> 1000 PKR / Submission<div class="divider h10"></div><span style="text-decoration: underline; font-weight: bold">Professional:</span> 2000 PKR / Submission</p>
             </div>
                 <div class="divider"></div>
                 <div class="text-center">
@@ -34,24 +26,28 @@
                 <div class="container-fluid2">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="title">Eligibility & Criteria</h1>
+                            <h2 class="title" style="font-size: 30px;">Eligibility & Criteria</h2>
                             <br>
-                            <p class="sub-title">1. The awards are open to students and professionals of all design disciplines.</p>
-                            <br>
-                            <p class="sub-title">2. Student level includes individuals enrolled in a full time Bachelors/ Undergraduate, Masters/Undergraduate and Ph.D programmes nationwide</p>
-                            <br>
-                            <p class="sub-title">3. Any student graduated within the previous four months from the date of submission may also submit their project in the student category</p>
-                            <br>
-                            <p class="sub-title">4. All work submitted shall be original and any plagiarized content would result in immediate disqualification.</p>
-                            <br>
-                            <p class="sub-title">5. Professionals may submit their previous student level works (modified/unmodified), however, these projects will be evaluated under professional category. </p>
-                            <br>
-                            <p class="sub-title">6. If your student project is nominated the participants will be required to produce a certificate of bonafide from their universities/university identification card as a proof of enrollment in an academic programme during the date of submission. </p>
-                            <br>
-                            <p class="sub-title">7. Projects that are still under development are also eligible for submission</p>
-                            <br>
-                            <p class="sub-title">8. Team level/individual participation is permitted. The maximum number of team members allowed are 4 members per team. The winning prize money for the student category would be per submission, not per team member. Moreover, the award for the professional category would also be one per submission.</p>
-                            <br>
+                            <div class="col-md-6">
+                                <p class="fontsize17">1. The awards are open to students and professionals of all design disciplines.</p>
+                                <br>
+                                <p class="fontsize17">2. Student level includes individuals enrolled in a full time Bachelors/ Undergraduate, Masters/Undergraduate and Ph.D programmes nationwide</p>
+                                <br>
+                                <p class="fontsize17">3. Any student graduated within the previous four months from the date of submission may also submit their project in the student category</p>
+                                <br>
+                                <p class="fontsize17">4. All work submitted shall be original and any plagiarized content would result in immediate disqualification.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <br class="visible-xs visible-sm">
+                                <p class="fontsize17">5. Professionals may submit their previous student level works (modified/unmodified), however, these projects will be evaluated under professional category. </p>
+                                <br>
+                                <p class="fontsize17">6. If your student project is nominated the participants will be required to produce a certificate of bonafide from their universities/university identification card as a proof of enrollment in an academic programme during the date of submission. </p>
+                                <br>
+                                <p class="fontsize17">7. Projects that are still under development are also eligible for submission</p>
+                                <br>
+                                <p class="fontsize17">8. Team level/individual participation is permitted. The maximum number of team members allowed are 4 members per team. The winning prize money for the student category would be per submission, not per team member. Moreover, the award for the professional category would also be one per submission.</p>
+                                <br>
+                            </div>
                         </div>
                     </div>
                 </div>

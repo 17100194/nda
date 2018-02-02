@@ -86,6 +86,7 @@
                                             <li class="{{request()->is('how-to-enter') ? 'active' : ''}}"><a href="{{url('how-to-enter')}}">How To Enter</a></li>
                                             <li class="{{request()->is('pricing-timeline') ? 'active' : ''}}"><a href="{{url('pricing-timeline')}}">Pricing & Timeline</a></li>
                                             <li class="{{request()->is('eligibility-criteria') ? 'active' : ''}}"><a href="{{url('eligibility-criteria')}}">Eligibility & Criteria</a></li>
+                                            <li class="{{request()->is('submissions') || request()->is('login') ? 'active' : ''}}"><a href="{{url('submissions')}}">Enter Now</a></li>
                                         </ul>
                                     </li>
                                     <li class="{{strpos(request()->url(),'category') ? 'home' : ''}}">
@@ -135,7 +136,7 @@
                             <br>
                             <p class="sub-title"><i class="icon-Map-Marker2" style="color: #FEBD21;"></i> Lahore University of Management Sciences (LUMS), Lahore, Pakistan</p>
                             <br>
-                            <p class="sub-title"><i class="icon-Mail" style="color: #FEBD21"></i> <a href="mailto:ndapakistan@gmail.com">ndapakistan@gmail.com</a></p>
+                            <p class="sub-title"><i class="icon-Mail" style="color: #FEBD21"></i> <a href="mailto:info@ndapakistan.com">info@ndapakistan.com</a></p>
                         </div><!-- /.widget -->
                     </div><!-- /.col-md-4 -->
                 </div><!-- /.row -->
@@ -227,7 +228,7 @@
                         paymentDropzone = this;
                         paymentDropzone.on("success",function (file,response) {
                             paymentFilename = response;
-                            window.location.reload();
+                            window.location.href({{url('submissions')}});
                         });
                         paymentDropzone.on("sending", function(file, xhr, formData){
                             formData.append("submissionid", submissionid);
@@ -270,7 +271,7 @@
                     dataType: 'json',
                     success: function (data) {
                         if (data === 'success'){
-                            window.location.reload();
+                            window.location.href({{url('submissions')}});
                         }
                     },
                     error: function (data) {
@@ -439,6 +440,19 @@
                 }
             });
 
+            var member = 1;
+            $('#add-member').on('click',function (e) {
+                e.preventDefault();
+                if (member <= 4 && member > 0) {
+                    if(member === 1){
+                        $(this).after('<br><br><label>Team Member '+member+'</label><input id="member' + member + '" name="member' + member + '" type="text">')
+                    } else {
+                        $('#member' + (member - 1)).after('<br><label>Team Member ' + member + '</label><input id="member' + member + '" name="member' + member + '" type="text">');
+                    }
+                    member = member + 1;
+                }
+            });
+
             $('#entry_form').on('submit',function (e) {
                 e.preventDefault();
                 var data = $('#entry_form').serializeArray();
@@ -506,6 +520,7 @@
                                 }
                             });
                         } else {
+                            $('#entry_form').reset();
                             window.onbeforeunload = null;
                             window.location.href = "{{url('submissions')}}";
                         }

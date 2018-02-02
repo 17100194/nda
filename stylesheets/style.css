@@ -384,6 +384,16 @@ input::-webkit-input-placeholder {
 	background-image: none;
 }
 
+.reverse-color{
+	background-color: #0B4869 !important;
+	color:white !important;
+}
+
+.reverse-color:hover{
+	background-color: #FEBD21 !important;
+	color:white !important;
+}
+
 textarea, 
 input[type="text"],
 input[type="submit"],
