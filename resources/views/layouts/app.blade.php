@@ -521,7 +521,8 @@
                                 }
                             });
                         } else {
-                            $('#entry_form').reset();
+                            $('#entry_form').find('input:text, input:password, select, textarea').val('');
+                            $('#entry_form').find('input:radio, input:checkbox').prop('checked', false);
                             window.onbeforeunload = null;
                             window.location.href = "{{url('submissions')}}";
                         }
