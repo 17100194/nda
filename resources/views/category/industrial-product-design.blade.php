@@ -35,12 +35,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content text-center">
+                        <div class="content text-center" style="height: 170px;">
                             <h5 class="name">Khurram Zafar</h5>
                             <p class="position">
-                                Innovation & Entrepreneurship Evangelist, Investor, Father, Magician
-                                Lahore University of Management Sciences (LUMS)
-                                McGill University
+                                Innovation & Entrepreneurship Evangelist
                             </p>
                         </div>
                     </div>
@@ -58,12 +56,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content text-center">
+                        <div class="content text-center" style="height: 170px;">
                             <h5 class="name">Zia Imran</h5>
                             <p class="position">
-                                Country Manager at SPRING Accelerator
-                                Acting CEO – Zaheen Machines
-                                CEO and Founder  VAHZAY PVT ltd
+                                Country Manager at SPRING Accelerator | Acting CEO – Zaheen Machines | CEO and Founder  VAHZAY PVT ltd
                             </p>
                         </div>
                     </div>

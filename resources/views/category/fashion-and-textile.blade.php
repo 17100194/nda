@@ -37,7 +37,7 @@
                         </div>
                         <div class="content text-center">
                             <h5 class="name">Sabahat Nawaz</h5>
-                            <p class="position">Associate Professor at Pakistan Institute of Fashion & Design. Pakistan Institute of Fashion & Design Central Saint Martins, University of the Arts, London, Pakistan
+                            <p class="position">Associate Professor at Pakistan Institute of Fashion & Design
                             </p>
                         </div>
                     </div>

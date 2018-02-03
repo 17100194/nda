@@ -38,9 +38,9 @@
                         <div class="content text-center">
                             <h5 class="name">Faisal Sherjan</h5>
                             <p class="position">
-                                Director National Incubation Centre Lahore
-                                Co-Founder, Chief Strategy Officer - Multiple Tech Startups
-                                Director Strategy and Planning - Jang Group
+                                Director National Incubation Centre Lahore |
+                                Co-Founder, Chief Strategy Officer - Multiple Tech Startups |
+                                Director Strategy and Planning - Jang Group |
                                 Chief Operating Officer International Division Geo Tv Network
                             </p>
                         </div>
