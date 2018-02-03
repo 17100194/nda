@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="col-md-5 padding-top-40">
-                    <img src="{{asset('images/categories/VCD.png')}}" class="center-block">
+                    <img src="{{asset('images/categories/VCD.png')}}" width="200"><img src="{{asset('images/categories/static-design.png')}}" width="235"><img src="{{asset('images/categories/animation-design.png')}}" class="center-block" width="235">
                 </div>
             </div>
         </div>

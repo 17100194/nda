@@ -94,7 +94,7 @@
                                         <a>Categories</a>
                                         <ul class="submenu list-style">
                                             <li class="{{request()->is('category/architecture') ? 'active' : ''}}"><a href="{{url('category/architecture')}}">Architecture</a></li>
-                                            <li class="{{request()->is('category/concept-design') ? 'active' : ''}}"><a href="{{url('category/concept-design')}}">Concept Design</a></li>
+                                            <li class="{{request()->is('category/game-design') ? 'active' : ''}}"><a href="{{url('category/game-design')}}">Game Design</a></li>
                                             <li class="{{request()->is('category/consumer-product-design') ? 'active' : ''}}"><a href="{{url('category/consumer-product-design')}}">Consumer Product Design</a></li>
                                             <li class="{{request()->is('category/design-social-impact') ? 'active' : ''}}"><a href="{{url('category/design-social-impact')}}">Design For Social Impact</a></li>
                                             <li class="{{request()->is('category/education-initiative') ? 'active' : ''}}"><a href="{{url('category/education-initiative')}}">Education Initiative</a></li>
