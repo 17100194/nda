@@ -566,7 +566,7 @@
 	.header-addtop .menu-extra > ul > li > a > span { left: 7px; top: 12px; }
 
 	#mainnav-mobi .mega-menu ul, .btn-submenu.active ~ .submenu.mega-menu, .mainnav.nav-footer { display: block !important; }
-	.header-absolute ~ #mainnav-mobi { top: 80px; }
+	.header-absolute ~ #mainnav-mobi { top: 80px; z-index:9999; }
 	.header-absolute.header-addtop.header-navhead ~ #mainnav-mobi { top: 156px; }
 	.header-absolute.header-addinfo ~ #mainnav-mobi { top: 99px; }
 	.header.header-style2 .logo, .header.header-style2.downscrolled .logo, .header-design.header.header-style2 .logo {  margin: 10px 0 0 0; width: 120px; }
