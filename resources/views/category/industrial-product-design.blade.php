@@ -16,14 +16,57 @@
             </div>
         </div>
     </section>
-    <section class="flat-row bg-gray">
+    <section class="flat-row" style="background: #0B4869">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="title-section text-center">
-                        <h1 class="title color-white">Industrial Product Design Jury 2018</h1>
+                <div class="title-section text-center">
+                    <h1 class="title" style="color:white;">Industrial Product Design Jury 2018</h1>
+                </div>
+                <div class="col-md-4 wrap-teammember">
+                    <div class="teammember">
+                        <div class="avatar">
+                            <img src="{{asset('images/jury/khurram_zafar.jpg')}}" width="100%">
+                            <div class="info-overlay">
+                                <div class="flat-socials">
+                                    <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5 class="name">Khurram Zafar</h5>
+                            <p class="position">
+                                Innovation & Entrepreneurship Evangelist, Investor, Father, Magician
+                                Lahore University of Management Sciences (LUMS)
+                                McGill University
+                            </p>
+                        </div>
                     </div>
-                    <img src="{{asset('images/comingsoon.png')}}" class="center-block">
+                </div>
+                <div class="col-md-4 wrap-teammember">
+                    <div class="teammember">
+                        <div class="avatar">
+                            <img src="{{asset('images/jury/zia_imran.jpg')}}" width="100%">
+                            <div class="info-overlay">
+                                <div class="flat-socials">
+                                    <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content text-center">
+                            <h5 class="name">Zia Imran</h5>
+                            <p class="position">
+                                Country Manager at SPRING Accelerator
+                                Acting CEO – Zaheen Machines
+                                CEO and Founder  VAHZAY PVT ltd
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

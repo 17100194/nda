@@ -7,7 +7,7 @@
                 <div class="col-md-7">
                     <div class="title-section">
                         <h1 class="title">Game Design</h1>
-                        <p class="sub-title">Given in recognition of conceptual or proposal designs, whether self-initiated or created for a client or educational institution, which have been fully developed and have a profound impact on design theory, practice, or public awareness.</p>
+                        <p class="sub-title">Given in recognition of applying good design and visual aesthetics to make a game for entertainment purposes. or example, board or card games or any other video games. The overall vision should be achieved through documentation, determining the basic game model and creating the overall story of the game.</p>
                     </div>
                 </div>
                 <div class="col-md-5 padding-top-40">
