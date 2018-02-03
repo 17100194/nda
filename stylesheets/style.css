@@ -92,6 +92,9 @@
 
 /* Reset
 -------------------------------------------------------------- */
+	.wrap-teammember .avatar img{
+		filter:grayscale(100%);
+	}
 	html {
 		overflow-y: scroll;
 		-webkit-text-size-adjust: 100%;

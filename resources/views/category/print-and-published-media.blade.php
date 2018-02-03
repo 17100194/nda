@@ -47,6 +47,10 @@
                     </div>
                 </div>
             </div>
+            <div class="divider"></div>
+            <div class="title-section text-center">
+                <h1 class="title" style="color:white;">More Jury Members Coming Soon</h1>
+            </div>
         </div>
     </section>
 @endsection
