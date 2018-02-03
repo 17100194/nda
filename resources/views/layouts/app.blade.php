@@ -63,10 +63,10 @@
                             <ul>
                                 <li>
                                     @if(Auth::guest())
-                                        <?php if (request()->is('/')):?><img src="{{asset('images/NIC-Logo.png')}}" class="logo padding-top-20"><?php else:?><a href="{{url('login')}}">Enter Now</a><?php endif;?>
+                                        <?php if (request()->is('/')):?><img src="{{asset('images/lums.png')}}" style="width: 90px;" class="logo padding-right-10"><img src="{{asset('images/NIC-Logo.png')}}" class="logo padding-top-20" style="width:110px;"><?php else:?><a href="{{url('login')}}">Enter Now</a><?php endif;?>
                                     @else
                                         <?php if (request()->is('/')):?>
-                                            <img src="{{asset('images/NIC-Logo.png')}}" class="logo padding-top-20">
+                                            <img src="{{asset('images/lums.png')}}" style="width: 90px;" class="logo padding-right-10"><img src="{{asset('images/NIC-Logo.png')}}" class="logo padding-top-20" style="width:110px;">
                                             <?php else:?>
                                             <a href="{{url('submissions')}}">Participate Now</a>
                                             <?php endif;?>
@@ -108,7 +108,7 @@
                                         </ul>
                                     </li>
                                     <li class="{{request()->is('jury') ? 'home' : ''}}"><a href="{{url('jury')}}">Jury</a></li>
-                                    <li class="{{request()->is('sponsors') ? 'home' : ''}}"><a href="{{url('sponsors')}}">Sponsors</a></li>
+                                    <li class="{{request()->is('sponsors') ? 'home' : ''}}"><a href="{{url('sponsors')}}">Partners</a></li>
                                     <li class="{{request()->is('about') ? 'home' : ''}}"><a href="{{url('about')}}">About NDA</a></li>
                                 </ul><!-- /.menu -->
                             </nav><!-- /.mainnav -->

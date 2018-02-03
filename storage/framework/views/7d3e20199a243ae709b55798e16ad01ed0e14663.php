@@ -18,7 +18,7 @@
 
                     <input type="hidden" id="type" name="type" value="<?php if (request()->is('submissions/professional')):?>Professional<?php else:?>Student<?php endif?>">
                     <div class="form-group <?php echo e($errors->has('title') ? ' has-error' : ''); ?>">
-                        <label>Project Title*</label>
+                        <label class="fontweight600">Project Title*</label>
                         <input id="title" type="text" name="title" value="<?php echo e(old('title')); ?>" required autofocus>
                         <?php if($errors->has('title')): ?>
                             <span class="help-block">
@@ -28,7 +28,7 @@
                     </div>
 
                     <div class="form-group <?php echo e($errors->has('by') ? ' has-error' : ''); ?>">
-                        <label><?php if (request()->is('submissions/professional')):?>Designer/Firm*<?php else:?>Your Name*<?php endif?></label>
+                        <label class="fontweight600"><?php if (request()->is('submissions/professional')):?>Designer/Firm*<?php else:?>Your Name*<?php endif?></label>
                         <input id="by" type="text" name="by" value="<?php echo e(old('by')); ?>" required>
                         <?php if($errors->has('by')): ?>
                             <span class="help-block">
@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="form-group <?php echo e($errors->has('for') ? ' has-error' : ''); ?>">
-                        <label><?php if (request()->is('submissions/professional')):?>Client Name (Optional)<?php else:?>School Name (Optional)<?php endif?></label>
+                        <label class="fontweight600"><?php if (request()->is('submissions/professional')):?>Client Name (Optional)<?php else:?>School Name (Optional)<?php endif?></label>
                         <input id="for" type="text" name="for" value="<?php echo e(old('for')); ?>">
                         <?php if($errors->has('for')): ?>
                             <span class="help-block">
@@ -48,7 +48,7 @@
                     </div>
 
                     <div class="form-group <?php echo e($errors->has('overview') ? ' has-error' : ''); ?>">
-                        <label>Project Overview*<br><span style="font-size: 13px;">An overview of your project with the high level description and working of your project</span></label>
+                        <label class="fontweight600">Project Overview*<br><span style="font-size: 13px;">An overview of your project with the high level description and working of your project</span></label>
                         <textarea id="overview" name="overview" style="resize: none; height: 150px;" required><?php echo e(old('overview')); ?></textarea>
                         <div class="text-right" style="margin-top: -50px;">
                             <span id="display_count_overview">500</span> words remaining
@@ -61,7 +61,7 @@
                     </div>
 
                     <div class="form-group <?php echo e($errors->has('details') ? ' has-error' : ''); ?>">
-                        <label>Project Details*<br><span style="font-size: 13px;">In depth description of your project, describing every aspect of it in detail</span></label>
+                        <label class="fontweight600">Project Details*<br><span style="font-size: 13px;">In depth description of your project, describing every aspect of it in detail</span></label>
                         <textarea id="details" name="details" style="resize: none; height: 150px;" required><?php echo e(old('details')); ?></textarea>
                         <div class="text-right" style="margin-top: -50px;">
                             <span id="display_count_details">1500</span> words remaining
@@ -80,7 +80,7 @@
                     </div>
 
                     <div class="form-group <?php echo e($errors->has('url') ? ' has-error' : ''); ?>">
-                        <label>External Link For Project (Optional but highly recommended)</label>
+                        <label class="fontweight600">External Link For Project (Optional but highly recommended)</label>
                         <input id="url" type="url" value="<?php echo e(old('url')); ?>" name="url">
                         <?php if($errors->has('url')): ?>
                             <span class="help-block">
@@ -90,7 +90,7 @@
                     </div>
 
                     <div class="form-group <?php echo e($errors->has('video_url') ? ' has-error' : ''); ?>">
-                        <label>Video Link (Optional but highly recommended)</label>
+                        <label class="fontweight600">Video Link (Optional but highly recommended)</label>
                         <input id="video_url" type="url" value="<?php echo e(old('video_url')); ?>" name="video_url">
                         <?php if($errors->has('video_url')): ?>
                             <span class="help-block">
@@ -100,7 +100,7 @@
                     </div>
 
                     <div class="form-group <?php echo e($errors->has('video_url') ? ' has-error' : ''); ?>">
-                        <label>Payment Method</label>
+                        <label class="fontweight600">How would you like to pay?</label>
                         <select id="payment_mthod" name="payment_method">
                             <option value="Easy Paisa">Easy Paisa</option>
                             <option value="Cash On Campus">Cash On Campus</option>
@@ -140,7 +140,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="divider"></div>
+                                <div class="divider hidden-xs hidden-sm"></div>
                                 <div class="divider"></div>
                                 <input type="checkbox" name="categories[]" value="Concept Design" id="concept_design">
                                 <label for="concept_design">Concept Design</label>
@@ -172,19 +172,19 @@
                     </div>
                 </form>
                 <div class="col-md-6">
-                    <label>Project Images*</label>
+                    <label class="fontweight600">Project Images*</label>
                     <form action="<?php echo e(url('upload-images')); ?>" class="dropzone" id="images">
                         <?php echo e(csrf_field()); ?>
 
                     </form>
                     <br><br>
-                    <label>Project PDF (Optional)</label>
+                    <label class="fontweight600">Project PDF (Optional)</label>
                     <form action="<?php echo e(url('upload-pdf')); ?>" class="dropzone" id="pdf">
                         <?php echo e(csrf_field()); ?>
 
                     </form>
                     <br><br>
-                    <label>Project Thumbnail*</label>
+                    <label class="fontweight600">Project Thumbnail*</label>
                     <form action="<?php echo e(url('upload-thumbnail')); ?>" class="dropzone" id="thumbnail">
                         <?php echo e(csrf_field()); ?>
 

@@ -7,18 +7,28 @@
                     <i class="fa fa-check-circle"></i> <?php echo session()->pull('message') ?>
                 </div>
             <?php endif; ?>
-            <div class="title-section text-center">
-                <h1 class="title">Get Started</h1>
-            </div>
-                <div class="divider"></div>
-            <div class="title-section text-center">
-                <h2>Early Bird Pricing</h2>
-                <p class="sub-title"><span style="text-decoration: underline; font-weight: bold">Student:</span> 1000 PKR / Submission<div class="divider h10"></div><span style="text-decoration: underline; font-weight: bold">Professional:</span> 2000 PKR / Submission</p>
-            </div>
-                <div class="divider"></div>
-                <div class="text-center">
-                    <a href="<?php echo e(url('/submissions/professional')); ?>" class="flat-button color-white">Make a Professional Entry</a> <span>OR</span> <a href="<?php echo e(url('/submissions/student')); ?>" class="flat-button color-white">Make a Student Entry</a>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="title-section text-center">
+                        <h1 class="title">Get Started</h1>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="title-section text-center">
+                        <h2>Early Bird Pricing</h2>
+                        <p class="sub-title"><span style="text-decoration: underline; font-weight: bold">Student:</span> 1000 PKR / Submission<div class="divider h10"></div><span style="text-decoration: underline; font-weight: bold">Professional:</span> 2000 PKR / Submission</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="text-center">
+                        <a href="<?php echo e(url('/submissions/professional')); ?>" class="flat-button color-white">Make a Professional Entry</a> <span>OR</span> <a href="<?php echo e(url('/submissions/student')); ?>" class="flat-button color-white">Make a Student Entry</a>
+                    </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <h2>Download PDF Manual</h2>
+                        <a href="<?php echo e(asset('files/manual.pdf')); ?>" download target="_blank"><img src="<?php echo e(asset('images/manual.jpg')); ?>" class="center-block" width="200"></a>
+                    </div>
+                </div>
+            </div>
             <div class="divider"></div>
             <div class="title-section line bg-gray after-width158">
                 <div class="container-fluid2">
@@ -33,7 +43,7 @@
                                 <br>
                                 <p class="fontsize17">3. Any student graduated within the previous four months from the date of submission may also submit their project in the student category</p>
                                 <br>
-                                <p class="fontsize17">4. All work submitted shall be original and any plagiarized content would result in immediate disqualification.</p>
+                                <p class="fontsize17">4. Team level/individual participation is permitted. The maximum number of team members allowed are 4 members per team. The winning prize money for the student category would be per submission, not per team member. Moreover, the award for the professional category would also be one per submission.</p>
                             </div>
                             <div class="col-md-6">
                                 <br class="visible-xs visible-sm">
@@ -43,7 +53,7 @@
                                 <br>
                                 <p class="fontsize17">7. Projects that are still under development are also eligible for submission</p>
                                 <br>
-                                <p class="fontsize17">8. Team level/individual participation is permitted. The maximum number of team members allowed are 4 members per team. The winning prize money for the student category would be per submission, not per team member. Moreover, the award for the professional category would also be one per submission.</p>
+                                <p class="fontsize17">8. All work submitted shall be original and any plagiarized content would result in immediate disqualification.</p>
                                 <br>
                             </div>
                         </div>

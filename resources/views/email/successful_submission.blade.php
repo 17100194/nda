@@ -89,8 +89,29 @@ $style = [
                                         The NDA are held by the larger parent event, UXPakistan. It is a two-day conference being held on 31st March and 1st April 2018. This will be the 2nd edition of this highly anticipated user experience conference which include workshops, sessions by esteemed and competent speakers, start-up demos and more. The conference will focus on promoting the concept of “Design in all Fields”. If you haven’t already registered for the conference we urge you to do so as this conference is one of a kind in Pakistan. For more details visit our website and get yourself registered for the conference <a href="https://www.uxpakistan.com/tickets/" target="_blank">here</a>. Deadline for the early bird registration for UXPakistan is February 25, 2018.
                                     </p>
                                     <p style="{{$style['paragraph']}}">
-                                        The submission charges for your category is <?php if($submission->type === 'Professional'):?>2000<?php else:?>1000<?php endif?> PKR. You can either pay INCLUDE PAYMENT METHOD DETAILS.
+                                        The submission charges for your category is <?php if($submission->type === 'Professional'):?>2000<?php else:?>1000<?php endif?> PKR. You selected the payment method <strong>{{$submission->payment_method}}</strong> so kindly find the details of it as mentioned below
                                     </p>
+                                    @if($submission->payment_method === 'Easy Paisa')
+                                        <p style="{{$style['header-1']}}">{{$submission->payment_method}} Details</p>
+                                        <p style="{{$style['paragraph']}}">
+                                            For your convenience, fee can also be submitted through Telenor Easy Paisa. For this you need your (the Sender) original and valid Nadra CNIC and CNIC number, the receiver CNIC number which in this case is 35202-7229322-7, your mobile number and finally, the receivers mobile number which in this case is 0349-4227376. This facility can be availed through your nearest retail shop that offers Easy Paisa facility. After transfer, you will get a confirmation message which you should save and keep a copy of as proof. You can heck out further details of this method <a href="https://www.easypaisa.com.pk/money-transfer-through-easypaisa-shop-1" target="_blank">here</a> if you are not familiar with Easy Paisa.
+                                        </p>
+                                    @endif
+                                    @if($submission->payment_method === 'Bank Transfer')
+                                        <p style="{{$style['header-1']}}">{{$submission->payment_method}} Details</p>
+                                        <p style="{{$style['paragraph']}}">
+                                            You can directly submit the fee in the form of cash or Electronic Funds Transfer in our bank account, through your nearest bank. You have to provide us the proof of payment which will be the deposit slip/picture of the deposit slip or a copy/picture of the electronic receipt.<br>
+                                            <span style="text-decoration: underline">Account Name: </span>Sania Kashif<br>
+                                            <span style="text-decoration: underline">Account Number: </span>7383550000609<br>
+                                            <span style="text-decoration: underline">Bank Name: Askari Bank Limited</span>
+                                        </p>
+                                    @endif
+                                    @if($submission->payment_method === 'Cash On Campus')
+                                        <p style="{{$style['header-1']}}">{{$submission->payment_method}} Details</p>
+                                        <p style="{{$style['paragraph']}}">
+                                            Submission fee can also be directly submitted to our team on LUMS Campus. Our Campus is in DHA, Opposite Sector U, Lahore 54792. It can easily be located on Google maps as well. You can call us on 0349-4227376 before coming to LUMS and our representative will receive the payment in person and provide you with a proof of payment.
+                                        </p>
+                                    @endif
                                     <p style="{{$style['paragraph']}}">
                                         We thank you once again for your participation and helping us celebrate good design. Feel free to contact our team on ndapakistan@gmail.com for any help or further information.
                                     </p>

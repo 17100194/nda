@@ -63,10 +63,10 @@
                             <ul>
                                 <li>
                                     <?php if(Auth::guest()): ?>
-                                        <?php if (request()->is('/')):?><img src="<?php echo e(asset('images/NIC-Logo.png')); ?>" class="logo padding-top-20"><?php else:?><a href="<?php echo e(url('login')); ?>">Enter Now</a><?php endif;?>
+                                        <?php if (request()->is('/')):?><img src="<?php echo e(asset('images/lums.png')); ?>" style="width: 90px;" class="logo padding-right-10"><img src="<?php echo e(asset('images/NIC-Logo.png')); ?>" class="logo padding-top-20" style="width:110px;"><?php else:?><a href="<?php echo e(url('login')); ?>">Enter Now</a><?php endif;?>
                                     <?php else: ?>
                                         <?php if (request()->is('/')):?>
-                                            <img src="<?php echo e(asset('images/NIC-Logo.png')); ?>" class="logo padding-top-20">
+                                            <img src="<?php echo e(asset('images/lums.png')); ?>" style="width: 90px;" class="logo padding-right-10"><img src="<?php echo e(asset('images/NIC-Logo.png')); ?>" class="logo padding-top-20" style="width:110px;">
                                             <?php else:?>
                                             <a href="<?php echo e(url('submissions')); ?>">Participate Now</a>
                                             <?php endif;?>
@@ -108,7 +108,7 @@
                                         </ul>
                                     </li>
                                     <li class="<?php echo e(request()->is('jury') ? 'home' : ''); ?>"><a href="<?php echo e(url('jury')); ?>">Jury</a></li>
-                                    <li class="<?php echo e(request()->is('sponsors') ? 'home' : ''); ?>"><a href="<?php echo e(url('sponsors')); ?>">Sponsors</a></li>
+                                    <li class="<?php echo e(request()->is('sponsors') ? 'home' : ''); ?>"><a href="<?php echo e(url('sponsors')); ?>">Partners</a></li>
                                     <li class="<?php echo e(request()->is('about') ? 'home' : ''); ?>"><a href="<?php echo e(url('about')); ?>">About NDA</a></li>
                                 </ul><!-- /.menu -->
                             </nav><!-- /.mainnav -->

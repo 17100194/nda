@@ -95,6 +95,8 @@ class SubmissionController extends Controller
             'image_files' => 'required',
             'thumbnail_file' => 'required',
             'pdf_file' => 'required|sometimes'
+        ], [
+            'categories.max' => 'You cannot select more than 3 categories'
         ]);
 
         if ($validator->fails()){
