@@ -130,7 +130,7 @@
                             <img src="images/categories/game-design.png" alt="image" width="100%" height="auto">
                         </a>
                     </figure>
-                    <h6>Concept Design</h6>
+                    <h6>Game Design</h6>
                 </div>
                 <div class="plan-item isotope-item">
                     <figure class="box">
