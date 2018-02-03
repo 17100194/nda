@@ -126,8 +126,8 @@
                 </div>
                 <div class="plan-item isotope-item">
                     <figure class="box">
-                        <a href="{{url('category/concept-design')}}">
-                            <img src="images/categories/concept-design.png" alt="image" width="100%" height="auto">
+                        <a href="{{url('category/game-design')}}">
+                            <img src="images/categories/game-design.png" alt="image" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Concept Design</h6>
