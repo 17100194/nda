@@ -22,7 +22,7 @@
                 <div class="title-section text-center">
                     <h1 class="title" style="color:white;">Print & Published Media Jury 2018</h1>
                 </div>
-                <div class="col-md-4 wrap-teammember">
+                <div class="col-md-3 wrap-teammember">
                     <div class="teammember">
                         <div class="avatar">
                             <img src="{{asset('images/jury/faisal_sherjan.png')}}" width="100%">
