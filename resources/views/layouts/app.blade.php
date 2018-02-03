@@ -87,6 +87,7 @@
                                             <li class="{{request()->is('pricing-timeline') ? 'active' : ''}}"><a href="{{url('pricing-timeline')}}">Pricing & Timeline</a></li>
                                             <li class="{{request()->is('eligibility-criteria') ? 'active' : ''}}"><a href="{{url('eligibility-criteria')}}">Eligibility & Criteria</a></li>
                                             <li class="{{request()->is('submissions') || request()->is('login') ? 'active' : ''}}"><a href="{{url('submissions')}}">Enter Now</a></li>
+                                            <li><a href="{{asset('files/manual.pdf')}}" download="">Instruction Manual</a></li>
                                         </ul>
                                     </li>
                                     <li class="{{strpos(request()->url(),'category') ? 'home' : ''}}">

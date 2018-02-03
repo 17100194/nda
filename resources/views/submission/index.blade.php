@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="text-center">
-                        <h2>Download PDF Manual</h2>
+                        <h2>Instruction Manual</h2>
                         <a href="{{asset('files/manual.pdf')}}" download target="_blank"><img src="{{asset('images/manual.jpg')}}" class="center-block" width="200"></a>
                     </div>
                 </div>
