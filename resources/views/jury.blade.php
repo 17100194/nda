@@ -200,6 +200,28 @@
                     <div class="col-md-4 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
+                                <img src="{{asset('images/jury/ahmed_shuja.jpg')}}" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center">
+                                <h5 class="name">Ahmed Shuja</h5>
+                                <p class="position">
+                                    Methodical Problem Solver. Experienced Digital Designer, Developer, Manager, and Mentor, AugmentCare
+                                    University College London, U. of London Brisbane, Australia
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
                                 <img src="{{asset('images/jury/gulraiz_khan.jpg')}}" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
