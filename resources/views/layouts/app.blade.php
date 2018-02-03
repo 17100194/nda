@@ -229,7 +229,7 @@
                         paymentDropzone = this;
                         paymentDropzone.on("success",function (file,response) {
                             paymentFilename = response;
-                            window.location.href({{url('submissions')}});
+                            window.location.href = "{{url('submissions')}}";
                         });
                         paymentDropzone.on("sending", function(file, xhr, formData){
                             formData.append("submissionid", submissionid);
@@ -272,7 +272,7 @@
                     dataType: 'json',
                     success: function (data) {
                         if (data === 'success'){
-                            window.location.href({{url('submissions')}});
+                            window.location.href = "{{url('submissions')}}";
                         }
                     },
                     error: function (data) {
