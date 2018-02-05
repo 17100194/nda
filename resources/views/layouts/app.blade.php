@@ -24,6 +24,9 @@
     <!-- iziModal Style -->
     <link rel="stylesheet" type="text/css" href="{{asset('stylesheets/iziModal.css')}}">
 
+    <!-- iziToast Style -->
+    <link rel="stylesheet" type="text/css" href="{{asset('stylesheets/iziToast.min.css')}}">
+
     <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="{{asset('stylesheets/responsive.css')}}">
 
@@ -171,6 +174,7 @@
 <script type="text/javascript" src="{{asset('javascript/jquery.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('javascript/dropzone.js')}}"></script>
 <script type="text/javascript" src="{{asset('javascript/iziModal.js')}}"></script>
+<script type="text/javascript" src="{{asset('javascript/iziToast.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('javascript/loadingoverlay.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('javascript/bootstrap.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('javascript/jquery.easing.js')}}"></script>
@@ -521,6 +525,12 @@
                                 }
                             });
                         } else {
+                            iziToast.show({
+                                title: 'Success',
+                                message: 'Your submission has been received successfully. You\'ll now be redirected to your submissions',
+                                color: 'green',
+                                position: 'topRight'
+                            });
                             $('#entry_form').find('input:text, input:password, select, textarea').val('');
                             $('#entry_form').find('input:radio, input:checkbox').prop('checked', false);
                             window.onbeforeunload = null;
@@ -528,7 +538,13 @@
                         }
                     },
                     error: function(data){
-
+                        $.LoadingOverlay('hide');
+                        iziToast.show({
+                            title: 'Error',
+                            message: 'There was some problem submitting your entry. Please try again',
+                            color: 'red',
+                            position: 'topRight'
+                        });
                     }
                 });
             });
