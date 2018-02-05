@@ -91,10 +91,10 @@ class SubmissionController extends Controller
             'overview' => 'required',
             'details' => 'required',
             'categories' => 'required|array|max:3',
-            'team' => 'max:800',
             'image_files' => 'required',
             'thumbnail_file' => 'required',
-            'pdf_file' => 'required|sometimes'
+            'url' => 'regex:/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/|nullable',
+            'video_url' => 'regex:/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/|nullable'
         ], [
             'categories.max' => 'You cannot select more than 3 categories'
         ]);

@@ -19,6 +19,8 @@
     <link href="{{asset('admin/assets/admin/layout2/css/layout.css')}}" rel="stylesheet">
 
     <!-- BEGIN PAGE STYLE -->
+    <link href="{{asset('admin/assets/global/plugins/magnific/magnific-popup.min.css')}}" rel="stylesheet">
+    <link href="{{asset('admin/assets/global/plugins/hover-effects/hover-effects.min.css')}}" rel="stylesheet">
     <link href="{{asset('admin/assets/global/plugins/metrojs/metrojs.min.css')}}" rel="stylesheet">
     <link href="{{asset('admin/assets/global/plugins/maps-amcharts/ammap/ammap.css')}}" rel="stylesheet">
 
@@ -62,8 +64,8 @@
         </div>
         <div class="sidebar-inner">
             <ul class="nav nav-sidebar">
-                <li class="nav-active active"><a href="#"><i class="icon-users"></i><span>Users</span></a></li>
-                <li class="nav-active"><a href="#"><i class="fa fa-file"></i><span>Submissions</span></a></li>
+                <li class="nav-active <?php if(request()->is('nda-admin')):?>active<?php endif?>"><a href="{{url('nda-admin')}}"><i class="icon-users"></i><span>Users</span></a></li>
+                <li class="nav-active <?php if(request()->is('nda-admin/submissions')):?>active<?php endif?>"><a href="{{url('nda-admin/submissions')}}"><i class="fa fa-file"></i><span>Submissions</span></a></li>
             </ul>
         </div>
     </div>
@@ -141,6 +143,8 @@
 <script src="{{asset('admin/assets/global/js/pages/search.js')}}"></script> <!-- Search Script -->
 
 <!-- BEGIN PAGE SCRIPT -->
+<script src="{{asset('admin/assets/global/plugins/magnific/jquery.magnific-popup.min.js')}}"></script>  <!-- Image Popup -->
+<script src="{{asset('admin/assets/global/plugins/isotope/isotope.pkgd.min.js')}}"></script>  <!-- Filter & sort magical Gallery -->
 <script src="{{asset('admin/assets/global/plugins/noty/jquery.noty.packaged.min.js')}}"></script>  <!-- Notifications -->
 <script src="{{asset('admin/assets/global/plugins/bootstrap-editable/js/bootstrap-editable.min.js')}}"></script> <!-- Inline Edition X-editable -->
 <script src="{{asset('admin/assets/global/plugins/bootstrap-context-menu/bootstrap-contextmenu.min.js')}}"></script> <!-- Context Menu -->
@@ -162,6 +166,23 @@
 <script src="{{asset('admin/assets/global/js/pages/table_dynamic.js')}}"></script>
 
 <!-- END PAGE SCRIPT -->
+@if(request()->is('nda-admin/submissions'))
+<script>
+    $(window).load(function(){
+        var $container = $('.portfolioContainer');
+        $container.isotope();
+        $('.portfolioFilter a').click(function(){
+            $('.portfolioFilter .current').removeClass('current');
+            $(this).addClass('current');
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector
+            });
+            return false;
+        });
+    });
+</script>
+@endif
 <script src="{{asset('admin/assets/admin/layout2/js/layout.js')}}"></script>
 </body>
 </html>

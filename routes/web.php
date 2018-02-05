@@ -15,9 +15,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/nda-admin/submissions/view/{id}', function (\Illuminate\Http\Request $request) {
+    $submission = \App\Submission::find($request->id);
+    return view('submission.view',['submission'=>$submission]);
+})->middleware('auth','admin');
+
 Route::get('/nda-admin', function () {
     $users = \App\User::all();
     return view('admin.users',['users'=>$users]);
+})->middleware('auth','admin');
+
+Route::get('/nda-admin/submissions', function () {
+    $submissions = \App\Submission::all();
+    return view('admin.submissions',['submissions'=>$submissions]);
 })->middleware('auth','admin');
 
 Route::get('/about', function (){
