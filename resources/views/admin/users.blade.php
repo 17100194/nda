@@ -26,7 +26,7 @@
                                     <td>{{$user->id}}</td>
                                     <td>{{$user->name}}</td>
                                     <td>{{$user->email}}</td>
-                                    <td><?php if ($user->isadmin):?><i class="icon-check"></i><?php else:?><i class="icon-cross"></i><?php endif?></td>
+                                    <td><?php if ($user->isadmin):?><i class="icon-check"></i><?php else:?><i class="icon-remove"></i><?php endif?></td>
                                     <td>{{$user->created_at}}</td>
                                     <td>View / Edit</td>
                                 </tr>
