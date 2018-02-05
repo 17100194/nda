@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/nda-admin', function () {
+    $users = \App\User::all();
+    return view('admin.users',['users'=>$users]);
+})->middleware('auth','admin');
+
 Route::get('/about', function (){
     return view('about');
 });
