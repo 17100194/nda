@@ -88,28 +88,28 @@
                             <img src="{{url('/storage/app/public/uploads/'.$submission->image_2)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_2)}}">
                         @endif
                         @if($submission->image_3)
-                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_3)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_2)}}">
+                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_3)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_3)}}">
                         @endif
                         @if($submission->image_4)
-                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_4)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_2)}}">
+                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_4)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_4)}}">
                         @endif
                         @if($submission->image_5)
-                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_5)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_2)}}">
+                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_5)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_5)}}">
                         @endif
                         @if($submission->image_6)
-                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_6)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_2)}}">
+                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_6)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_6)}}">
                         @endif
                         @if($submission->image_7)
-                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_7)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_2)}}">
+                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_7)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_7)}}">
                         @endif
                         @if($submission->image_8)
-                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_8)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_2)}}">
+                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_8)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_8)}}">
                         @endif
                         @if($submission->image_9)
-                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_9)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_2)}}">
+                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_9)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_9)}}">
                         @endif
                         @if($submission->image_10)
-                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_10)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_2)}}">
+                            <img src="{{url('/storage/app/public/uploads/'.$submission->image_10)}}" width="200" class="magnific" style="cursor: pointer" data-mfp-src="{{url('/storage/app/public/uploads/'.$submission->image_10)}}">
                         @endif
                     </div>
                 </div>
