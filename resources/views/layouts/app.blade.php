@@ -274,13 +274,17 @@
                     url: '{{url('delete-entry')}}',
                     data: {submissionid: submissionid},
                     dataType: 'json',
+                    beforeSend: function() {
+                        $.LoadingOverlay('show');
+                    },
                     success: function (data) {
+                        $.LoadingOverlay('hide');
                         if (data === 'success'){
                             window.location.href = "{{url('submissions')}}";
                         }
                     },
                     error: function (data) {
-
+                        $.LoadingOverlay('hide');
                     }
                 });
             }

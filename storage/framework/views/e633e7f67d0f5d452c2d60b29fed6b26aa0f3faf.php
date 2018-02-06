@@ -18,7 +18,7 @@
                         <br>
                         <p class="fontsize20">The size of each image can not be more than 3 MB. The images need to be depictive of your project and it is preferable to avoid use of a lot of text</p>
                         <br>
-                        <p class="fontsize20">The video needs to be uploaded on YouTube, Vimeo or any online drive which provides an external share link. This external link needs to provided in the submission form.</p>
+                        <p class="fontsize20">The video needs to be uploaded on YouTube, Vimeo or any online drive which provides an external share link. This external link needs to provided in the submission form. The video should be under or at 2 minutes and 30 seconds and must be in mp4 format and must accurately demonstrate the functionality of your project.</p>
                     </div>
                     <div class="divider"></div>
                     <div class="content-post">

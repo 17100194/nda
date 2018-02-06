@@ -38,50 +38,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="col-md-3 text-center">
-                        <div class="teammember">
-                            <div class="avatar">
-                                <img src="<?php echo e(asset('images/suleman.jpeg')); ?>" alt="image">
-                            </div>
-                            <div class="content text-center">
-                                <h5 class="name">Dr. Suleman Shahid</h5>
-                                <p class="position">Founder</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 text-center">
-                        <div class="teammember">
-                            <div class="avatar">
-                                <img src="<?php echo e(asset('images/sania.jpg')); ?>" alt="image">
-                            </div>
-                            <div class="content text-center">
-                                <h5 class="name">Sania Kashif</h5>
-                                <p class="position">President UX Paksitan</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 text-center">
-                        <div class="teammember">
-                            <div class="avatar">
-                                <img src="<?php echo e(asset('images/fahad.jpeg')); ?>" alt="image">
-                            </div>
-                            <div class="content text-center">
-                                <h5 class="name">Fahad Cheema</h5>
-                                <p class="position">Director IT</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 text-center">
-                        <div class="teammember">
-                            <div class="avatar">
-                                <img src="<?php echo e(asset('images/abeera.jpg')); ?>" alt="image">
-                            </div>
-                            <div class="content text-center">
-                                <h5 class="name">Abeera Shamail</h5>
-                                <p class="position">Vice President UX Pakistan</p>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="<?php echo e('images/comingsoon.png'); ?>" class="center-block">
                 </div>
             </div>
         </div>

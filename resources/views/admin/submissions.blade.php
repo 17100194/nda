@@ -73,7 +73,7 @@
                                     }
                                 ?>
                             <figure class="{{$class}} effect-sarah" onclick="window.location.href = '{{url('nda-admin/submissions/view/'.$submission->id)}}'">
-                                <img src="{{url('/storage/app/public/uploads/'.$submission->thumbnail)}}"/>
+                                <img src="{{$submission->thumbnail}}"/>
                                 <figcaption>
                                     <h2>{{$submission->title}}</h2>
                                     <p>ID: {{$submission->id}} | Type: {{$submission->type}} | By: {{$submission->by}}</p>

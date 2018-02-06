@@ -76,7 +76,7 @@
                     <div class="row">
                         @foreach($submissions as $submission)
                             <div class="col-md-4 col-sm-6 text-center padding-top-10">
-                                <img src="{{url('/storage/app/public/uploads/'.$submission->thumbnail)}}" class="center-block" width="250">
+                                <img src="{{$submission->thumbnail}}" class="center-block" width="250">
                                 <div class="divider h33"></div>
                                 <h3>{{$submission->title}}</h3>
                                 <p style="font-weight: bold;">{{$submission->type}} Entry</p>

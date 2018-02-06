@@ -24,6 +24,9 @@
     <!-- iziModal Style -->
     <link rel="stylesheet" type="text/css" href="<?php echo e(asset('stylesheets/iziModal.css')); ?>">
 
+    <!-- iziToast Style -->
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('stylesheets/iziToast.min.css')); ?>">
+
     <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="<?php echo e(asset('stylesheets/responsive.css')); ?>">
 
@@ -87,13 +90,14 @@
                                             <li class="<?php echo e(request()->is('pricing-timeline') ? 'active' : ''); ?>"><a href="<?php echo e(url('pricing-timeline')); ?>">Pricing & Timeline</a></li>
                                             <li class="<?php echo e(request()->is('eligibility-criteria') ? 'active' : ''); ?>"><a href="<?php echo e(url('eligibility-criteria')); ?>">Eligibility & Criteria</a></li>
                                             <li class="<?php echo e(request()->is('submissions') || request()->is('login') ? 'active' : ''); ?>"><a href="<?php echo e(url('submissions')); ?>">Enter Now</a></li>
+                                            <li><a href="<?php echo e(asset('files/manual.pdf')); ?>" download="">Instruction Manual</a></li>
                                         </ul>
                                     </li>
                                     <li class="<?php echo e(strpos(request()->url(),'category') ? 'home' : ''); ?>">
                                         <a>Categories</a>
                                         <ul class="submenu list-style">
                                             <li class="<?php echo e(request()->is('category/architecture') ? 'active' : ''); ?>"><a href="<?php echo e(url('category/architecture')); ?>">Architecture</a></li>
-                                            <li class="<?php echo e(request()->is('category/concept-design') ? 'active' : ''); ?>"><a href="<?php echo e(url('category/concept-design')); ?>">Concept Design</a></li>
+                                            <li class="<?php echo e(request()->is('category/game-design') ? 'active' : ''); ?>"><a href="<?php echo e(url('category/game-design')); ?>">Game Design</a></li>
                                             <li class="<?php echo e(request()->is('category/consumer-product-design') ? 'active' : ''); ?>"><a href="<?php echo e(url('category/consumer-product-design')); ?>">Consumer Product Design</a></li>
                                             <li class="<?php echo e(request()->is('category/design-social-impact') ? 'active' : ''); ?>"><a href="<?php echo e(url('category/design-social-impact')); ?>">Design For Social Impact</a></li>
                                             <li class="<?php echo e(request()->is('category/education-initiative') ? 'active' : ''); ?>"><a href="<?php echo e(url('category/education-initiative')); ?>">Education Initiative</a></li>
@@ -170,6 +174,7 @@
 <script type="text/javascript" src="<?php echo e(asset('javascript/jquery.min.js')); ?>"></script>
 <script type="text/javascript" src="<?php echo e(asset('javascript/dropzone.js')); ?>"></script>
 <script type="text/javascript" src="<?php echo e(asset('javascript/iziModal.js')); ?>"></script>
+<script type="text/javascript" src="<?php echo e(asset('javascript/iziToast.min.js')); ?>"></script>
 <script type="text/javascript" src="<?php echo e(asset('javascript/loadingoverlay.min.js')); ?>"></script>
 <script type="text/javascript" src="<?php echo e(asset('javascript/bootstrap.min.js')); ?>"></script>
 <script type="text/javascript" src="<?php echo e(asset('javascript/jquery.easing.js')); ?>"></script>
@@ -228,7 +233,7 @@
                         paymentDropzone = this;
                         paymentDropzone.on("success",function (file,response) {
                             paymentFilename = response;
-                            window.location.href(<?php echo e(url('submissions')); ?>);
+                            window.location.href = "<?php echo e(url('submissions')); ?>";
                         });
                         paymentDropzone.on("sending", function(file, xhr, formData){
                             formData.append("submissionid", submissionid);
@@ -269,13 +274,17 @@
                     url: '<?php echo e(url('delete-entry')); ?>',
                     data: {submissionid: submissionid},
                     dataType: 'json',
+                    beforeSend: function() {
+                        $.LoadingOverlay('show');
+                    },
                     success: function (data) {
+                        $.LoadingOverlay('hide');
                         if (data === 'success'){
-                            window.location.href(<?php echo e(url('submissions')); ?>);
+                            window.location.href = "<?php echo e(url('submissions')); ?>";
                         }
                     },
                     error: function (data) {
-
+                        $.LoadingOverlay('hide');
                     }
                 });
             }
@@ -520,13 +529,26 @@
                                 }
                             });
                         } else {
-                            $('#entry_form').reset();
+                            iziToast.show({
+                                title: 'Success',
+                                message: 'Your submission has been received successfully. You\'ll now be redirected to your submissions',
+                                color: 'green',
+                                position: 'topRight'
+                            });
+                            $('#entry_form').find('input:text, input:password, select, textarea').val('');
+                            $('#entry_form').find('input:radio, input:checkbox').prop('checked', false);
                             window.onbeforeunload = null;
                             window.location.href = "<?php echo e(url('submissions')); ?>";
                         }
                     },
                     error: function(data){
-
+                        $.LoadingOverlay('hide');
+                        iziToast.show({
+                            title: 'Error',
+                            message: 'There was some problem submitting your entry. Please try again',
+                            color: 'red',
+                            position: 'topRight'
+                        });
                     }
                 });
             });

@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="text-center">
-                        <h2>Download PDF Manual</h2>
+                        <h2>Instruction Manual</h2>
                         <a href="<?php echo e(asset('files/manual.pdf')); ?>" download target="_blank"><img src="<?php echo e(asset('images/manual.jpg')); ?>" class="center-block" width="200"></a>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                     <div class="row">
                         <?php $__currentLoopData = $submissions; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $submission): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <div class="col-md-4 col-sm-6 text-center padding-top-10">
-                                <img src="<?php echo e(url('/storage/app/public/uploads/'.$submission->thumbnail)); ?>" class="center-block" width="250">
+                                <img src="<?php echo e($submission->thumbnail); ?>" class="center-block" width="250">
                                 <div class="divider h33"></div>
                                 <h3><?php echo e($submission->title); ?></h3>
                                 <p style="font-weight: bold;"><?php echo e($submission->type); ?> Entry</p>

@@ -90,7 +90,7 @@
                     </div>
 
                     <div class="form-group <?php echo e($errors->has('video_url') ? ' has-error' : ''); ?>">
-                        <label class="fontweight600">Video Link (Optional but highly recommended)</label>
+                        <label class="fontweight600">Video Link (Optional but highly recommended)<br><span style="font-size: 13px;">The video should be under or at 2 minutes and 30 seconds and must be in mp4 format and must accurately demonstrate the functionality of your project.</span></label>
                         <input id="video_url" type="url" value="<?php echo e(old('video_url')); ?>" name="video_url">
                         <?php if($errors->has('video_url')): ?>
                             <span class="help-block">
@@ -142,8 +142,8 @@
                             <div class="col-sm-6">
                                 <div class="divider hidden-xs hidden-sm"></div>
                                 <div class="divider"></div>
-                                <input type="checkbox" name="categories[]" value="Concept Design" id="concept_design">
-                                <label for="concept_design">Concept Design</label>
+                                <input type="checkbox" name="categories[]" value="Game Design" id="game_design">
+                                <label for="game_design">Game Design</label>
                                 <input type="checkbox" name="categories[]" value="Design For Social Impact" id="design_social">
                                 <label for="design_social">Design For Social Impact</label>
                                 <input type="checkbox" name="categories[]" value="Education Initiative" id="education">

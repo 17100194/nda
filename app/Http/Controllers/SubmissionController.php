@@ -13,6 +13,7 @@ use App\Submission;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use Validator;
@@ -60,13 +61,32 @@ class SubmissionController extends Controller
 
     public function uploadPayment(Request $request){
         $file = $request->file('payment_file');
+        $submission = Submission::find($request->submissionid);
         $validation = Validator::make($request->all(),['payment_file'=>'required|image']);
         if($validation->fails()){
             return response()->json($validation->errors()->first(),400);
         }
         $filename = str_random('10').'_'.$file->getClientOriginalName();
         $file->storeAs('public/uploads', $filename);
-        Submission::where('id',$request->submissionid)->update(['payment_proof'=>$filename,'payment_status'=>'Verifying']);
+        $filePath = storage_path('app/public/uploads/'.$filename);
+        $fileData = File::get($filePath);
+        $dir = '/';
+        $recursive = false; // Get subdirectories also?
+        $contents = collect(Storage::cloud()->listContents($dir, $recursive));
+        $dir = $contents->where('type', '=', 'dir')
+            ->where('filename', '=', $submission->title)
+            ->first(); // There could be duplicate directory names!
+        Storage::cloud()->put($dir['path'].'/'.$filename, $fileData);
+        $contents = collect(Storage::cloud()->listContents($dir['path'], $recursive));
+        $file = $contents
+            ->where('type', '=', 'file')
+            ->where('filename', '=', pathinfo($filename, PATHINFO_FILENAME))
+            ->where('extension', '=', pathinfo($filename, PATHINFO_EXTENSION))
+            ->first(); // there can be duplicate file names!
+        //return $file; // array with file info
+        Storage::delete('public/uploads/'.$filename);
+        $url = Storage::cloud()->url($file['path']);
+        Submission::where('id',$request->submissionid)->update(['payment_proof'=>$url,'payment_status'=>'Verifying']);
         session(['message' => '<strong>Payment Proof Submitted Successfully!</strong> Our team will verify your payment and update payment status if valid. Thank you for your patience']);
         return response()->json($filename, 200);
     }
@@ -79,12 +99,27 @@ class SubmissionController extends Controller
 
     public function removePaymentProof(Request $request){
         $filename = $request->filename;
-        Storage::delete('public/uploads/'.$filename);
+        $submission = Submission::where('payment_proof',$filename)->first();
+        // Now find that file and use its ID (path) to delete it
+        $dir = '/';
+        $recursive = false; // Get subdirectories also?
+        $contents = collect(Storage::cloud()->listContents($dir, $recursive));
+        $dir = $contents->where('type', '=', 'dir')
+            ->where('filename', '=', $submission->title)
+            ->first(); // There could be duplicate directory names!
+        $contents = collect(Storage::cloud()->listContents($dir['path'], $recursive));
+        $file = $contents
+            ->where('type', '=', 'file')
+            ->where('filename', '=', pathinfo($filename, PATHINFO_FILENAME))
+            ->where('extension', '=', pathinfo($filename, PATHINFO_EXTENSION))
+            ->first(); // there can be duplicate file names!
+        //return $file; // array with file info
+        Storage::cloud()->delete($file['path']);
         Submission::where('payment_proof',$filename)->update(['payment_proof'=>null,'payment_status'=>'Not Paid']);
         return response()->json('File Removed Successfully',200);
     }
 
-    public function submitEntry(Request $request){;
+    public function submitEntry(Request $request){
         $validator = Validator::make($request->all(),[
             'title' => 'required',
             'by' => 'required',
@@ -119,17 +154,72 @@ class SubmissionController extends Controller
         if ($request->video_url){
             $submission->project_video = $request->video_url;
         }
+        Storage::cloud()->makeDirectory($submission->title);
         if ($request->pdf_file){
-            Storage::move('temp/'.$request->pdf_file,'public/uploads/'.$request->pdf_file);
-            $submission->project_pdf = $request->pdf_file;
+            $filename = $request->pdf_file;
+            $filePath = storage_path('app/temp/'.$filename);
+            $fileData = File::get($filePath);
+            $dir = '/';
+            $recursive = false; // Get subdirectories also?
+            $contents = collect(Storage::cloud()->listContents($dir, $recursive));
+            $dir = $contents->where('type', '=', 'dir')
+                ->where('filename', '=', $submission->title)
+                ->first(); // There could be duplicate directory names!
+            Storage::cloud()->put($dir['path'].'/'.$filename, $fileData);
+            $contents = collect(Storage::cloud()->listContents($dir['path'], $recursive));
+            $file = $contents
+                ->where('type', '=', 'file')
+                ->where('filename', '=', pathinfo($filename, PATHINFO_FILENAME))
+                ->where('extension', '=', pathinfo($filename, PATHINFO_EXTENSION))
+                ->first(); // there can be duplicate file names!
+            //return $file; // array with file info
+            Storage::delete('temp/'.$filename);
+            $url = Storage::cloud()->url($file['path']);
+            $submission->project_pdf = $url;
         }
         $images = explode(',',$request->image_files);
         foreach ($images as $index=>$image){
-            Storage::move('temp/'.$image,'public/uploads/'.$image);
-            $submission->fill(['image_'.(string)((int)$index+1) => $image]);
+            $filename = $image;
+            $filePath = storage_path('app/temp/'.$filename);
+            $fileData = File::get($filePath);
+            $dir = '/';
+            $recursive = false; // Get subdirectories also?
+            $contents = collect(Storage::cloud()->listContents($dir, $recursive));
+            $dir = $contents->where('type', '=', 'dir')
+                ->where('filename', '=', $submission->title)
+                ->first(); // There could be duplicate directory names!
+            Storage::cloud()->put($dir['path'].'/'.$filename, $fileData);
+            $contents = collect(Storage::cloud()->listContents($dir['path'], $recursive));
+            $file = $contents
+                ->where('type', '=', 'file')
+                ->where('filename', '=', pathinfo($filename, PATHINFO_FILENAME))
+                ->where('extension', '=', pathinfo($filename, PATHINFO_EXTENSION))
+                ->first(); // there can be duplicate file names!
+            //return $file; // array with file info
+            Storage::delete('temp/'.$filename);
+            $url = Storage::cloud()->url($file['path']);
+            $submission->fill(['image_'.(string)((int)$index+1) => $url]);
         }
-        Storage::move('temp/'.$request->thumbnail_file,'public/uploads/'.$request->thumbnail_file);
-        $submission->thumbnail = $request->thumbnail_file;
+        $filename = $request->thumbnail_file;
+        $filePath = storage_path('app/temp/'.$filename);
+        $fileData = File::get($filePath);
+        $dir = '/';
+        $recursive = false; // Get subdirectories also?
+        $contents = collect(Storage::cloud()->listContents($dir, $recursive));
+        $dir = $contents->where('type', '=', 'dir')
+            ->where('filename', '=', $submission->title)
+            ->first(); // There could be duplicate directory names!
+        Storage::cloud()->put($dir['path'].'/'.$filename, $fileData);
+        $contents = collect(Storage::cloud()->listContents($dir['path'], $recursive));
+        $file = $contents
+            ->where('type', '=', 'file')
+            ->where('filename', '=', pathinfo($filename, PATHINFO_FILENAME))
+            ->where('extension', '=', pathinfo($filename, PATHINFO_EXTENSION))
+            ->first(); // there can be duplicate file names!
+        //return $file; // array with file info
+        Storage::delete('temp/'.$filename);
+        $url = Storage::cloud()->url($file['path']);
+        $submission->thumbnail = $url;
         if($request->member1){
             $submission->team_member1 = $request->member1;
         }
@@ -156,38 +246,16 @@ class SubmissionController extends Controller
     function deleteEntry(Request $request){
         $submission = Submission::find($request->submissionid);
         if ($submission->author->id === Auth::id() && $submission->payment_status === 'Not Paid'){
-            Storage::delete('public/uploads/'.$submission->image_1);
-            if ($submission->image_2){
-                Storage::delete('public/uploads/'.$submission->image_2);
-            }
-            if ($submission->image_3){
-                Storage::delete('public/uploads/'.$submission->image_3);
-            }
-            if ($submission->image_4){
-                Storage::delete('public/uploads/'.$submission->image_4);
-            }
-            if ($submission->image_5){
-                Storage::delete('public/uploads/'.$submission->image_5);
-            }
-            if ($submission->image_6){
-                Storage::delete('public/uploads/'.$submission->image_6);
-            }
-            if ($submission->image_7){
-                Storage::delete('public/uploads/'.$submission->image_7);
-            }
-            if ($submission->image_8){
-                Storage::delete('public/uploads/'.$submission->image_8);
-            }
-            if ($submission->image_9){
-                Storage::delete('public/uploads/'.$submission->image_9);
-            }
-            if ($submission->image_10){
-                Storage::delete('public/uploads/'.$submission->image_10);
-            }
-            if ($submission->project_pdf){
-                Storage::delete('public/uploads/'.$submission->project_pdf);
-            }
-            Storage::delete('public/uploads/'.$submission->thumbnail);
+            $directoryName = $submission->title;
+            // Now find that directory and use its ID (path) to delete it
+            $dir = '/';
+            $recursive = false; // Get subdirectories also?
+            $contents = collect(Storage::cloud()->listContents($dir, $recursive));
+            $directory = $contents
+                ->where('type', '=', 'dir')
+                ->where('filename', '=', $directoryName)
+                ->first(); // there can be duplicate file names!
+            Storage::cloud()->deleteDirectory($directory['path']);
             Submission::where('id', $request->submissionid)->delete();
             session(['message'=>'<strong>Entry deleted successfully!</strong> All the files and data associated with the entry has been removed.']);
             return response()->json('success',200);

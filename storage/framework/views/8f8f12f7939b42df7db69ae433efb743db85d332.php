@@ -124,14 +124,6 @@
                 </div>
                 <div class="plan-item isotope-item">
                     <figure class="box">
-                        <a href="<?php echo e(url('category/concept-design')); ?>">
-                            <img src="images/categories/concept-design.png" alt="image" width="100%" height="auto">
-                        </a>
-                    </figure>
-                    <h6>Concept Design</h6>
-                </div>
-                <div class="plan-item isotope-item">
-                    <figure class="box">
                         <a href="<?php echo e(url('category/consumer-product-design')); ?>">
                             <img src="images/categories/consumer-product.png" alt="image" width="100%" height="auto">
                         </a>
@@ -227,9 +219,92 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="title-section text-center margin-bottom-67">
-                        <h1 class="title fontsize36">STEERING COMMITTEE 2018</h1>
+                        <h1 class="title fontsize36">STEERING COMMITTEE - ADVISORY COMMITTEE 2018</h1>
                     </div>
-                    <img src="<?php echo e(asset('images/comingsoon.png')); ?>" class="center-block">
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="<?php echo e(asset('images/jury/farida_batool.jpg')); ?>" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center" style="height: 250px;">
+                                <h5 class="name">Dr. Farida Batool</h5>
+                                <p class="position">
+                                    Professor at National College of Arts (NCA)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="<?php echo e(asset('images/jury/imran_hussain.jpg')); ?>" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center" style="height: 250px;">
+                                <h5 class="name">Imran Hussain</h5>
+                                <p class="position">
+                                    VP, User Experience at Systems Limited | User Experience & Service Design
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="<?php echo e(asset('images/jury/faisal_sherjan.png')); ?>" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center" style="height: 250px;">
+                                <h5 class="name">Faisal Sherjan</h5>
+                                <p class="position">
+                                    Director National Incubation Centre Lahore | Co-Founder, Chief Strategy Officer - Multiple Tech Startups | Director Strategy and Planning - Jang Group | Chief Operating Officer International Division Geo Tv Network
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="<?php echo e(asset('images/jury/shahid_khan.jpg')); ?>" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center" style="height: 250px;">
+                                <h5 class="name">Shahid Khan</h5>
+                                <p class="position">
+                                    Sr. Global Director, Design Thinking With SAP | SAP Design Company
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
