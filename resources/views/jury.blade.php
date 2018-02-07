@@ -25,7 +25,28 @@
                     <div class="title-section line">
                         <h1 class="title">Game Design</h1>
                     </div>
-                    <img src="{{asset('images/comingsoon.png')}}" class="center-block">
+                    <div class="divider"></div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="{{asset('images/jury/faraz_ahmed.jpg')}}" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center">
+                                <h5 class="name">Faraz Ahmed</h5>
+                                <p class="position">
+                                    Co-Founder and CTO Mindstorm Studios
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="divider"></div>
