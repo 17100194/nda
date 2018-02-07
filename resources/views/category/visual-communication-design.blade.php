@@ -20,8 +20,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-5 padding-top-40">
-                    <img src="{{asset('images/categories/VCD.png')}}" width="200"><img src="{{asset('images/categories/static-design.png')}}" width="235"><img src="{{asset('images/categories/animation-design.png')}}" class="center-block" width="235">
+                <div class="col-md-5 padding-top-40 text-center">
+                    <img src="{{asset('images/categories/VCD.png')}}" width="200"><img src="{{asset('images/categories/static-design.png')}}" width="200">
+                    <br>
+                    <img src="{{asset('images/categories/animation-design.png')}}" class="center-block" width="200">
                 </div>
             </div>
         </div>

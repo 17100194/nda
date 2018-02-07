@@ -213,6 +213,9 @@
                     <h6>Service Design</h6>
                 </div>
                 <div class="plan-item isotope-item">
+
+                </div>
+                <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/visual-communication-design')}}">
                             <img src="images/categories/VCD.png" alt="image" width="100%" height="auto">

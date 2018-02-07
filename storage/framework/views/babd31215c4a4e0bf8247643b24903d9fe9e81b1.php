@@ -18,8 +18,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-5 padding-top-40">
-                    <img src="<?php echo e(asset('images/categories/VCD.png')); ?>" width="200"><img src="<?php echo e(asset('images/categories/static-design.png')); ?>" width="235"><img src="<?php echo e(asset('images/categories/animation-design.png')); ?>" class="center-block" width="235">
+                <div class="col-md-5 padding-top-40 text-center">
+                    <img src="<?php echo e(asset('images/categories/VCD.png')); ?>" width="200"><img src="<?php echo e(asset('images/categories/static-design.png')); ?>" width="200">
+                    <br>
+                    <img src="<?php echo e(asset('images/categories/animation-design.png')); ?>" class="center-block" width="200">
                 </div>
             </div>
         </div>
@@ -29,27 +31,6 @@
             <div class="row">
                 <div class="title-section text-center">
                     <h1 class="title" style="color:white;">Visual Communication Design Jury 2018</h1>
-                </div>
-                <div class="col-md-3 wrap-teammember">
-                    <div class="teammember">
-                        <div class="avatar">
-                            <img src="<?php echo e(asset('images/jury/ali_murtaza.jpeg')); ?>" width="100%">
-                            <div class="info-overlay">
-                                <div class="flat-socials">
-                                    <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content text-center">
-                            <h5 class="name">Ali Murtaza</h5>
-                            <p class="position">
-                                Program Manager, Makistan (ITU) | Design Consultant
-                            </p>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-md-3 wrap-teammember">
                     <div class="teammember">

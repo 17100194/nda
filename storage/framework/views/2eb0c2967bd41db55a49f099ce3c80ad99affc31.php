@@ -112,7 +112,7 @@
                                         </ul>
                                     </li>
                                     <li class="<?php echo e(request()->is('jury') ? 'home' : ''); ?>"><a href="<?php echo e(url('jury')); ?>">Jury</a></li>
-                                    <li class="<?php echo e(request()->is('sponsors') ? 'home' : ''); ?>"><a href="<?php echo e(url('sponsors')); ?>">Partners</a></li>
+                                    <li class="<?php echo e(request()->is('partners') ? 'home' : ''); ?>"><a href="<?php echo e(url('partners')); ?>">Partners</a></li>
                                     <li class="<?php echo e(request()->is('about') ? 'home' : ''); ?>"><a href="<?php echo e(url('about')); ?>">About NDA</a></li>
                                 </ul><!-- /.menu -->
                             </nav><!-- /.mainnav -->
