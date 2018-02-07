@@ -38,7 +38,7 @@
                         <div class="content text-center">
                             <h5 class="name">Faraz Ahmed</h5>
                             <p class="position">
-                                Co-Founder and CTO Mindstorm Studios
+                                Co-founder & CEO at Turbo Labz and CTO - Mindstorm studios
                             </p>
                         </div>
                     </div>
