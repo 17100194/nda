@@ -112,7 +112,7 @@
                                         </ul>
                                     </li>
                                     <li class="{{request()->is('jury') ? 'home' : ''}}"><a href="{{url('jury')}}">Jury</a></li>
-                                    <li class="{{request()->is('sponsors') ? 'home' : ''}}"><a href="{{url('sponsors')}}">Partners</a></li>
+                                    <li class="{{request()->is('partners') ? 'home' : ''}}"><a href="{{url('partners')}}">Partners</a></li>
                                     <li class="{{request()->is('about') ? 'home' : ''}}"><a href="{{url('about')}}">About NDA</a></li>
                                 </ul><!-- /.menu -->
                             </nav><!-- /.mainnav -->

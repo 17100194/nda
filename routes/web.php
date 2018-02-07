@@ -34,7 +34,7 @@ Route::get('/about', function (){
     return view('about');
 });
 
-Route::get('/sponsors', function (){
+Route::get('/partners', function (){
     return view('sponsors');
 });
 
