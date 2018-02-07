@@ -126,6 +126,14 @@
                 </div>
                 <div class="plan-item isotope-item">
                     <figure class="box">
+                        <a href="{{url('category/game-design')}}">
+                            <img src="images/categories/game-design.png" alt="image" width="100%" height="auto">
+                        </a>
+                    </figure>
+                    <h6>Game Design</h6>
+                </div>
+                <div class="plan-item isotope-item">
+                    <figure class="box">
                         <a href="{{url('category/consumer-product-design')}}">
                             <img src="images/categories/consumer-product.png" alt="image" width="100%" height="auto">
                         </a>
