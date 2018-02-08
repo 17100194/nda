@@ -47,10 +47,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content text-center">
+                        <div class="content text-center" style="height: 170px;">
                             <h5 class="name">Shehzil Malik</h5>
                             <p class="position">
                                 Designer / Illustrator at Shehzil Malik Design Studio
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 wrap-teammember">
+                    <div class="teammember">
+                        <div class="avatar">
+                            <img src="{{asset('images/jury/shahzad_nawaz.jpg')}}" width="100%">
+                            <div class="info-overlay">
+                                <div class="flat-socials">
+                                    <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content text-center" style="height: 170px;">
+                            <h5 class="name">Shahzad Nawaz</h5>
+                            <p class="position">
+                                Imagineer and Change Artist at DESIGN: Shahzad Nawaz Design | Filmmaker at Coup'd etat Films | DVF at ISSRA - NDU
                             </p>
                         </div>
                     </div>
