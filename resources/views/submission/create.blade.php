@@ -147,8 +147,8 @@
                                 <label for="game_design">Game Design</label>
                                 <input type="checkbox" name="categories[]" value="Design For Social Impact" id="design_social">
                                 <label for="design_social">Design For Social Impact</label>
-                                {{--<input type="checkbox" name="categories[]" value="Education Initiative" id="education">--}}
-                                {{--<label for="education">Education Initiative</label>--}}
+                                <input type="checkbox" name="categories[]" value="Education Initiative" id="education">
+                                <label for="education">Education Initiative</label>
                                 <input type="checkbox" name="categories[]" value="Fashion & Textile" id="fashion">
                                 <label for="fashion">Fashion & Textile</label>
                                 <input type="checkbox" name="categories[]" value="Furniture & Lighting" id="furniture">

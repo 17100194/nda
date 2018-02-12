@@ -100,7 +100,7 @@
                                             <li class="{{request()->is('category/game-design') ? 'active' : ''}}"><a href="{{url('category/game-design')}}">Game Design</a></li>
                                             <li class="{{request()->is('category/consumer-product-design') ? 'active' : ''}}"><a href="{{url('category/consumer-product-design')}}">Consumer Product Design</a></li>
                                             <li class="{{request()->is('category/design-social-impact') ? 'active' : ''}}"><a href="{{url('category/design-social-impact')}}">Design For Social Impact</a></li>
-                                            {{--<li class="{{request()->is('category/education-initiative') ? 'active' : ''}}"><a href="{{url('category/education-initiative')}}">Education Initiative</a></li>--}}
+                                            <li class="{{request()->is('category/education-initiative') ? 'active' : ''}}"><a href="{{url('category/education-initiative')}}">Education Initiative</a></li>
                                             <li class="{{request()->is('category/fashion-and-textile') ? 'active' : ''}}"><a href="{{url('category/fashion-and-textile')}}">Fashion & Textile</a></li>
                                             <li class="{{request()->is('category/furniture-and-lighting') ? 'active' : ''}}"><a href="{{url('category/furniture-and-lighting')}}">Furniture & Lighting</a></li>
                                             <li class="{{request()->is('category/industrial-product-design') ? 'active' : ''}}"><a href="{{url('category/industrial-product-design')}}">Industrial Product Design</a></li>
