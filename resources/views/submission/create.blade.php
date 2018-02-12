@@ -140,7 +140,7 @@
                                     <label for="animation">Animation Design</label>
                                 </div>
                             </div>
-                            <div class="col-sm-6 padding-top-10">
+                            <div class="col-sm-6 padding-top-5">
                                 <div class="divider hidden-xs hidden-sm"></div>
                                 <div class="divider"></div>
                                 <input type="checkbox" name="categories[]" value="Game Design" id="game_design">
