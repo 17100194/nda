@@ -232,7 +232,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="title-section text-center margin-bottom-67">
-                        <h1 class="title fontsize36">STEERING COMMITTEE - ADVISORY COMMITTEE 2018</h1>
+                        <h1 class="title fontsize36">ADVISORY COUNCIL 2018</h1>
                     </div>
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
@@ -314,6 +314,27 @@
                                 <h5 class="name">Shahid Khan</h5>
                                 <p class="position">
                                     Sr. Global Director, Design Thinking With SAP | SAP Design Company
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="{{asset('images/jury/suleman_shahid.jpg')}}" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center" style="height: 250px;">
+                                <h5 class="name">Suleman Shahid</h5>
+                                <p class="position">
+                                    Founder UX-Pakistan, Assistant Professor at LUMS and Tilburg University, the Netherlands
                                 </p>
                             </div>
                         </div>
