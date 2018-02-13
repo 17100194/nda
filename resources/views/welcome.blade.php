@@ -321,7 +321,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/suleman_shahid.jpg')}}" width="100%">
+                                <img src="{{asset('images/suleman.jpeg')}}" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
