@@ -156,7 +156,7 @@
                             </div>
                             <div class="flat-socials float-right text-right">
                                 <a href="https://www.facebook.com/National-Design-Awards-872719382896472/" target="_blank"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i><i class="fa fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/ndapakistan/" target="_blank"><i class="fa fa-instagram"></i><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
