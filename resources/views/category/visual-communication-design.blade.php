@@ -76,6 +76,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-3 wrap-teammember">
+                    <div class="teammember">
+                        <div class="avatar">
+                            <img src="{{asset('images/jury/omair_faizullah.jpeg')}}" width="100%">
+                            <div class="info-overlay">
+                                <div class="flat-socials">
+                                    <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content text-center" style="height: 170px;">
+                            <h5 class="name">Omair Faizullah</h5>
+                            <p class="position">
+                                Associate Professor at BNU | Creative Director
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="divider"></div>
             <div class="title-section text-center">
