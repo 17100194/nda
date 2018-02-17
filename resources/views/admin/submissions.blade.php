@@ -22,6 +22,7 @@
                             <a href="#" data-filter=".print-published-media">Print & Published Media</a>
                             <a href="#" data-filter=".service-design">UI/UX Design</a>
                             <a href="#" data-filter=".visual-communication-design">Visual Communication Design</a>
+                            <a href="#" data-filter=".emerging-technologies">Emerging Technologies</a>
                         </div>
                         <div class="portfolioContainer grid">
                             @foreach($submissions as $submission)
@@ -29,7 +30,7 @@
                                     $categories = explode(',',$submission->categories);
                                     $class = '';
                                     foreach ($categories as $category){
-                                        if ($category == 'Architecture'){
+                                        if ($category == 'Interior Design' || $category == 'Landscape Design'){
                                             $class = $class.'architecture ';
                                         }
                                         if ($category == 'Game Design'){
@@ -59,8 +60,11 @@
                                         if ($category == 'UI/UX Design'){
                                             $class = $class.'ui-ux-design ';
                                         }
-                                        if ($category == 'Visual Communication Design'){
+                                        if ($category == 'Static Design' || $category == 'Animation Design'){
                                             $class = $class.'visual-communication-design ';
+                                        }
+                                        if ($category == 'Emerging Technologies'){
+                                            $class = $class.'emerging-technologies ';
                                         }
                                     }
                                 ?>
