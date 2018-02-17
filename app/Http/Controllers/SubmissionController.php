@@ -86,7 +86,7 @@ class SubmissionController extends Controller
         //return $file; // array with file info
         Storage::delete('public/uploads/'.$filename);
         $url = Storage::cloud()->url($file['path']);
-        Submission::where('id',$request->submissionid)->update(['payment_proof'=>$url,'payment_status'=>'Verifying']);
+        Submission::where('id',$request->submissionid)->update(['payment_proof'=>$url,'payment_status'=>'Submitted']);
         session(['message' => '<strong>Payment Proof Submitted Successfully!</strong> Our team will verify your payment and update payment status if valid. Thank you for your patience']);
         return response()->json($filename, 200);
     }
