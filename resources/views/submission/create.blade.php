@@ -122,15 +122,6 @@
                                     <label for="landscape">Landscape Design</label>
                                 </div>
                                 <div class="divider"></div>
-                                <label class="font-raleway">Product Design</label>
-                                <div class="divider"></div>
-                                <div style="padding-left: 20px;">
-                                    <input type="checkbox" name="categories[]" value="Consumer Product Design" id="consumer_product">
-                                    <label for="consumer_product">Consumer Product Design</label>
-                                    <input type="checkbox" name="categories[]" value="Industrial Product Design" id="industry_product">
-                                    <label for="industry_product">Industrial Product Design</label>
-                                </div>
-                                <div class="divider"></div>
                                 <label class="font-raleway">Visual Communication Design</label>
                                 <div class="divider"></div>
                                 <div style="padding-left: 20px;">
@@ -139,28 +130,31 @@
                                     <input type="checkbox" name="categories[]" value="Animation Design" id="animation">
                                     <label for="animation">Animation Design</label>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 padding-top-5">
-                                <div class="divider hidden-xs hidden-sm"></div>
                                 <div class="divider"></div>
                                 <input type="checkbox" name="categories[]" value="Game Design" id="game_design">
                                 <label for="game_design">Game Design</label>
                                 <input type="checkbox" name="categories[]" value="Design For Social Impact" id="design_social">
                                 <label for="design_social">Design For Social Impact</label>
+                            </div>
+                            <div class="col-sm-6 padding-top-5">
+                                <div class="divider hidden-xs hidden-sm"></div>
+                                <div class="divider"></div>
                                 <input type="checkbox" name="categories[]" value="Education Initiative" id="education">
                                 <label for="education">Education Initiative</label>
+                                <input type="checkbox" name="categories[]" value="Product Design" id="product-design">
+                                <label for="product-design">Product Design</label>
                                 <input type="checkbox" name="categories[]" value="Fashion & Textile" id="fashion">
                                 <label for="fashion">Fashion & Textile</label>
                                 <input type="checkbox" name="categories[]" value="Furniture & Lighting" id="furniture">
                                 <label for="furniture">Furniture & Lighting</label>
-                                <input type="checkbox" name="categories[]" value="Interactive Design" id="interactive">
-                                <label for="interactive">Interactive Design</label>
                                 <input type="checkbox" name="categories[]" value="Packaging" id="packaging">
                                 <label for="packaging">Packaging</label>
                                 <input type="checkbox" name="categories[]" value="Print & Published Media" id="print">
                                 <label for="print">Print & Published Media</label>
-                                <input type="checkbox" name="categories[]" value="Service Design" id="service_design">
-                                <label for="service_design">Service Design</label>
+                                <input type="checkbox" name="categories[]" value="UI/UX Design" id="ui-ux">
+                                <label for="ui-ux">UI/UX Design</label>
+                                <input type="checkbox" name="categories[]" value="Emerging Technologies" id="emerging-technologies">
+                                <label for="emerging-technologies">Emerging Technologies</label>
                             </div>
                         </div>
                         <div class="{{ $errors->has('categories') ? ' has-error' : '' }} padding-top-20">

@@ -13,16 +13,14 @@
                             <a href="#" data-filter="*" class="current">All Categories</a>
                             <a href="#" data-filter=".architecture">Architecture</a>
                             <a href="#" data-filter=".game-design">Game Design</a>
-                            <a href="#" data-filter=".consumer=product-design">Consumer Product Design</a>
+                            <a href="#" data-filter=".consumer=product-design">Product Design</a>
                             <a href="#" data-filter=".design-social-impact">Design For Social Impact</a>
                             <a href="#" data-filter=".education-initiative">Education Initiative</a>
                             <a href="#" data-filter=".fashion-textile">Fashion & Textile</a>
                             <a href="#" data-filter=".furniture-lighting">Furniture & Lighting</a>
-                            <a href="#" data-filter=".industrial-product-design">Industrial Product Design</a>
-                            <a href="#" data-filter=".interaction-design">Interaction Design</a>
                             <a href="#" data-filter=".packaging">Packaging</a>
                             <a href="#" data-filter=".print-published-media">Print & Published Media</a>
-                            <a href="#" data-filter=".service-design">Service Design</a>
+                            <a href="#" data-filter=".service-design">UI/UX Design</a>
                             <a href="#" data-filter=".visual-communication-design">Visual Communication Design</a>
                         </div>
                         <div class="portfolioContainer grid">
@@ -49,14 +47,8 @@
                                         if ($category == 'Furniture & Lighting'){
                                             $class = $class.'furniture-lighting ';
                                         }
-                                        if ($category == 'Industrial Product Design'){
-                                            $class = $class.'industrial-product-design ';
-                                        }
-                                        if ($category == 'Consumer Product Design'){
-                                            $class = $class.'consumer-product-design ';
-                                        }
-                                        if ($category == 'Interaction Design'){
-                                            $class = $class.'interaction-design ';
+                                        if ($category == 'Product Design'){
+                                            $class = $class.'product-design ';
                                         }
                                         if ($category == 'Packaging'){
                                             $class = $class.'packaging ';
@@ -64,8 +56,8 @@
                                         if ($category == 'Print & Published Media'){
                                             $class = $class.'print-published-media ';
                                         }
-                                        if ($category == 'Service Design'){
-                                            $class = $class.'service-design ';
+                                        if ($category == 'UI/UX Design'){
+                                            $class = $class.'ui-ux-design ';
                                         }
                                         if ($category == 'Visual Communication Design'){
                                             $class = $class.'visual-communication-design ';

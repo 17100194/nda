@@ -53,7 +53,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="title-section line">
-                        <h1 class="title">Consumer Product Design</h1>
+                        <h1 class="title">Product Design</h1>
                     </div>
                     <div class="divider"></div>
                     <div class="col-md-3 wrap-teammember">
@@ -69,7 +69,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content text-center" style="height: 160px;">
+                            <div class="content text-center" style="height: 180px;">
                                 <h5 class="name">Badar Khushnood</h5>
                                 <p class="position">
                                     Cofounder @ Bramerz.com | Growth Hacker @ Fishry.com Ecommerce | ex-Google, Facebook & Twitter
@@ -90,10 +90,52 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="content text-center" style="height: 160px;">
+                            <div class="content text-center" style="height: 180px;">
                                 <h5 class="name">Pavan Dadlani</h5>
                                 <p class="position">
                                     Senior Scientist & Project Leader at Philips Group Innovation
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="{{asset('images/jury/omair_faizullah.jpeg')}}" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center" style="height: 180px;">
+                                <h5 class="name">Omair Faizullah</h5>
+                                <p class="position">
+                                    Associate Professor at BNU | Creative Director
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="{{asset('images/jury/zia_imran.jpg')}}" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center" style="height: 180px;">
+                                <h5 class="name">Zia Imran</h5>
+                                <p class="position">
+                                    Country Manager at SPRING Accelerator | Acting CEO – Zaheen Machines | CEO and Founder  VAHZAY PVT ltd
                                 </p>
                             </div>
                         </div>
@@ -255,57 +297,6 @@
                                 <h5 class="name">Shahzad Mughal</h5>
                                 <p class="position">
                                     CEO - Workman
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="divider"></div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title-section line">
-                        <h1 class="title">Industrial Product Design</h1>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="col-md-3 wrap-teammember">
-                        <div class="teammember">
-                            <div class="avatar">
-                                <img src="{{asset('images/jury/khurram_zafar.jpg')}}" width="100%">
-                                <div class="info-overlay">
-                                    <div class="flat-socials">
-                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content text-center" style="height: 170px;">
-                                <h5 class="name">Khurram Zafar</h5>
-                                <p class="position">
-                                    Innovation & Entrepreneurship Evangelist
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 wrap-teammember">
-                        <div class="teammember">
-                            <div class="avatar">
-                                <img src="{{asset('images/jury/zia_imran.jpg')}}" width="100%">
-                                <div class="info-overlay">
-                                    <div class="flat-socials">
-                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content text-center" style="height: 170px;">
-                                <h5 class="name">Zia Imran</h5>
-                                <p class="position">
-                                    Country Manager at SPRING Accelerator | Acting CEO – Zaheen Machines | CEO and Founder  VAHZAY PVT ltd
                                 </p>
                             </div>
                         </div>

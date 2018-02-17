@@ -47,7 +47,32 @@
                     <div class="tp-caption sub-title letter-spacing-0_2"
                          id="slide-3049-layer-4"
                          data-x="['center','center','center','center']" data-hoffset="['-1','-1','-1','-1']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['4','54','30','15']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['-10','10','10','-5']"
+                         data-fontsize="['30',25','16','14']"
+                         data-lineheight="['30','30','22','16']"
+                         data-fontweight="['300','300','300','300']"
+                         data-width="['1000',1000','800','450']"
+                         data-height="none"
+                         data-whitespace="['normal',normal','normal','normal']"
+
+                         data-type="text"
+                         data-responsive_offset="on"
+
+                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":100,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+                         data-textAlign="['center','center','center','center']"
+                         data-paddingtop="[10,10,10,10]"
+                         data-paddingright="[10,10,10,10]"
+                         data-paddingbottom="[10,10,10,10]"
+                         data-paddingleft="[10,10,10,10]"
+
+                         style="z-index: 17; white-space: normal;">(For Both Students and Professionals)
+                    </div>
+
+                    <!-- LAYER NR. 13 -->
+                    <div class="tp-caption sub-title letter-spacing-0_2"
+                         id="slide-3049-layer-4"
+                         data-x="['center','center','center','center']" data-hoffset="['-1','-1','-1','-1']"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['50','54','50','25']"
                          data-fontsize="['30',25','16','14']"
                          data-lineheight="['30','30','22','16']"
                          data-fontweight="['300','300','300','300']"
@@ -95,12 +120,25 @@
                 <div class="col-md-7 clearfix">
                     <div class="title-section">
                         <h3 class="title fontweight600 letter-spacing11">What are the NDAs?</h3>
-                        <div class="divider h33"></div>
+                        <div class="divider"></div>
                         <p class="sub-title">We hosted Pakistan’s inaugural user experience and design conference <a href="https://www.uxpakistan.com" target="_blank" style="color: #FEBD21;">UXPakistan</a> in April 2017, with state-of-the art workshops, UX clinic for startups, a design competition, top notch speaker line-up and this time we intend to host the inaugural National Design Awards as an official part of UXPakistan’18 conference. The awards program aims to increase awareness of the impact of design by drawing attention to ways in which design enriches everyday life. We will have various categories for jury selected awards covering multiple disciplines of design.</p>
+                        <div class="divider"></div>
+                        <h3 class="title fontweight600 letter-spacing11">Winning Prize</h3>
+                        <ul class="list-style style-caret">
+                            <li class="active">
+                                <a class="fontsize24">Students - 50,000Rs per Winner per Category</a>
+                            </li>
+                            <li class="active">
+                                <a class="fontsize24">Best Startup - 100,000Rs</a>
+                            </li>
+                            <li class="active">
+                                <a class="fontsize24">Professionals - Our Wonderful Trophy</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-md-5 clearfix">
-                    <img src="{{asset('images/award.png')}}" class="img-responsive center-block" width="200">
+                    <img src="{{asset('images/award.png')}}" class="img-responsive center-block" width="250">
                 </div>
             </div>
         </div>
@@ -134,7 +172,7 @@
                 </div>
                 <div class="plan-item isotope-item">
                     <figure class="box">
-                        <a href="{{url('category/consumer-product-design')}}">
+                        <a href="{{url('category/product-design')}}">
                             <img src="images/categories/consumer-product.png" alt="image" width="100%" height="auto">
                         </a>
                     </figure>
@@ -147,6 +185,14 @@
                         </a>
                     </figure>
                     <h6>Design For Social Impact</h6>
+                </div>
+                <div class="plan-item isotope-item">
+                    <figure class="box">
+                        <a href="{{url('category/emerging-technologies')}}">
+                            <img src="images/categories/emerging-technologies.png" alt="image" width="100%" height="auto">
+                        </a>
+                    </figure>
+                    <h6>Emerging Technologies</h6>
                 </div>
                 <div class="plan-item isotope-item">
                     <figure class="box">
@@ -174,19 +220,11 @@
                 </div>
                 <div class="plan-item isotope-item">
                     <figure class="box">
-                        <a href="{{url('category/industrial-product-design')}}">
+                        <a href="{{url('category/product-design')}}">
                             <img src="images/categories/industry-product.png" alt="image" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Industrial Product Design</h6>
-                </div>
-                <div class="plan-item isotope-item">
-                    <figure class="box">
-                        <a href="{{url('category/interactive-design')}}">
-                            <img src="images/categories/interactive-design.png" alt="image" width="100%" height="auto">
-                        </a>
-                    </figure>
-                    <h6>Interactive Design</h6>
                 </div>
                 <div class="plan-item isotope-item">
                     <figure class="box">
@@ -206,14 +244,11 @@
                 </div>
                 <div class="plan-item isotope-item">
                     <figure class="box">
-                        <a href="{{url('category/service-design')}}">
-                            <img src="images/categories/service-design.png" alt="image" width="100%" height="auto">
+                        <a href="{{url('category/ui-ux')}}">
+                            <img src="images/categories/ui-and-ux.png" alt="image" width="100%" height="auto">
                         </a>
                     </figure>
-                    <h6>Service Design</h6>
-                </div>
-                <div class="plan-item isotope-item">
-
+                    <h6>UI/UX Design</h6>
                 </div>
                 <div class="plan-item isotope-item">
                     <figure class="box">

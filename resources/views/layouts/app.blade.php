@@ -98,16 +98,15 @@
                                         <ul class="submenu list-style">
                                             <li class="{{request()->is('category/architecture') ? 'active' : ''}}"><a href="{{url('category/architecture')}}">Architecture</a></li>
                                             <li class="{{request()->is('category/game-design') ? 'active' : ''}}"><a href="{{url('category/game-design')}}">Game Design</a></li>
-                                            <li class="{{request()->is('category/consumer-product-design') ? 'active' : ''}}"><a href="{{url('category/consumer-product-design')}}">Consumer Product Design</a></li>
+                                            <li class="{{request()->is('category/product-design') ? 'active' : ''}}"><a href="{{url('category/product-design')}}">Product Design</a></li>
+                                            <li class="{{request()->is('category/emerging-technologies') ? 'active' : ''}}"><a href="{{url('category/emerging-technologies')}}">Emerging Technologies</a></li>
                                             <li class="{{request()->is('category/design-social-impact') ? 'active' : ''}}"><a href="{{url('category/design-social-impact')}}">Design For Social Impact</a></li>
                                             <li class="{{request()->is('category/education-initiative') ? 'active' : ''}}"><a href="{{url('category/education-initiative')}}">Education Initiative</a></li>
                                             <li class="{{request()->is('category/fashion-and-textile') ? 'active' : ''}}"><a href="{{url('category/fashion-and-textile')}}">Fashion & Textile</a></li>
                                             <li class="{{request()->is('category/furniture-and-lighting') ? 'active' : ''}}"><a href="{{url('category/furniture-and-lighting')}}">Furniture & Lighting</a></li>
-                                            <li class="{{request()->is('category/industrial-product-design') ? 'active' : ''}}"><a href="{{url('category/industrial-product-design')}}">Industrial Product Design</a></li>
-                                            <li class="{{request()->is('category/interactive-design') ? 'active' : ''}}"><a href="{{url('category/interactive-design')}}">Interactive Design</a></li>
                                             <li class="{{request()->is('category/packaging') ? 'active' : ''}}"><a href="{{url('category/packaging')}}">Packaging</a></li>
                                             <li class="{{request()->is('category/print-and-published-media') ? 'active' : ''}}"><a href="{{url('category/print-and-published-media')}}">Print & Published Media</a></li>
-                                            <li class="{{request()->is('category/service-design') ? 'active' : ''}}"><a href="{{url('category/service-design')}}">Service Design</a></li>
+                                            <li class="{{request()->is('category/ui-ux') ? 'active' : ''}}"><a href="{{url('category/ui-ux')}}">UI/UX Design</a></li>
                                             <li class="{{request()->is('category/visual-communication-design') ? 'active' : ''}}"><a href="{{url('category/visual-communication-design')}}">Visual Communication Design</a></li>
                                         </ul>
                                     </li>
