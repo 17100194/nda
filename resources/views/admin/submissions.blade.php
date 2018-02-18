@@ -13,7 +13,7 @@
                             <a href="#" data-filter="*" class="current">All Categories</a>
                             <a href="#" data-filter=".architecture">Architecture</a>
                             <a href="#" data-filter=".game-design">Game Design</a>
-                            <a href="#" data-filter=".consumer=product-design">Product Design</a>
+                            <a href="#" data-filter=".product-design">Product Design</a>
                             <a href="#" data-filter=".design-social-impact">Design For Social Impact</a>
                             <a href="#" data-filter=".education-initiative">Education Initiative</a>
                             <a href="#" data-filter=".fashion-textile">Fashion & Textile</a>
