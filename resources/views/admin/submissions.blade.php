@@ -20,7 +20,7 @@
                             <a href="#" data-filter=".furniture-lighting">Furniture & Lighting</a>
                             <a href="#" data-filter=".packaging">Packaging</a>
                             <a href="#" data-filter=".print-published-media">Print & Published Media</a>
-                            <a href="#" data-filter=".service-design">UI/UX Design</a>
+                            <a href="#" data-filter=".ui-ux-design">UI/UX Design</a>
                             <a href="#" data-filter=".visual-communication-design">Visual Communication Design</a>
                             <a href="#" data-filter=".emerging-technologies">Emerging Technologies</a>
                         </div>
