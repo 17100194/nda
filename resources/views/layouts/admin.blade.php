@@ -87,6 +87,9 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
+                                <a href="{{url('/')}}"><i class="icon-Home"></i><span>Visit Site</span></a>
+                            </li>
+                            <li>
                                 <a href="#"><i class="icon-user"></i><span>My Profile</span></a>
                             </li>
                             <li>
