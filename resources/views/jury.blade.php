@@ -14,36 +14,6 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="title-section line">
-                        <h1 class="title">Architecture</h1>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="col-md-3 wrap-teammember">
-                        <div class="teammember">
-                            <div class="avatar">
-                                <img src="{{asset('images/jury/sami_chohan.jpg')}}" width="100%">
-                                <div class="info-overlay">
-                                    <div class="flat-socials">
-                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content text-center">
-                                <h5 class="name">Sami Chohan</h5>
-                                <p class="position">
-                                    Head, Department of Architecture, Indus Valley School of Art and Architecture
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="divider"></div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title-section line">
                         <h1 class="title">Game Design</h1>
                     </div>
                     <div class="divider"></div>
@@ -85,27 +55,6 @@
                                 <h5 class="name">Murad Akhter</h5>
                                 <p class="position">
                                     Co-Founder & CEO Tintash
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 wrap-teammember">
-                        <div class="teammember">
-                            <div class="avatar">
-                                <img src="{{asset('images/jury/maheen_sohail.jpg')}}" width="100%">
-                                <div class="info-overlay">
-                                    <div class="flat-socials">
-                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content text-center" style="height: 130px;">
-                                <h5 class="name">Maheen Sohail</h5>
-                                <p class="position">
-                                    VR Product Designer at Facebook
                                 </p>
                             </div>
                         </div>
@@ -227,7 +176,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/gulraiz_khan.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/aneeqa_ishaq.jpg')}}" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -238,9 +187,131 @@
                                 </div>
                             </div>
                             <div class="content text-center" style="height: 200px;">
-                                <h5 class="name">Gulraiz Khan</h5>
+                                <h5 class="name">Aneeqa Ishaq</h5>
                                 <p class="position">
-                                    Lecturer - Habib University | Assistant director – the playground | Visiting Lecturer - SZABIST | Masters of Fine Arts - Parsons School of Design
+                                    Design Thinking | User Experience | EdTech | Stanford
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-section line">
+                        <h1 class="title">Fashion & Textile</h1>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="{{asset('images/jury/sabahat.jpg')}}" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center" style="height:130px">
+                                <h5 class="name">Sabahat Nawaz</h5>
+                                <p class="position">Associate Professor at Pakistan Institute of Fashion & Design
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="{{asset('images/jury/maria_butt.jpg')}}" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center" style="height:130px">
+                                <h5 class="name">Maria Butt</h5>
+                                <p class="position">
+                                    Founder Maria.B.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="{{asset('images/jury/yahsir_waheed.jpg')}}" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center" style="height:130px">
+                                <h5 class="name">Yahsir Waheed</h5>
+                                <p class="position">
+                                    Fashion Designer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-section line">
+                        <h1 class="title">Emerging Technologies</h1>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="{{asset('images/suleman.jpeg')}}" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center" style="height: 150px;">
+                                <h5 class="name">Suleman Shahid</h5>
+                                <p class="position">
+                                    Founder UX-Pakistan, Assistant Professor at LUMS and Tilburg University, the Netherlands
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="{{asset('images/jury/maheen_sohail.jpg')}}" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center" style="height: 150px;">
+                                <h5 class="name">Maheen Sohail</h5>
+                                <p class="position">
+                                    VR Product Designer at Facebook
                                 </p>
                             </div>
                         </div>
@@ -319,57 +390,57 @@
                     </div>
                 </div>
             </div>
-            {{--<div class="divider"></div>--}}
-            {{--<div class="row">--}}
-                {{--<div class="col-md-12">--}}
-                    {{--<div class="title-section line">--}}
-                        {{--<h1 class="title">Education Initiative</h1>--}}
-                    {{--</div>--}}
-                    {{--<div class="divider"></div>--}}
-                    {{--<div class="col-md-3 wrap-teammember">--}}
-                        {{--<div class="teammember">--}}
-                            {{--<div class="avatar">--}}
-                                {{--<img src="{{asset('images/jury/javed_khan.jpg')}}" width="100%">--}}
-                                {{--<div class="info-overlay">--}}
-                                    {{--<div class="flat-socials">--}}
-                                        {{--<a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>--}}
-                                        {{--<a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>--}}
-                                        {{--<a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>--}}
-                                        {{--<a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>--}}
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                            {{--<div class="content text-center" style="height: 150px;">--}}
-                                {{--<h5 class="name">Dr. Javed-Vasileios Khan</h5>--}}
-                                {{--<p class="position">--}}
-                                    {{--Assistant Professor at Eindhoven University of Technology & Ambianti co-founder--}}
-                                {{--</p>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                    {{--<div class="col-md-3 wrap-teammember">--}}
-                        {{--<div class="teammember">--}}
-                            {{--<div class="avatar">--}}
-                                {{--<img src="{{asset('images/jury/farida_batool.jpg')}}" width="100%">--}}
-                                {{--<div class="info-overlay">--}}
-                                    {{--<div class="flat-socials">--}}
-                                        {{--<a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>--}}
-                                        {{--<a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>--}}
-                                        {{--<a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>--}}
-                                        {{--<a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>--}}
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                            {{--<div class="content text-center" style="height: 150px;">--}}
-                                {{--<h5 class="name">Dr. Farida Batool</h5>--}}
-                                {{--<p class="position">--}}
-                                    {{--Professor at National College of Arts (NCA)--}}
-                                {{--</p>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-section line">
+                        <h1 class="title">Education Initiative</h1>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="{{asset('images/jury/javed_khan.jpg')}}" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center" style="height: 150px;">
+                                <h5 class="name">Dr. Javed-Vasileios Khan</h5>
+                                <p class="position">
+                                    Assistant Professor at Eindhoven University of Technology & Ambianti co-founder
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="{{asset('images/jury/farida_batool.jpg')}}" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center" style="height: 150px;">
+                                <h5 class="name">Dr. Farida Batool</h5>
+                                <p class="position">
+                                    Professor at National College of Arts (NCA)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="divider"></div>
             <div class="row">
                 <div class="col-md-12">
@@ -415,77 +486,6 @@
                                 <h5 class="name">Muhammad Akmal Cheema</h5>
                                 <p class="position">
                                     Design Educator (NCA, UCAD), Consultant
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="divider"></div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="title-section line">
-                        <h1 class="title">Fashion & Textile</h1>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="col-md-3 wrap-teammember">
-                        <div class="teammember">
-                            <div class="avatar">
-                                <img src="{{asset('images/jury/sabahat.jpg')}}" width="100%">
-                                <div class="info-overlay">
-                                    <div class="flat-socials">
-                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content text-center" style="height:130px">
-                                <h5 class="name">Sabahat Nawaz</h5>
-                                <p class="position">Associate Professor at Pakistan Institute of Fashion & Design
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 wrap-teammember">
-                        <div class="teammember">
-                            <div class="avatar">
-                                <img src="{{asset('images/jury/maria_butt.jpg')}}" width="100%">
-                                <div class="info-overlay">
-                                    <div class="flat-socials">
-                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content text-center" style="height:130px">
-                                <h5 class="name">Maria Butt</h5>
-                                <p class="position">
-                                    Founder Maria.B.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 wrap-teammember">
-                        <div class="teammember">
-                            <div class="avatar">
-                                <img src="{{asset('images/jury/yahsir_waheed.jpg')}}" width="100%">
-                                <div class="info-overlay">
-                                    <div class="flat-socials">
-                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content text-center" style="height:130px">
-                                <h5 class="name">Yahsir Waheed</h5>
-                                <p class="position">
-                                    Fashion Designer
                                 </p>
                             </div>
                         </div>
@@ -777,6 +777,36 @@
                                 <h5 class="name">Omair Faizullah</h5>
                                 <p class="position">
                                     Associate Professor at BNU | Creative Director
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-section line">
+                        <h1 class="title">Architecture</h1>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="col-md-3 wrap-teammember">
+                        <div class="teammember">
+                            <div class="avatar">
+                                <img src="{{asset('images/jury/sami_chohan.jpg')}}" width="100%">
+                                <div class="info-overlay">
+                                    <div class="flat-socials">
+                                        <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content text-center">
+                                <h5 class="name">Sami Chohan</h5>
+                                <p class="position">
+                                    Head, Department of Architecture, Indus Valley School of Art and Architecture
                                 </p>
                             </div>
                         </div>

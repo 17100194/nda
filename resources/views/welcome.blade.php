@@ -48,7 +48,7 @@
                          id="slide-3049-layer-4"
                          data-x="['center','center','center','center']" data-hoffset="['-1','-1','-1','-1']"
                          data-y="['middle','middle','middle','middle']" data-voffset="['-10','10','10','-5']"
-                         data-fontsize="['30',25','16','14']"
+                         data-fontsize="['25',25','16','14']"
                          data-lineheight="['30','30','22','16']"
                          data-fontweight="['300','300','300','300']"
                          data-width="['1000',1000','800','450']"
@@ -65,7 +65,7 @@
                          data-paddingbottom="[10,10,10,10]"
                          data-paddingleft="[10,10,10,10]"
 
-                         style="z-index: 17; white-space: normal;">(For Both Students and Professionals)
+                         style="z-index: 17; white-space: normal;">(For both Students and Professionals)
                     </div>
 
                     <!-- LAYER NR. 13 -->
@@ -126,13 +126,15 @@
                         <h3 class="title fontweight600 letter-spacing11">Winning Prize</h3>
                         <ul class="list-style style-caret">
                             <li class="active">
-                                <a class="fontsize24">Students - 50,000Rs per Winner per Category</a>
+                                <a class="fontsize20">Students - 50,000Rs per Winner per Category</a>
                             </li>
+                            <div class="divider"></div>
                             <li class="active">
-                                <a class="fontsize24">Best Startup - 100,000Rs</a>
+                                <a class="fontsize20">Best Startup - 100,000Rs</a>
                             </li>
+                            <div class="divider"></div>
                             <li class="active">
-                                <a class="fontsize24">Professionals - Our Wonderful Trophy</a>
+                                <a class="fontsize20">Professionals - Our Wonderful Trophy</a>
                             </li>
                         </ul>
                     </div>
