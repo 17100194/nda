@@ -96,6 +96,9 @@
                                     <li class="{{strpos(request()->url(),'category') ? 'home' : ''}}">
                                         <a>Categories</a>
                                         <ul class="submenu list-style">
+                                            <li class="{{request()->is('category/lifetime-achievement') ? 'active' : ''}}"><a href="{{url('category/lifetime-achievement')}}">Lifetime Achievement Award</a></li>
+                                            <li class="{{request()->is('category/peoples-choice') ? 'active' : ''}}"><a href="{{url('category/peoples-choice')}}">Peoples' Choice Award</a></li>
+                                            <li class="{{request()->is('category/best-ux-startup') ? 'active' : ''}}"><a href="{{url('category/best-ux-startup')}}">Best UX By A Startup</a></li>
                                             <li class="{{request()->is('category/architecture') ? 'active' : ''}}"><a href="{{url('category/architecture')}}">Architecture</a></li>
                                             <li class="{{request()->is('category/game-design') ? 'active' : ''}}"><a href="{{url('category/game-design')}}">Game Design</a></li>
                                             <li class="{{request()->is('category/product-design') ? 'active' : ''}}"><a href="{{url('category/product-design')}}">Product Design</a></li>

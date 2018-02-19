@@ -163,15 +163,15 @@
                 </div>
                 <div class="plan-item isotope-item">
                     <figure class="box">
-                        <a href="{{url('category/people-choice')}}">
+                        <a href="{{url('category/peoples-choice')}}">
                             <img src="images/categories/pppl-choice.png" alt="image" width="100%" height="auto">
                         </a>
                     </figure>
-                    <h6>People Choice Award</h6>
+                    <h6>Peoples' Choice Award</h6>
                 </div>
                 <div class="plan-item isotope-item">
                     <figure class="box">
-                        <a href="{{url('category/best-ux')}}">
+                        <a href="{{url('category/best-ux-startup')}}">
                             <img src="images/categories/ux.png" alt="image" width="100%" height="auto">
                         </a>
                     </figure>
