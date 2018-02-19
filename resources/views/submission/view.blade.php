@@ -40,7 +40,7 @@
                     <div class="panel-content">
                         <p><strong>Team Members:</strong> <?php if($submission->team_member1):?>{{$submission->team_member1}}, <?php endif?><?php if($submission->team_member2):?>{{$submission->team_member2}}, <?php endif?><?php if($submission->team_member3):?>{{$submission->team_member3}}, <?php endif?><?php if($submission->team_member4):?>{{$submission->team_member4}}, <?php endif?><?php if(!$submission->team_member1||!$submission->team_member2||!$submission->team_member3||!$submission->team_member4):?>N/A<?php endif?></p>
                         <p class=""><strong>Status:</strong> {{$submission->status}}</p>
-                        <p class=""><strong>Payment Status:</strong> {{$submission->payment_status}} <?php if($submission->payment_status == 'Submitted'):?><a href="#">View Payment Proof</a><?php endif?></p>
+                        <p class=""><strong>Payment Status:</strong> {{$submission->payment_status}} <?php if($submission->payment_status == 'Submitted'):?><a href="#" class="magnific btn btn-link" data-mfp-src="{{$submission->payment_proof}}">View Payment Proof</a><?php endif?></p>
                         <p class=""><strong>Payment Method:</strong> {{$submission->payment_method}}</p>
                         <p class=""><strong>Created At:</strong> {{$submission->created_at}}</p>
                     </div>

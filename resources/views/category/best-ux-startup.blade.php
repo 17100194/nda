@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-7">
                     <div class="title-section">
-                        <h1 class="title">Best UX By A Startup</h1>
+                        <h1 class="title">Best UX Design By A Startup</h1>
                         <p class="sub-title">
 
                         </p>
