@@ -46,7 +46,7 @@
                 <div class="col-md-3 wrap-teammember">
                     <div class="teammember">
                         <div class="avatar">
-                            <img src="{{asset('images/jury/farida_batool.jpg')}}" width="100%">
+                            <img src="{{asset('images/jury/farrah_arif.jpg')}}" width="100%">
                             <div class="info-overlay">
                                 <div class="flat-socials">
                                     <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -57,9 +57,9 @@
                             </div>
                         </div>
                         <div class="content text-center" style="height: 150px;">
-                            <h5 class="name">Dr. Farida Batool</h5>
+                            <h5 class="name">Farrah Arif</h5>
                             <p class="position">
-                                Professor at National College of Arts (NCA)
+                                Founder EdTech Worx | LUMS Professor | Cambridge PhD | Design Thinking Strategist
                             </p>
                         </div>
                     </div>

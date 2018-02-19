@@ -140,7 +140,7 @@
                 <div class="col-md-3 wrap-teammember">
                     <div class="teammember">
                         <div class="avatar">
-                            <img src="{{asset('images/jury/gulraiz_khan.jpg')}}" width="100%">
+                            <img src="{{asset('images/jury/aneeqa_ishaq.jpg')}}" width="100%">
                             <div class="info-overlay">
                                 <div class="flat-socials">
                                     <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -151,9 +151,9 @@
                             </div>
                         </div>
                         <div class="content text-center" style="height: 200px;">
-                            <h5 class="name">Gulraiz Khan</h5>
+                            <h5 class="name">Aneeqa Ishaq</h5>
                             <p class="position">
-                                Lecturer - Habib University | Assistant director – the playground | Visiting Lecturer - SZABIST | Masters of Fine Arts - Parsons School of Design
+                                Design Thinking | User Experience | EdTech | Stanford
                             </p>
                         </div>
                     </div>
