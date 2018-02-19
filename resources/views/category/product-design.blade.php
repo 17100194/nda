@@ -77,7 +77,7 @@
                 <div class="col-md-3 wrap-teammember">
                     <div class="teammember">
                         <div class="avatar">
-                            <img src="{{asset('images/jury/omair_faizullah.jpeg')}}" width="100%">
+                            <img src="{{asset('images/jury/ali_murtaza.jpeg')}}" width="100%">
                             <div class="info-overlay">
                                 <div class="flat-socials">
                                     <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -88,9 +88,9 @@
                             </div>
                         </div>
                         <div class="content text-center" style="height: 200px;">
-                            <h5 class="name">Omair Faizullah</h5>
+                            <h5 class="name">Ali Murtaza</h5>
                             <p class="position">
-                                Associate Professor at BNU | Creative Director
+                                Program Manager, Makeistan (ITU) | Design Consultant
                             </p>
                         </div>
                     </div>

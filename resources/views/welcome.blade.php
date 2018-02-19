@@ -138,14 +138,46 @@
                     </div>
                 </div>
                 <div class="col-md-5 clearfix">
-                    <img src="{{asset('images/award.png')}}" class="img-responsive center-block" width="250">
+                    <img src="{{asset('images/award.png')}}" class="img-responsive center-block" width="260">
                 </div>
             </div>
         </div>
     </section>
-
     <section class="flat-row page-planding bg-planding">
         <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-section text-center margin-bottom-67">
+                        <h1 class="title fontsize36" style="color: #FEBD21;">Special Awards</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="planding-isotope isotope-podes">
+                <div class="plan-item isotope-item">
+                    <figure class="box">
+                        <a href="{{url('category/lifetime-achievement')}}">
+                            <img src="images/categories/life-time.png" alt="image" width="100%" height="auto">
+                        </a>
+                    </figure>
+                    <h6>Lifetime Achievement Award</h6>
+                </div>
+                <div class="plan-item isotope-item">
+                    <figure class="box">
+                        <a href="{{url('category/people-choice')}}">
+                            <img src="images/categories/pppl-choice.png" alt="image" width="100%" height="auto">
+                        </a>
+                    </figure>
+                    <h6>People Choice Award</h6>
+                </div>
+                <div class="plan-item isotope-item">
+                    <figure class="box">
+                        <a href="{{url('category/best-ux')}}">
+                            <img src="images/categories/ux.png" alt="image" width="100%" height="auto">
+                        </a>
+                    </figure>
+                    <h6>Best UX Design By A Startup</h6>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="title-section text-center margin-bottom-67">

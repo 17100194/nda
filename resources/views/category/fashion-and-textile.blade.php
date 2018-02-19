@@ -35,9 +35,51 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content text-center">
+                        <div class="content text-center" style="height:130px">
                             <h5 class="name">Sabahat Nawaz</h5>
                             <p class="position">Associate Professor at Pakistan Institute of Fashion & Design
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 wrap-teammember">
+                    <div class="teammember">
+                        <div class="avatar">
+                            <img src="{{asset('images/jury/maria_butt.jpg')}}" width="100%">
+                            <div class="info-overlay">
+                                <div class="flat-socials">
+                                    <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content text-center" style="height:130px">
+                            <h5 class="name">Maria Butt</h5>
+                            <p class="position">
+                                Founder Maria.B.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 wrap-teammember">
+                    <div class="teammember">
+                        <div class="avatar">
+                            <img src="{{asset('images/jury/yahsir_waheed.jpg')}}" width="100%">
+                            <div class="info-overlay">
+                                <div class="flat-socials">
+                                    <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content text-center" style="height:130px">
+                            <h5 class="name">Yahsir Waheed</h5>
+                            <p class="position">
+                                Fashion Designer
                             </p>
                         </div>
                     </div>

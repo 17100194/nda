@@ -35,10 +35,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content text-center">
+                        <div class="content text-center" style="height: 130px;">
                             <h5 class="name">Shahzad Mughal</h5>
                             <p class="position">
                                 CEO - Workman
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 wrap-teammember">
+                    <div class="teammember">
+                        <div class="avatar">
+                            <img src="{{asset('images/jury/naveed_butt.jpg')}}" width="100%">
+                            <div class="info-overlay">
+                                <div class="flat-socials">
+                                    <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content text-center" style="height: 130px;">
+                            <h5 class="name">Naveed Butt</h5>
+                            <p class="position">
+                                Assistant Professor at Pakistan Institute of Fashion & Design
                             </p>
                         </div>
                     </div>
