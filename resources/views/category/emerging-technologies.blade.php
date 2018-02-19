@@ -7,7 +7,9 @@
                 <div class="col-md-7">
                     <div class="title-section">
                         <h1 class="title">Emerging Technologies</h1>
-                        <p class="sub-title"></p>
+                        <p class="sub-title">
+                            Given in recognition of early prototypes or detailed ideas of products or technologies with technical innovations, that are perceived as capable of bringing a change and representing progressive development. These are characterized by their potential of fast growth and prominent impact which lies in the future, so in the emergence phase they can be somewhat uncertain and ambiguous. Emerging technologies include a variety of technologies such as educational technology, information technology, nanotechnology, biotechnology, cognitive science, psycho-technology, robotics, artificial intelligence, AR/VR and physical computing. Two emerging technologies can also be combined to form one integrated final product so that they share resources and interact with each other, creating new efficiencies.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-5 padding-top-40">
