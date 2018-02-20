@@ -24,8 +24,8 @@
                         <p class=""><strong>Entry Type:</strong> {{$submission->type}}</p>
                         <p class=""><strong>Client Name:</strong> <?php if ($submission->for):?>{{$submission->for}}<?php else:?>N/A<?php endif?></p>
                         <p class=""><strong>Categories:</strong> {{$submission->categories}}</p>
-                        <p class=""><strong>External Link:</strong> <?php if ($submission->project_url):?>{{$submission->project_url}}<?php else:?>N/A<?php endif?></p>
-                        <p class=""><strong>Video:</strong> <?php if ($submission->project_video):?>{{$submission->project_video}}<?php else:?>N/A<?php endif?></p>
+                        <p class=""><strong>External Link:</strong> <?php if ($submission->project_url):?><a href="{{$submission->project_url}}" target="_blank">{{$submission->project_url}}</a><?php else:?>N/A<?php endif?></p>
+                        <p class=""><strong>Video:</strong> <?php if ($submission->project_video):?><a href="{{$submission->project_video}}" target="_blank">{{$submission->project_video}}</a><?php else:?>N/A<?php endif?></p>
                     </div>
                 </div>
             </div>
