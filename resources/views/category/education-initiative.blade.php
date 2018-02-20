@@ -46,7 +46,7 @@
                 <div class="col-md-3 wrap-teammember">
                     <div class="teammember">
                         <div class="avatar">
-                            <img src="{{asset('images/jury/farrah_arif.jpg')}}" width="100%">
+                            <img src="{{asset('images/suleman.jpeg')}}" width="100%">
                             <div class="info-overlay">
                                 <div class="flat-socials">
                                     <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -57,13 +57,34 @@
                             </div>
                         </div>
                         <div class="content text-center" style="height: 150px;">
-                            <h5 class="name">Farrah Arif</h5>
+                            <h5 class="name">Suleman Shahid</h5>
                             <p class="position">
-                                Founder EdTech Worx | LUMS Professor | Cambridge PhD | Design Thinking Strategist
+                                Founder UX-Pakistan, Assistant Professor at LUMS and Tilburg University, the Netherlands
                             </p>
                         </div>
                     </div>
                 </div>
+                {{--<div class="col-md-3 wrap-teammember">--}}
+                    {{--<div class="teammember">--}}
+                        {{--<div class="avatar">--}}
+                            {{--<img src="{{asset('images/jury/farrah_arif.jpg')}}" width="100%">--}}
+                            {{--<div class="info-overlay">--}}
+                                {{--<div class="flat-socials">--}}
+                                    {{--<a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>--}}
+                                    {{--<a href="#"><i class="fa fa-twitter"></i><i class="fa fa-twitter"></i></a>--}}
+                                    {{--<a href="#"><i class="fa fa-google-plus"></i><i class="fa fa-google-plus"></i></a>--}}
+                                    {{--<a href="#"><i class="fa fa-linkedin"></i><i class="fa fa-linkedin"></i></a>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="content text-center" style="height: 150px;">--}}
+                            {{--<h5 class="name">Farrah Arif</h5>--}}
+                            {{--<p class="position">--}}
+                                {{--Founder EdTech Worx | LUMS Professor | Cambridge PhD | Design Thinking Strategist--}}
+                            {{--</p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
             <div class="divider"></div>
             <div class="title-section text-center">
