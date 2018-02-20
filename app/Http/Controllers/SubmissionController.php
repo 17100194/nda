@@ -8,6 +8,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\PaymentConfirmation;
 use App\Mail\SuccessfulSubmission;
 use App\Submission;
 use App\User;
@@ -262,6 +263,15 @@ class SubmissionController extends Controller
         } else {
             return response()->json('Unauthorized Command', 400);
         }
+    }
+
+    function verifyPayment(Request $request){
+        $submission = Submission::find($request->submissionid);
+        $user = $submission->author;
+        Submission::where('id', $request->submissionid)->update(['payment_status'=>'Paid']);
+        $email = new PaymentConfirmation($user);
+        Mail::to($user->email)->send($email);
+        return response()->json('success',200);
     }
 
 }

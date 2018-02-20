@@ -531,12 +531,6 @@
                                 }
                             });
                         } else {
-                            iziToast.show({
-                                title: 'Success',
-                                message: 'Your submission has been received successfully. You\'ll now be redirected to your submissions',
-                                color: 'green',
-                                position: 'topRight'
-                            });
                             $('#entry_form').find('input:text, input:password, select, textarea').val('');
                             $('#entry_form').find('input:radio, input:checkbox').prop('checked', false);
                             window.onbeforeunload = null;

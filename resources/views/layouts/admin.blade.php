@@ -123,6 +123,7 @@
 <script src="{{asset('admin/assets/global/plugins/jquery/jquery-3.1.0.min.js')}}"></script>
 <script src="{{asset('admin/assets/global/plugins/jquery/jquery-migrate-3.0.0.min.js')}}"></script>
 <script src="{{asset('admin/assets/global/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('javascript/loadingoverlay.min.js')}}"></script>
 <script src="{{asset('admin/assets/global/plugins/gsap/main-gsap.min.js')}}"></script>
 <script src="{{asset('admin/assets/global/plugins/tether/js/tether.min.js')}}"></script>
 <script src="{{asset('admin/assets/global/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
@@ -169,6 +170,34 @@
 <script src="{{asset('admin/assets/global/js/pages/table_dynamic.js')}}"></script>
 
 <!-- END PAGE SCRIPT -->
+@if(strpos(request()->url(),'nda-admin/submissions/view'))
+    <script>
+        $('#verify').on('click', function (e) {
+            e.preventDefault();
+            $.ajaxSetup({
+                header:$('meta[name="_token"]').attr('content')
+            });
+            $.ajax({
+                type: "GET",
+                url: '{{url('verify-payment')}}',
+                data: {submissionid: $(this).data('id')},
+                dataType: 'json',
+                beforeSend: function() {
+                    $.LoadingOverlay('show');
+                },
+                success: function (data) {
+                    $.LoadingOverlay('hide');
+                    if (data === 'success'){
+                        window.location.reload();
+                    }
+                },
+                error: function (data) {
+                    $.LoadingOverlay('hide');
+                }
+            });
+        });
+    </script>
+@endif
 @if(request()->is('nda-admin/submissions'))
 <script>
     $(window).load(function(){
