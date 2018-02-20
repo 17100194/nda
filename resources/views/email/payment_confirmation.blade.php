@@ -77,16 +77,20 @@ $style = [
                                     <!-- Intro -->
 
                                     <p style="{{ $style['paragraph'] }}">
-                                        Please click on the below button to verify your email address
+                                        <strong>Thank you for submitting the payment for the National Design Awards!</strong> You are receiving this email as a confirmation for your payment.
                                     </p>
-
-
-                                    <!-- Outro -->
-
                                     <p style="{{ $style['paragraph'] }}">
-                                        Thank you
+                                        This marks the completion of your project submission phase. Your submission for the NDA is now being forwarded to the jury panel. The jury panel will go through all the entries submitted and shortlisting will take place. The shortlisted teams will be announced on the NDA website. These teams will be given the details of the final phase.
                                     </p>
-
+                                    <p style="{{ $style['paragraph'] }}">
+                                        The awards ceremony will be held on 1st April at Lahore University of Management Sciences. Further details of the venue will be provided to the shortlisted teams.
+                                    </p>
+                                    <p style="{{ $style['paragraph'] }}">
+                                        At this point, we would again like to direct your attention towards the parent event UXPakistan. It is a two-day conference being held on <strong>31st March and 1st April 2018</strong>. This will be the 2nd edition of this highly anticipated conference which includes workshops, speaker sessions by esteemed and competent speakers, design competition and more. The conference will focus on promoting the concept of “Design in all Fields”. <strong>Registrations for the conference are opening very soon, so stay tuned!</strong>
+                                    </p>
+                                    <p style="{{ $style['paragraph'] }}">
+                                        We thank you once again for your participation in these awards. If you have any queries, please do contact us at <a href="mailto:info@ndapakistan.com">info@ndapakistan.com</a> or at 0349-4227376.
+                                    </p>
 
                                     <!-- Salutation -->
                                     <p style="{{ $style['paragraph'] }}">
