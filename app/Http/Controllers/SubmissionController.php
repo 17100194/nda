@@ -179,7 +179,8 @@ class SubmissionController extends Controller
             $submission->project_pdf = $url;
         }
         $images = explode(',',$request->image_files);
-        foreach ($images as $index=>$image){
+        $index = 1;
+        foreach ($images as $image){
             $filename = $image;
             $filePath = storage_path('app/temp/'.$filename);
             $fileData = File::get($filePath);
@@ -200,6 +201,7 @@ class SubmissionController extends Controller
             Storage::delete('temp/'.$filename);
             $url = Storage::cloud()->url($file['path']);
             $submission->fill(['image_'.(string)((int)$index+1) => $url]);
+            $index = $index+1;
         }
         $filename = $request->thumbnail_file;
         $filePath = storage_path('app/temp/'.$filename);
