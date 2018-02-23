@@ -200,7 +200,7 @@ class SubmissionController extends Controller
             //return $file; // array with file info
             Storage::delete('temp/'.$filename);
             $url = Storage::cloud()->url($file['path']);
-            $submission->fill(['image_'.(string)((int)$index+1) => $url]);
+            $submission->fill(['image_'.(string)($index) => $url]);
             $index = $index+1;
         }
         $filename = $request->thumbnail_file;
