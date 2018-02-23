@@ -114,6 +114,9 @@ $style = [
                                         </p>
                                     @endif
                                     <p style="{{$style['paragraph']}}">
+                                        <strong style="text-decoration:underline;">Note: Don't forget to upload your payment receipt on the website once you've made the payment as this is the only way for us to actually verify that you've paid. If you don't upload the payment proof your status will not be marked as paid even if you have made the payment so this is very important. You can find the button to upload the payment proof at the bottom of the submissions page</strong>
+                                    </p>
+                                    <p style="{{$style['paragraph']}}">
                                         We thank you once again for your participation and helping us celebrate good design. Feel free to contact our team on ndapakistan@gmail.com for any help or further information.
                                     </p>
 
