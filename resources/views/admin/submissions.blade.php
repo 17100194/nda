@@ -71,8 +71,8 @@
                             <figure class="{{$class}} effect-sarah" onclick="window.location.href = '{{url('nda-admin/submissions/view/'.$submission->id)}}'">
                                 <img src="{{$submission->thumbnail}}"/>
                                 <figcaption>
-                                    <h2>{{$submission->title}}</h2>
-                                    <p>ID: {{$submission->id}} | Type: {{$submission->type}} | By: {{$submission->by}} | <?php if($submission->payment_status == 'Paid'):?>( Paid <i class="icon-check" style="color: #FEBD21;"> )</i><?php elseif($submission->payment_status == 'Submitted'):?>( Payment Proof Submitted <i class="icon-info" style="color: #FEBD21;"></i> )<?php endif?></p>
+                                    <h2>{{$submission->title}} <?php if($submission->payment_status == 'Paid'):?>( Paid <i class="icon-check" style="color: #FEBD21;"> )</i><?php elseif($submission->payment_status == 'Submitted'):?>( Payment Proof Submitted <i class="icon-info" style="color: #FEBD21;"></i> )<?php endif?></h2>
+                                    <p>ID: {{$submission->id}} | Type: {{$submission->type}} | By: {{$submission->by}}</p>
                                 </figcaption>
                             </figure>
                             @endforeach
