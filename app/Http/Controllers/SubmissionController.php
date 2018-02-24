@@ -129,8 +129,8 @@ class SubmissionController extends Controller
             'categories' => 'required|array|max:3',
             'image_files' => 'required',
             'thumbnail_file' => 'required',
-            'url' => 'regex:/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/|nullable',
-            'video_url' => 'regex:/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/|nullable'
+            'url' => 'url|nullable',
+            'video_url' => 'url|nullable'
         ], [
             'categories.max' => 'You cannot select more than 3 categories'
         ]);
