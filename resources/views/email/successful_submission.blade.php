@@ -101,10 +101,10 @@ $style = [
                                         <p style="{{$style['header-1']}}">{{$submission->payment_method}} Details</p>
                                         <p style="{{$style['paragraph']}}">
                                             You can directly submit the fee in the form of cash or Electronic Funds Transfer in our bank account, through your nearest bank. You have to provide us the proof of payment which will be the deposit slip/picture of the deposit slip or a copy/picture of the electronic receipt.<br>
-                                            <span style="text-decoration: underline">Account Name: </span>Sania Kashif<br>
-                                            <span style="text-decoration: underline">Account Number: </span>3550000609<br>
-                                            <span style="text-decoration: underline">Branch Code: </span>0738<br>
-                                            <span style="text-decoration: underline">Bank Name: Askari Bank Limited</span>
+                                            <span style="text-decoration: underline">Account Name:</span> Sania Kashif<br>
+                                            <span style="text-decoration: underline">Account Number:</span> 3550000609<br>
+                                            <span style="text-decoration: underline">Branch Code:</span> 0738<br>
+                                            <span style="text-decoration: underline">Bank Name:</span> Askari Bank Limited
                                         </p>
                                     @endif
                                     @if($submission->payment_method === 'Cash On Campus')
