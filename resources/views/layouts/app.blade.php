@@ -466,87 +466,96 @@
 
             $('#entry_form').on('submit',function (e) {
                 e.preventDefault();
-                var data = $('#entry_form').serializeArray();
-                if(imagesDropzone.getAcceptedFiles().length === 0){
-                    data.push({name: 'image_files', value:null});
+                if (imagesDropzone.getUploadingFiles().length > 0 || pdfDropzone.getUploadingFiles().length > 0 || thumbDropzone.getUploadingFiles().length > 0){
+                    iziToast.show({
+                        title: 'Files Uploading',
+                        message: 'Please wait for your files to get uploaded before submitting the form',
+                        color: 'blue',
+                        position: 'topRight'
+                    });
                 } else {
-                    data.push({name: 'image_files', value:$.map(imageFilenames,function (value) {
-                        return value.serverName;
-                    })});
-                }
-                if(pdfFilename){
-                    data.push({name: 'pdf_file', value:pdfFilename});
-                }
-                if(thumbDropzone.getAcceptedFiles().length === 0){
-                    data.push({name: 'thumbnail_file', value:null});
-                } else {
-                    data.push({name: 'thumbnail_file', value:thumbnailFilename});
-                }
-                $.ajaxSetup({
-                    header:$('meta[name="_token"]').attr('content')
-                });
-                $.ajax({
-                    type:"POST",
-                    url:'{{url('submit-entry')}}',
-                    data: data,
-                    beforeSend: function() {
-                        $('.form-group').removeClass('has-error');
-                        $('div.has-error').remove();
-                        $('.help-block').remove();
-                        $.LoadingOverlay('show');
-                    },
-                    success: function(data){
-                        $.LoadingOverlay('hide');
-                        if(data.errors)
-                        {
-                            var arr = data.errors;
-                            $.each(arr, function(index, value)
+                    var data = $('#entry_form').serializeArray();
+                    if(imagesDropzone.getAcceptedFiles().length === 0){
+                        data.push({name: 'image_files', value:null});
+                    } else {
+                        data.push({name: 'image_files', value:$.map(imageFilenames,function (value) {
+                            return value.serverName;
+                        })});
+                    }
+                    if(pdfFilename){
+                        data.push({name: 'pdf_file', value:pdfFilename});
+                    }
+                    if(thumbDropzone.getAcceptedFiles().length === 0){
+                        data.push({name: 'thumbnail_file', value:null});
+                    } else {
+                        data.push({name: 'thumbnail_file', value:thumbnailFilename});
+                    }
+                    $.ajaxSetup({
+                        header:$('meta[name="_token"]').attr('content')
+                    });
+                    $.ajax({
+                        type:"POST",
+                        url:'{{url('submit-entry')}}',
+                        data: data,
+                        beforeSend: function() {
+                            $('.form-group').removeClass('has-error');
+                            $('div.has-error').remove();
+                            $('.help-block').remove();
+                            $.LoadingOverlay('show');
+                        },
+                        success: function(data){
+                            $.LoadingOverlay('hide');
+                            if(data.errors)
                             {
-                                if (value.length != 0)
+                                var arr = data.errors;
+                                $.each(arr, function(index, value)
                                 {
-                                    if($('input[name='+index+']')) {
-                                        $('input[name=' + index + ']').parent().addClass('has-error');
-                                        $('input[name=' + index + ']').after('<span class="help-block"><strong>' + value + '</strong></span>');
-                                    }
-                                    if ($('textarea[name='+index+']')){
-                                        $('textarea[name=' + index + ']').parent().addClass('has-error');
-                                        if(index == 'overview' || index == 'details'){
-                                            $('textarea[name=' + index + ']').next().after('<span class="help-block"><strong>' + value + '</strong></span>');
-                                        } else {
-                                            $('textarea[name=' + index + ']').after('<span class="help-block"><strong>' + value + '</strong></span>');
+                                    if (value.length != 0)
+                                    {
+                                        if($('input[name='+index+']')) {
+                                            $('input[name=' + index + ']').parent().addClass('has-error');
+                                            $('input[name=' + index + ']').after('<span class="help-block"><strong>' + value + '</strong></span>');
+                                        }
+                                        if ($('textarea[name='+index+']')){
+                                            $('textarea[name=' + index + ']').parent().addClass('has-error');
+                                            if(index == 'overview' || index == 'details'){
+                                                $('textarea[name=' + index + ']').next().after('<span class="help-block"><strong>' + value + '</strong></span>');
+                                            } else {
+                                                $('textarea[name=' + index + ']').after('<span class="help-block"><strong>' + value + '</strong></span>');
+                                            }
+                                        }
+                                        if (index == 'categories'){
+                                            $('input[name="categories[]"]').closest('.row').after('<div class="has-error padding-top-25"><span class="help-block"><strong>'+value+'</strong></span></div>');
+                                        }
+                                        if (index == 'image_files'){
+                                            $('#images').after('<div class="has-error padding-top-25"><span class="help-block"><strong>'+value+'</strong></span></div>');
+                                        }
+                                        if (index == 'pdf_file'){
+                                            $('#pdf').after('<div class="has-error padding-top-25"><span class="help-block"><strong>'+value+'</strong></span></div>');
+                                        }
+                                        if (index == 'thumbnail_file'){
+                                            $('#thumbnail').after('<div class="has-error padding-top-25"><span class="help-block"><strong>'+value+'</strong></span></div>');
                                         }
                                     }
-                                    if (index == 'categories'){
-                                        $('input[name="categories[]"]').closest('.row').after('<div class="has-error padding-top-25"><span class="help-block"><strong>'+value+'</strong></span></div>');
-                                    }
-                                    if (index == 'image_files'){
-                                        $('#images').after('<div class="has-error padding-top-25"><span class="help-block"><strong>'+value+'</strong></span></div>');
-                                    }
-                                    if (index == 'pdf_file'){
-                                        $('#pdf').after('<div class="has-error padding-top-25"><span class="help-block"><strong>'+value+'</strong></span></div>');
-                                    }
-                                    if (index == 'thumbnail_file'){
-                                        $('#thumbnail').after('<div class="has-error padding-top-25"><span class="help-block"><strong>'+value+'</strong></span></div>');
-                                    }
-                                }
+                                });
+                            } else {
+                                $('#entry_form').find('input:text, input:password, select, textarea').val('');
+                                $('#entry_form').find('input:radio, input:checkbox').prop('checked', false);
+                                window.onbeforeunload = null;
+                                window.location.href = "{{url('submissions')}}";
+                            }
+                        },
+                        error: function(data){
+                            $.LoadingOverlay('hide');
+                            iziToast.show({
+                                title: 'Error',
+                                message: 'There was some problem submitting your entry. Please try again',
+                                color: 'red',
+                                position: 'topRight'
                             });
-                        } else {
-                            $('#entry_form').find('input:text, input:password, select, textarea').val('');
-                            $('#entry_form').find('input:radio, input:checkbox').prop('checked', false);
-                            window.onbeforeunload = null;
-                            window.location.href = "{{url('submissions')}}";
                         }
-                    },
-                    error: function(data){
-                        $.LoadingOverlay('hide');
-                        iziToast.show({
-                            title: 'Error',
-                            message: 'There was some problem submitting your entry. Please try again',
-                            color: 'red',
-                            position: 'topRight'
-                        });
-                    }
-                });
+                    });
+                }
             });
 
             $('#submit_entry').on('click',function () {
