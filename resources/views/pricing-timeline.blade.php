@@ -14,11 +14,11 @@
                         follows:</p>
                     <br>
                     <ul class="list-style style-caret">
-                        <li class="active"><a class="fontsize20">Early Bird</a></li>
+                        <li class="active"><a class="fontsize20">Early Bird (Deadline: 12th March 2018)</a></li>
                         <p class="fontsize20">Student: 1000 PKR / Submission</p>
                         <p class="fontsize20">Professional: 2000 PKR / Submission</p>
                         <br>
-                        <li class="active"><a class="fontsize20">Normal</a></li>
+                        <li class="active"><a class="fontsize20">Normal (Deadline: 25th March 2018)</a></li>
                         <p class="fontsize20">Student: 1500 PKR / Submission</p>
                         <p class="fontsize20">Professional: 3000 PKR / Submission</p>
                     </ul>
