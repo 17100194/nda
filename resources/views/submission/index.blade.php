@@ -16,7 +16,7 @@
                     </div>
                     <div class="divider"></div>
                     <div class="title-section text-center">
-                        <h2>Normal Pricing<br>(Deadline: 28th March 2018)</h2>
+                        <h2>Normal Pricing<br>(Deadline: 1st April 2018)</h2>
                         <p class="sub-title"><span style="text-decoration: underline; font-weight: bold">Student:</span> 1500 PKR / Submission<div class="divider h10"></div><span style="text-decoration: underline; font-weight: bold">Professional:</span> 3000 PKR / Submission</p>
                     </div>
                     <div class="divider"></div>
