@@ -75,9 +75,9 @@ Route::get('/submissions', 'SubmissionController@index')->middleware('auth');
 //Route::post('/upload-images', 'SubmissionController@uploadImages')->middleware('auth');
 //Route::post('/upload-pdf', 'SubmissionController@uploadPDF')->middleware('auth');
 //Route::post('/upload-thumbnail', 'SubmissionController@uploadThumbnail')->middleware('auth');
-//Route::post('/upload-payment', 'SubmissionController@uploadPayment')->middleware('auth');
-//
-//Route::get('/remove-file', 'SubmissionController@removeFile')->middleware('auth');
+Route::post('/upload-payment', 'SubmissionController@uploadPayment')->middleware('auth');
+
+Route::get('/remove-file', 'SubmissionController@removeFile')->middleware('auth');
 
 Route::get('/remove-payment', 'SubmissionController@removePaymentProof')->middleware('auth');
 
