@@ -3,7 +3,7 @@
 @section('content')
     <div class="page-content">
         <div class="header">
-            <h2><strong>{{$submission->title}}</strong> <small>By {{$author->name}} (ID: {{$submission->id}})</small></h2>
+            <h2><strong>{{$submission->title}}</strong> <small>By {{$submission->author()->name}} (ID: {{$submission->id}})</small></h2>
         </div>
         <div class="row">
             <div class="col-md-12">

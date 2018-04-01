@@ -17,8 +17,7 @@ Route::get('/', function () {
 
 Route::get('/nda-admin/submissions/view/{id}', function (\Illuminate\Http\Request $request) {
     $submission = \App\Submission::find($request->id);
-    $author = $submission->author;
-    return view('submission.view',['submission'=>$submission,'author'=>$author]);
+    return view('submission.view',['submission'=>$submission]);
 })->middleware('auth','admin');
 
 Route::get('/nda-admin', function () {
@@ -28,9 +27,6 @@ Route::get('/nda-admin', function () {
 
 Route::get('/nda-admin/submissions', function () {
     $submissions = \App\Submission::all();
-    foreach ($submissions as $submission){
-        $submission->author = $submission->author()->name;
-    }
     return view('admin.submissions',['submissions'=>$submissions]);
 })->middleware('auth','admin');
 
