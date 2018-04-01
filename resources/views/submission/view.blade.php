@@ -3,7 +3,7 @@
 @section('content')
     <div class="page-content">
         <div class="header">
-            <h2><strong>{{$submission->title}}</strong> <small>By {{$submission->by}} (ID: {{$submission->id}})</small></h2>
+            <h2><strong>{{$submission->title}}</strong> <small>By {{$author->name}} (ID: {{$submission->id}})</small></h2>
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -22,6 +22,7 @@
                     </div>
                     <div class="panel-content">
                         <p class=""><strong>Entry Type:</strong> {{$submission->type}}</p>
+                        <p class=""><strong>Designer/Firm:</strong> {{$submission->by}}</p>
                         <p class=""><strong>Client Name:</strong> <?php if ($submission->for):?>{{$submission->for}}<?php else:?>N/A<?php endif?></p>
                         <p class=""><strong>Categories:</strong> {{$submission->categories}}</p>
                         <p class=""><strong>External Link:</strong> <?php if ($submission->project_url):?><a href="{{$submission->project_url}}" target="_blank">{{$submission->project_url}}</a><?php else:?>N/A<?php endif?></p>
