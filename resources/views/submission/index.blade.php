@@ -21,7 +21,8 @@
                     </div>
                     <div class="divider"></div>
                     <div class="text-center">
-                        <a href="{{url('/submissions/professional')}}" class="flat-button color-white">Make a Professional Entry</a> <span>OR</span> <a href="{{url('/submissions/student')}}" class="flat-button color-white">Make a Student Entry</a>
+                        <h2 style="color:#FEBD21">Submissions Closed</h2>
+{{--                        <a href="{{url('/submissions/professional')}}" class="flat-button color-white">Make a Professional Entry</a> <span>OR</span> <a href="{{url('/submissions/student')}}" class="flat-button color-white">Make a Student Entry</a>--}}
                     </div>
                 </div>
                 <div class="col-md-6">
