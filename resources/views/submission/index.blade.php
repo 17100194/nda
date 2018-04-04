@@ -90,13 +90,14 @@
                         @endforeach
                     </div>
                     <div id="modal">
-                        <input type="hidden" id="submissionid">
-                        <form action="{{url('upload-payment')}}" class="dropzone" id="payment" style="margin: 15px;">
-                            {{csrf_field()}}
-                        </form>
-                        <div class="text-center">
-                            <button class="flat-button save">Submit</button>
-                        </div>
+                        <p class="text-center" style="padding: 10px;"><i class="fa fa-info-circle"></i> The payment deadline has passed. You can no longer upload payment proof</p>
+                        {{--<input type="hidden" id="submissionid">--}}
+                        {{--<form action="{{url('upload-payment')}}" class="dropzone" id="payment" style="margin: 15px;">--}}
+                            {{--{{csrf_field()}}--}}
+                        {{--</form>--}}
+                        {{--<div class="text-center">--}}
+                            {{--<button class="flat-button save">Submit</button>--}}
+                        {{--</div>--}}
                     </div>
                 @endif
             </div>
