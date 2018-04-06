@@ -7,75 +7,46 @@
         </div>
         <div class="row">
             <div class="col-lg-12 portlets">
-                <div class="panel panel-transparent">
-                    <div class="panel-content">
-                        <div class="portfolioFilter">
-                            <a href="#" data-filter="*" class="current">All Categories</a>
-                            <a href="#" data-filter=".architecture">Architecture</a>
-                            <a href="#" data-filter=".game-design">Game Design</a>
-                            <a href="#" data-filter=".product-design">Product Design</a>
-                            <a href="#" data-filter=".design-social-impact">Design For Social Impact</a>
-                            <a href="#" data-filter=".education-initiative">Education Initiative</a>
-                            <a href="#" data-filter=".fashion-textile">Fashion & Textile</a>
-                            <a href="#" data-filter=".furniture-lighting">Furniture & Lighting</a>
-                            <a href="#" data-filter=".packaging">Packaging</a>
-                            <a href="#" data-filter=".print-published-media">Print & Published Media</a>
-                            <a href="#" data-filter=".ui-ux-design">UI/UX Design</a>
-                            <a href="#" data-filter=".visual-communication-design">Visual Communication Design</a>
-                            <a href="#" data-filter=".emerging-technologies">Emerging Technologies</a>
-                        </div>
-                        <div class="portfolioContainer grid">
+                <div class="panel">
+                    <div class="panel-content pagination2 table-responsive">
+                        <table class="table table-hover table-dynamic">
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Type</th>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>Categories</th>
+                                <th>Submission Status</th>
+                                <th>Payment Status</th>
+                                <th>Payment Method</th>
+                                <th>Created At</th>
+                                <th>Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
                             @foreach($submissions as $submission)
-                                <?php
-                                    $categories = explode(',',$submission->categories);
-                                    $class = '';
-                                    foreach ($categories as $category){
-                                        if ($category == 'Interior Design' || $category == 'Landscape Design'){
-                                            $class = $class.'architecture ';
-                                        }
-                                        if ($category == 'Game Design'){
-                                            $class = $class.'game-design ';
-                                        }
-                                        if ($category == 'Design For Social Impact'){
-                                            $class = $class.'design-social-impact ';
-                                        }
-                                        if ($category == 'Education Initiative'){
-                                            $class = $class.'education-initiative ';
-                                        }
-                                        if ($category == 'Fashion & Textile'){
-                                            $class = $class.'fashion-textile ';
-                                        }
-                                        if ($category == 'Furniture & Lighting'){
-                                            $class = $class.'furniture-lighting ';
-                                        }
-                                        if ($category == 'Product Design'){
-                                            $class = $class.'product-design ';
-                                        }
-                                        if ($category == 'Packaging'){
-                                            $class = $class.'packaging ';
-                                        }
-                                        if ($category == 'Print & Published Media'){
-                                            $class = $class.'print-published-media ';
-                                        }
-                                        if ($category == 'UI/UX Design'){
-                                            $class = $class.'ui-ux-design ';
-                                        }
-                                        if ($category == 'Static Design' || $category == 'Animation Design'){
-                                            $class = $class.'visual-communication-design ';
-                                        }
-                                        if ($category == 'Emerging Technologies'){
-                                            $class = $class.'emerging-technologies ';
-                                        }
-                                    }
-                                ?>
-                            <figure class="{{$class}} effect-sarah" onclick="window.location.href = '{{url('nda-admin/submissions/view/'.$submission->id)}}'">
-                                <figcaption>
-                                    <h2>{{$submission->title}}</h2>
-                                    <p>ID: {{$submission->id}} | Type: {{$submission->type}} | By: {{$submission->author->name}} | Payment: <?php if($submission->payment_status == 'Paid'):?>Paid <i class="icon-check" style="color: green;"></i><?php elseif($submission->payment_status == 'Submitted'):?>Payment Proof Submitted <i class="icon-info" style="color: #FEBD21;"></i><?php else:?>Not Paid <i class="glyphicon glyphicon-remove-circle" style="color: red;"></i><?php endif?></p>
-                                </figcaption>
-                            </figure>
+                                <tr>
+                                    <td>{{$submission->id}}</td>
+                                    <td>{{$submission->type}}</td>
+                                    <td>{{$submission->title}}</td>
+                                    <td>{{$submission->author->name}}</td>
+                                    <td>{{$submission->categories}}</td>
+                                    <td>{{$submission->status}}</td>
+                                    <td>{{$submission->payment_status}}</td>
+                                    <td>{{$submission->payment_method}}</td>
+                                    <td>{{$submission->created_at}}</td>
+                                    <td>
+                                        <a href="{{url('nda-admin/submissions/view/'.$submission->id)}}" class="btn btn-primary btn-xs m-0">View</a>
+                                        <?php if($submission->status == 'Evaluation In Process' && $submission->payment_status == 'Paid'):?>
+                                            {{--<a class="shortlist btn btn-success btn-xs m-0">Shortlist</a>--}}
+                                        <?php endif?>
+                                        {{--<a class="reject btn btn-danger btn-xs m-0">Reject</a>--}}
+                                    </td>
+                                </tr>
                             @endforeach
-                        </div>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

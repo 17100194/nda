@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\PaymentConfirmation;
+use App\Mail\ShortlistedSubmission;
 use App\Mail\SuccessfulSubmission;
 use App\Submission;
 use App\User;
@@ -273,6 +274,14 @@ class SubmissionController extends Controller
         Submission::where('id', $request->submissionid)->update(['payment_status'=>'Paid']);
         $email = new PaymentConfirmation($user);
         Mail::to($user->email)->send($email);
+        return response()->json('success',200);
+    }
+
+    function shortlistSubmission(Request $request){
+        $submission = Submission::find($request->submissionid);
+        Submission::where('id', $request->submissionid)->update(['status'=>'Shortlisted']);
+        $email = new ShortlistedSubmission($submission);
+        Mail::to($submission->author->email)->send($email);
         return response()->json('success',200);
     }
 

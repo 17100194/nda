@@ -24,6 +24,9 @@
     <link href="{{asset('admin/assets/global/plugins/metrojs/metrojs.min.css')}}" rel="stylesheet">
     <link href="{{asset('admin/assets/global/plugins/maps-amcharts/ammap/ammap.css')}}" rel="stylesheet">
 
+    <!-- iziToast Style -->
+    <link rel="stylesheet" type="text/css" href="{{asset('stylesheets/iziToast.min.css')}}">
+
     <!-- END PAGE STYLE -->
     <script src="{{asset('admin/assets/global/plugins/modernizr/modernizr-2.6.2-respond-1.1.0.min.js')}}"></script>
 </head>
@@ -168,8 +171,45 @@
 <script src="{{asset('admin/assets/global/plugins/datatables/jquery.dataTables.min.js')}}"></script> <!-- Tables Filtering, Sorting & Editing -->
 <script src="{{asset('admin/assets/global/plugins/datatables/dataTables.bootstrap.min.js')}}"></script>
 <script src="{{asset('admin/assets/global/js/pages/table_dynamic.js')}}"></script>
+<script type="text/javascript" src="{{asset('javascript/iziToast.min.js')}}"></script>
 
 <!-- END PAGE SCRIPT -->
+@if(request()->is('nda-admin/submissions'))
+    <script>
+        $('.shortlist').on('click',function () {
+            var btn = $(this);
+            var id = $(this).closest('tr').find('td:first').text();
+            $.ajaxSetup({
+                header:$('meta[name="_token"]').attr('content')
+            });
+            $.ajax({
+                type: "GET",
+                url: '{{url('shortlist-submission')}}',
+                data: {submissionid: id},
+                dataType: 'json',
+                beforeSend: function() {
+                    $.LoadingOverlay('show');
+                },
+                success: function (data) {
+                    $.LoadingOverlay('hide');
+                    if (data === 'success'){
+                        btn.closest('tr').find('td:nth-child(6)').html('Shortlisted');
+                        btn.remove();
+                        iziToast.show({
+                            title: 'Submission Shortlisted and Email Sent Successfully!',
+                            icon: 'fa fa-check',
+                            color: 'green',
+                            position: 'bottomCenter'
+                        });
+                    }
+                },
+                error: function (data) {
+                    $.LoadingOverlay('hide');
+                }
+            });
+        });
+    </script>
+@endif
 @if(strpos(request()->url(),'nda-admin/submissions/view'))
     <script>
         $('#verify').on('click', function (e) {

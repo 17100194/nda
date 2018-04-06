@@ -15,7 +15,7 @@
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Email Address</th>
-                                <th>Admin</th>
+                                <th>Verified</th>
                                 <th>Created At</th>
                                 <th>Actions</th>
                             </tr>
@@ -26,7 +26,7 @@
                                     <td>{{$user->id}}</td>
                                     <td>{{$user->name}}</td>
                                     <td>{{$user->email}}</td>
-                                    <td><?php if ($user->isadmin):?><i class="fa fa-check fa-lg"></i><?php else:?><i class="fa fa-remove fa-lg"></i><?php endif?></td>
+                                    <td><?php if ($user->verified):?><i class="fa fa-check fa-lg"></i><?php else:?><i class="fa fa-remove fa-lg"></i><?php endif?></td>
                                     <td>{{$user->created_at}}</td>
                                     <td>View / Edit</td>
                                 </tr>

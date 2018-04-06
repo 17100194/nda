@@ -87,6 +87,8 @@ Route::get('/delete-entry', 'SubmissionController@deleteEntry')->middleware('aut
 
 Route::get('/verify-payment', 'SubmissionController@verifyPayment')->middleware('auth', 'admin');
 
+Route::get('/shortlist-submission', 'SubmissionController@shortlistSubmission')->middleware('auth', 'admin');
+
 Auth::routes();
 
 Route::get('register/verify/{token}', 'Auth\RegisterController@verify');
