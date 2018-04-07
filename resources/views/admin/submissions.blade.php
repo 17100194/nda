@@ -38,9 +38,11 @@
                                     <td>{{$submission->created_at}}</td>
                                     <td>
                                         <a href="{{url('nda-admin/submissions/view/'.$submission->id)}}" class="btn btn-blue btn-block btn-sm m-0 m-b-5">View</a>
-                                        <?php if($submission->status == 'Evaluation In Process' && $submission->payment_status == 'Paid'):?>
-                                        {{--<button class="shortlist btn btn-success btn-block btn-sm m-0">Shortlist</button>--}}
-                                        <?php endif?>
+                                        @if($submission->status == 'Evaluation In Process' && $submission->payment_status == 'Paid')
+                                            <button class="shortlist btn btn-success btn-block btn-sm m-0">Shortlist</button>
+                                        @elseif($submission->status == 'Shortlisted')
+                                            <button class="btn btn-success btn-block btn-sm m-0" disabled>Shortlisted</button>
+                                        @endif
                                     </td>
                                 </tr>
                             @endforeach

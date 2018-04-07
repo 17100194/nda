@@ -77,19 +77,16 @@ $style = [
                                     <!-- Intro -->
 
                                     <p style="{{ $style['paragraph'] }}">
-                                        <strong>Thank you for submitting the payment for the National Design Awards!</strong> You are receiving this email as a confirmation for your payment.
+                                        We would like to congratulate you on being shortlisted for the inaugural National Design awards being held at Lahore University of Management Sciences. Your project is now officially in the Evaluation Phase and our prestigious jury is working to select the winners for each category.
                                     </p>
                                     <p style="{{ $style['paragraph'] }}">
-                                        This marks the completion of your project submission phase. Your submission for the NDA is now being forwarded to the jury panel. The jury panel will go through all the entries submitted and shortlisting will take place. The shortlisted teams will be announced on the NDA website. These teams will be given the details of the final phase.
+                                        It gives us great pleasure to invite you to the official NDA award ceremony being held on <strong style="color: #FEBD21">21st April 2018</strong> at LUMS. Please be present at the venue at <strong style="color: #FEBD21">5.00 pm</strong> for registration on the date of the event.
                                     </p>
                                     <p style="{{ $style['paragraph'] }}">
-                                        The awards ceremony will be held on 22nd April at Lahore University of Management Sciences. Further details of the venue will be provided to the shortlisted teams.
+                                        At this point, we would again like to highlight, that the NDA are held by the larger parent event, UXPakistan. It is a conference being held on <strong style="color: #FEBD21">21st and 22nd April 2018</strong>. This will be the 2nd edition of this highly anticipated conference which include exciting workshops for building your skills, speaker sessions by esteemed and competent speakers, and more. The conference will focus on promoting the concept of “Design in all Fields”. This conference has separate passes and if you haven’t already purchased them we urge you to do so as this conference is one of a kind in Pakistan. For more details of the conference and the workshops, visit our website <a href="https://www.uxpakistan.com/" target="_blank">www.uxpakistan.com</a>. Get yourself registered for the conference and workshops <a href="https://www.uxpakistan.com/tickets/" target="_blank">here</a>.
                                     </p>
                                     <p style="{{ $style['paragraph'] }}">
-                                        At this point, we would again like to direct your attention towards the parent event UXPakistan. It is a two-day conference being held on <strong>21st and 22nd April 2018</strong>. This will be the 2nd edition of this highly anticipated conference which includes workshops, speaker sessions by esteemed and competent speakers, design competition and more. The conference will focus on promoting the concept of “Design in all Fields”. <strong>Registrations for the conference are opening very soon, so stay tuned!</strong>
-                                    </p>
-                                    <p style="{{ $style['paragraph'] }}">
-                                        We thank you once again for your participation in these awards. If you have any queries, please do contact us at <a href="mailto:info@ndapakistan.com">info@ndapakistan.com</a> or at 0349-4227376.
+                                        We thank you once again for your participation and helping us celebrate design as a vital humanistic tool in shaping the world. Feel free to contact our team for any help or further information.
                                     </p>
 
                                     <!-- Salutation -->
