@@ -68,7 +68,7 @@
         <div class="sidebar-inner">
             <ul class="nav nav-sidebar">
                 <li class="nav-active <?php if(request()->is('nda-admin')):?>active<?php endif?>"><a href="{{url('nda-admin')}}"><i class="icon-users"></i><span>Users</span></a></li>
-                <li class="nav-active <?php if(request()->is('nda-admin/submissions')):?>active<?php endif?>"><a href="{{url('nda-admin/submissions')}}"><i class="fa fa-file"></i><span>Submissions</span></a></li>
+                <li class="nav-active <?php if(strpos(request()->url(),'nda-admin/submissions/view')):?>active<?php endif?>"><a href="{{url('nda-admin/submissions')}}"><i class="fa fa-file"></i><span>Submissions</span></a></li>
             </ul>
         </div>
     </div>
@@ -188,23 +188,32 @@
                 data: {submissionid: id},
                 dataType: 'json',
                 beforeSend: function() {
-                    $.LoadingOverlay('show');
+                    $('.panel').LoadingOverlay('show');
                 },
                 success: function (data) {
-                    $.LoadingOverlay('hide');
+                    $('.panel').LoadingOverlay('hide');
                     if (data === 'success'){
+                        btn.removeClass('shortlist');
                         btn.closest('tr').find('td:nth-child(6)').html('Shortlisted');
-                        btn.remove();
+                        btn.attr('disabled',true);
+                        btn.html('Shortlisted');
                         iziToast.show({
                             title: 'Submission Shortlisted and Email Sent Successfully!',
                             icon: 'fa fa-check',
                             color: 'green',
-                            position: 'bottomCenter'
+                            position: 'topRight'
                         });
                     }
                 },
                 error: function (data) {
-                    $.LoadingOverlay('hide');
+                    $('.panel').LoadingOverlay('hide');
+                    iziToast.show({
+                        title: 'Error!',
+                        message: 'Something went wrong. Please try again',
+                        icon: 'fa fa-remove',
+                        color: 'red',
+                        position: 'topRight'
+                    });
                 }
             });
         });
@@ -237,23 +246,6 @@
             });
         });
     </script>
-@endif
-@if(request()->is('nda-admin/submissions'))
-<script>
-    $(window).load(function(){
-        var $container = $('.portfolioContainer');
-        $container.isotope();
-        $('.portfolioFilter a').click(function(){
-            $('.portfolioFilter .current').removeClass('current');
-            $(this).addClass('current');
-            var selector = $(this).attr('data-filter');
-            $container.isotope({
-                filter: selector
-            });
-            return false;
-        });
-    });
-</script>
 @endif
 <script src="{{asset('admin/assets/admin/layout2/js/layout.js')}}"></script>
 </body>

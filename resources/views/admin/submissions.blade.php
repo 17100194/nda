@@ -33,15 +33,14 @@
                                     <td>{{$submission->author->name}}</td>
                                     <td>{{$submission->categories}}</td>
                                     <td>{{$submission->status}}</td>
-                                    <td>{{$submission->payment_status}}</td>
+                                    <td><?php if($submission->payment_status == 'Submitted'):?><span class="text-info">Payment Proof Submitted <i class="icon-info"></i></span><?php elseif ($submission->payment_status == 'Paid'):?><span class="text-success">{{$submission->payment_status}} <i class="icon-check"></i></span><?php else:?><span class="text-danger">{{$submission->payment_status}} <i class="icon-close"></i></span><?php endif?></td>
                                     <td>{{$submission->payment_method}}</td>
                                     <td>{{$submission->created_at}}</td>
                                     <td>
-                                        <a href="{{url('nda-admin/submissions/view/'.$submission->id)}}" class="btn btn-primary btn-xs m-0">View</a>
+                                        <a href="{{url('nda-admin/submissions/view/'.$submission->id)}}" class="btn btn-blue btn-block btn-sm m-0 m-b-5">View</a>
                                         <?php if($submission->status == 'Evaluation In Process' && $submission->payment_status == 'Paid'):?>
-                                            {{--<a class="shortlist btn btn-success btn-xs m-0">Shortlist</a>--}}
+                                        {{--<button class="shortlist btn btn-success btn-block btn-sm m-0">Shortlist</button>--}}
                                         <?php endif?>
-                                        {{--<a class="reject btn btn-danger btn-xs m-0">Reject</a>--}}
                                     </td>
                                 </tr>
                             @endforeach
