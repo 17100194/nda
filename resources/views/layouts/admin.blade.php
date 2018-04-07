@@ -68,7 +68,7 @@
         <div class="sidebar-inner">
             <ul class="nav nav-sidebar">
                 <li class="nav-active <?php if(request()->is('nda-admin')):?>active<?php endif?>"><a href="{{url('nda-admin')}}"><i class="icon-users"></i><span>Users</span></a></li>
-                <li class="nav-active <?php if(strpos(request()->url(),'nda-admin/submissions/view')):?>active<?php endif?>"><a href="{{url('nda-admin/submissions')}}"><i class="fa fa-file"></i><span>Submissions</span></a></li>
+                <li class="nav-active <?php if(strpos(request()->url(),'nda-admin/submissions')):?>active<?php endif?>"><a href="{{url('nda-admin/submissions')}}"><i class="fa fa-file"></i><span>Submissions</span></a></li>
             </ul>
         </div>
     </div>
