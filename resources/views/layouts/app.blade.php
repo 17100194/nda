@@ -6,11 +6,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="{{asset('images/logo.png')}}">
+    <meta property="og:description" content="The awards program aims to increase awareness of the impact of design by drawing attention to ways in which design enriches everyday life.">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'National Design Awards') }}</title>
+    <title>{{ config('app.name', 'National Design Awards Pakistan') }}</title>
 
     <!-- Bootstrap  -->
     <link rel="stylesheet" type="text/css" href="{{asset('stylesheets/bootstrap.css')}}" >
