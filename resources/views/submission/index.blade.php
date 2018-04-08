@@ -34,7 +34,7 @@
             </div>
             <div class="divider"></div>
             <div class="title-section line bg-gray after-width158">
-                <div class="container-fluid2">
+                <div style="padding: 2.5%;">
                     <div class="row">
                         <div class="col-md-12">
                             <h2 class="title" style="font-size: 30px;">Eligibility & Criteria</h2>

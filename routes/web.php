@@ -77,19 +77,19 @@ Route::get('/submissions', 'SubmissionController@index')->middleware('auth');
 //Route::post('/upload-thumbnail', 'SubmissionController@uploadThumbnail')->middleware('auth');
 //Route::post('/upload-payment', 'SubmissionController@uploadPayment')->middleware('auth');
 //
-//Route::get('/remove-file', 'SubmissionController@removeFile')->middleware('auth');
+//Route::post('/remove-file', 'SubmissionController@removeFile')->middleware('auth');
 //
-//Route::get('/remove-payment', 'SubmissionController@removePaymentProof')->middleware('auth');
-
+//Route::post('/remove-payment', 'SubmissionController@removePaymentProof')->middleware('auth');
+//
 //Route::post('/submit-entry', 'SubmissionController@submitEntry')->middleware('auth');
+//
+//Route::post('/delete-entry', 'SubmissionController@deleteEntry')->middleware('auth');
 
-Route::get('/delete-entry', 'SubmissionController@deleteEntry')->middleware('auth');
+Route::post('/verify-payment', 'SubmissionController@verifyPayment')->middleware('auth', 'admin');
 
-Route::get('/verify-payment', 'SubmissionController@verifyPayment')->middleware('auth', 'admin');
+Route::post('/shortlist-submission', 'SubmissionController@shortlistSubmission')->middleware('auth', 'admin');
 
-Route::get('/shortlist-submission', 'SubmissionController@shortlistSubmission')->middleware('auth', 'admin');
-
-Route::get('/reject-submission', 'SubmissionController@rejectSubmission')->middleware('auth', 'admin');
+Route::post('/reject-submission', 'SubmissionController@rejectSubmission')->middleware('auth', 'admin');
 
 Auth::routes();
 

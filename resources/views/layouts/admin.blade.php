@@ -177,18 +177,21 @@
 <script src="{{asset('admin/assets/global/plugins/datatables/dataTables.bootstrap.min.js')}}"></script>
 <script src="{{asset('admin/assets/global/js/pages/table_dynamic.js')}}"></script>
 <script type="text/javascript" src="{{asset('javascript/iziToast.min.js')}}"></script>
-
+<script>
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+</script>
 <!-- END PAGE SCRIPT -->
 @if(request()->is('nda-admin/submissions'))
     <script>
         $('.shortlist').on('click',function () {
             var btn = $(this);
             var id = $(this).closest('tr').find('td:first').text();
-            $.ajaxSetup({
-                header:$('meta[name="_token"]').attr('content')
-            });
             $.ajax({
-                type: "GET",
+                type: "POST",
                 url: '{{url('shortlist-submission')}}',
                 data: {submissionid: id},
                 dataType: 'json',
@@ -198,6 +201,7 @@
                 success: function (data) {
                     $('.panel').LoadingOverlay('hide');
                     if (data === 'success'){
+                        return alert(data);
                         btn.removeClass('shortlist');
                         btn.closest('tr').find('td:nth-child(6)').html('Shortlisted');
                         btn.attr('disabled',true);
@@ -226,20 +230,17 @@
         $('.reject').on('click',function () {
             var btn = $(this);
             var id = $(this).closest('tr').find('td:first').text();
-            $.ajaxSetup({
-                header:$('meta[name="_token"]').attr('content')
-            });
             $.ajax({
-                type: "GET",
+                type: "POST",
                 url: '{{url('reject-submission')}}',
                 data: {submissionid: id},
-                dataType: 'json',
                 beforeSend: function() {
                     $('.panel').LoadingOverlay('show');
                 },
                 success: function (data) {
                     $('.panel').LoadingOverlay('hide');
                     if (data === 'success'){
+                        return alert(data);
                         btn.removeClass('reject');
                         btn.closest('tr').find('td:nth-child(6)').html('Rejected');
                         btn.attr('disabled',true);
@@ -271,11 +272,8 @@
     <script>
         $('#verify').on('click', function (e) {
             e.preventDefault();
-            $.ajaxSetup({
-                header:$('meta[name="_token"]').attr('content')
-            });
             $.ajax({
-                type: "GET",
+                type: "POST",
                 url: '{{url('verify-payment')}}',
                 data: {submissionid: $(this).data('id')},
                 dataType: 'json',

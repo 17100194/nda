@@ -212,6 +212,13 @@
 <script type="text/javascript" src="{{asset('revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+<script>
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+</script>
 @if(request()->is('submissions'))
     <script>
         Dropzone.autoDiscover = false;
@@ -249,7 +256,7 @@
                             file.previewElement.remove();
                             if (paymentFilename){
                                 $.ajax({
-                                    type: "GET",
+                                    type: "POST",
                                     url: '{{url('remove-payment')}}',
                                     data: {filename: paymentFilename},
                                     dataType: 'json',
@@ -273,11 +280,8 @@
 
         function deleteEntry(submissionid) {
             if (confirm('Are you sure you want to delete your entry? All the data associated with it will be removed')){
-                $.ajaxSetup({
-                    header:$('meta[name="_token"]').attr('content')
-                });
                 $.ajax({
-                    type: "GET",
+                    type: "POST",
                     url: '{{url('delete-entry')}}',
                     data: {submissionid: submissionid},
                     dataType: 'json',
@@ -372,7 +376,7 @@
                         var filename = $.grep(imageFilenames, function(e){ return e.clientName == file.name; });
                         if (filename.length > 0){
                             $.ajax({
-                                type: "GET",
+                                type: "POST",
                                 url: '{{url('remove-file')}}',
                                 data: {filename: filename[0].serverName},
                                 dataType: 'json',
@@ -409,7 +413,7 @@
                         file.previewElement.remove();
                         if (pdfFilename){
                             $.ajax({
-                                type: "GET",
+                                type: "POST",
                                 url: '{{url('remove-file')}}',
                                 data: {filename: pdfFilename},
                                 dataType: 'json',
@@ -443,7 +447,7 @@
                         file.previewElement.remove();
                         if (thumbnailFilename){
                             $.ajax({
-                                type: "GET",
+                                type: "POST",
                                 url: '{{url('remove-file')}}',
                                 data: {filename: thumbnailFilename},
                                 dataType: 'json',
@@ -498,9 +502,6 @@
                     } else {
                         data.push({name: 'thumbnail_file', value:thumbnailFilename});
                     }
-                    $.ajaxSetup({
-                        header:$('meta[name="_token"]').attr('content')
-                    });
                     $.ajax({
                         type:"POST",
                         url:'{{url('submit-entry')}}',
