@@ -39,9 +39,14 @@
                                     <td>
                                         <a href="{{url('nda-admin/submissions/view/'.$submission->id)}}" class="btn btn-blue btn-block btn-sm m-0 m-b-5">View</a>
                                         @if($submission->status == 'In Review' && $submission->payment_status == 'Paid')
-                                            <button class="shortlist btn btn-success btn-block btn-sm m-0">Shortlist</button>
+                                            <button class="shortlist btn btn-success btn-block btn-sm m-0 m-b-5">Shortlist</button>
                                         @elseif($submission->status == 'Shortlisted')
                                             <button class="btn btn-success btn-block btn-sm m-0" disabled>Shortlisted</button>
+                                        @endif
+                                        @if($submission->status == 'In Review')
+                                            <button class="reject btn btn-danger btn-block btn-sm m-0">Reject</button>
+                                        @elseif($submission->status == 'Rejected')
+                                            <button class="btn btn-danger btn-block btn-sm m-0" disabled>Rejected</button>
                                         @endif
                                     </td>
                                 </tr>

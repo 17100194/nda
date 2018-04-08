@@ -202,8 +202,51 @@
                         btn.closest('tr').find('td:nth-child(6)').html('Shortlisted');
                         btn.attr('disabled',true);
                         btn.html('Shortlisted');
+                        btn.closest('tr').find('.reject').remove();
                         iziToast.show({
                             title: 'Submission Shortlisted and Email Sent Successfully!',
+                            icon: 'fa fa-check',
+                            color: 'green',
+                            position: 'topRight'
+                        });
+                    }
+                },
+                error: function (data) {
+                    $('.panel').LoadingOverlay('hide');
+                    iziToast.show({
+                        title: 'Error!',
+                        message: 'Something went wrong. Please try again',
+                        icon: 'fa fa-remove',
+                        color: 'red',
+                        position: 'topRight'
+                    });
+                }
+            });
+        });
+        $('.reject').on('click',function () {
+            var btn = $(this);
+            var id = $(this).closest('tr').find('td:first').text();
+            $.ajaxSetup({
+                header:$('meta[name="_token"]').attr('content')
+            });
+            $.ajax({
+                type: "GET",
+                url: '{{url('reject-submission')}}',
+                data: {submissionid: id},
+                dataType: 'json',
+                beforeSend: function() {
+                    $('.panel').LoadingOverlay('show');
+                },
+                success: function (data) {
+                    $('.panel').LoadingOverlay('hide');
+                    if (data === 'success'){
+                        btn.removeClass('reject');
+                        btn.closest('tr').find('td:nth-child(6)').html('Rejected');
+                        btn.attr('disabled',true);
+                        btn.html('Rejected');
+                        btn.closest('tr').find('.shortlist').remove();
+                        iziToast.show({
+                            title: 'Submission Rejected and Email Sent Successfully!',
                             icon: 'fa fa-check',
                             color: 'green',
                             position: 'topRight'
