@@ -90,7 +90,7 @@
                          data-paddingbottom="[10,10,10,10]"
                          data-paddingleft="[10,10,10,10]"
 
-                         style="z-index: 17; white-space: normal;">21nd April 2018 | Lahore University of Management Sciences
+                         style="z-index: 17; white-space: normal;">21st April 2018 | Lahore University of Management Sciences
                     </div>
 
                     <a href="{{url('submissions')}}" target="_self" class="tp-caption flat-button color-white"
