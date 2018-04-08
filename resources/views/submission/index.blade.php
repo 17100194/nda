@@ -85,19 +85,18 @@
                                 <p><span style="font-weight: bold">Status:</span> {{$submission->status}}</p>
                                 <p><span style="font-weight: bold">Payment Status:</span> <?php if ($submission->payment_status == 'Not Paid'):?><span class="text-danger"><i class="ti-close"></i> {{$submission->payment_status}}</span><?php elseif ($submission->payment_status == 'Submitted'):?><span class="text-info"><i class="ti-info"></i> Payment Proof Submitted <br><small>(You'll be notified when your payment has been verified)</small></span><?php else:?><span class="text-success"><i class="ti-check-box"></i> {{$submission->payment_status}}</span><?php endif?></p>
                                 <br>
-                                <?php if ($submission->payment_status == 'Not Paid'):?><p><a href="#" data-id="{{$submission->id}}" data-izimodal-open="#modal" data-izimodal-transitionin="bounceInUp" class="flat-button color-white">Upload Payment Receipt</a><br><a class="font-raleway" href="javascript:void(0)" style="color: red" data-id="{{$submission->id}}" onclick="deleteEntry($(this).data('id'));">Delete Entry</a></p><?php endif?>
+                                <?php if ($submission->payment_status == 'Not Paid' && $submission->status == 'In Review'):?><p><a href="#" data-id="{{$submission->id}}" data-izimodal-open="#modal" data-izimodal-transitionin="bounceInUp" class="flat-button color-white">Upload Payment Receipt</a><br><a class="font-raleway" href="javascript:void(0)" style="color: red" data-id="{{$submission->id}}" onclick="deleteEntry($(this).data('id'));">Delete Entry</a></p><?php endif?>
                             </div>
                         @endforeach
                     </div>
                     <div id="modal">
-                        <p class="text-center" style="padding: 10px;"><i class="fa fa-info-circle"></i> The payment deadline has passed. You can no longer upload payment proof</p>
-                        {{--<input type="hidden" id="submissionid">--}}
-                        {{--<form action="{{url('upload-payment')}}" class="dropzone" id="payment" style="margin: 15px;">--}}
-                            {{--{{csrf_field()}}--}}
-                        {{--</form>--}}
-                        {{--<div class="text-center">--}}
-                            {{--<button class="flat-button save">Submit</button>--}}
-                        {{--</div>--}}
+                        <input type="hidden" id="submissionid">
+                        <form action="{{url('upload-payment')}}" class="dropzone" id="payment" style="margin: 15px;">
+                            {{csrf_field()}}
+                        </form>
+                        <div class="text-center">
+                            <button class="flat-button save">Submit</button>
+                        </div>
                     </div>
                 @endif
             </div>
