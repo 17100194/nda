@@ -14,7 +14,7 @@
                     <!-- <div class="overlay">
                     </div> -->
                     <!-- MAIN IMAGE -->
-                    <img src="{{asset('images/slides/1.jpg')}}"  alt=""  data-bgposition="center center" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <img src="{{asset('images/slides/1.jpg')}}"  alt="Home Main Banner"  data-bgposition="center center" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                     <div class="overlay-slider" style="background-image: linear-gradient(135deg, #0B4869 30%, #FEBD21 70%); opacity: 0.8;"></div>
                     <!-- LAYER NR. 12 -->
@@ -110,7 +110,7 @@
             </ul>
         </div>
         <div class="img-arrow arr-top">
-            <a href="#about" class="icon-right-arrow rotate arrow-bottom active smooth" data-scroll-nav="0"><img src="{{asset('images/slides/arrow-bottom.png')}}" alt="image"><i class="fa fa-angle-double-down"></i></a>
+            <a href="#about" class="icon-right-arrow rotate arrow-bottom active smooth" data-scroll-nav="0"><img src="{{asset('images/slides/arrow-bottom.png')}}" alt="Arrow Bottom"><i class="fa fa-angle-double-down"></i></a>
         </div>
     </div><!-- END REVOLUTION SLIDER -->
 
@@ -140,7 +140,7 @@
                     </div>
                 </div>
                 <div class="col-md-5 clearfix">
-                    <img src="{{asset('images/award.png')}}" class="img-responsive center-block" width="260">
+                    <img src="{{asset('images/award.png')}}" alt="NDA Trophy" class="img-responsive center-block" width="260">
                 </div>
             </div>
         </div>
@@ -158,7 +158,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/lifetime-achievement')}}">
-                            <img src="images/categories/life-time.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/life-time.png" alt="Lifetime Achievement Award" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Lifetime Achievement Award</h6>
@@ -166,7 +166,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/peoples-choice')}}">
-                            <img src="images/categories/pppl-choice.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/pppl-choice.png" alt="People Choice Award" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Peoples' Choice Award</h6>
@@ -174,7 +174,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/best-ux-startup')}}">
-                            <img src="images/categories/ux.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/ux.png" alt="Best UX Design By Startup" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Best UX Design By A Startup</h6>
@@ -191,7 +191,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/architecture')}}">
-                            <img src="images/categories/archi.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/archi.png" alt="Architecture" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Architecture</h6>
@@ -199,7 +199,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/game-design')}}">
-                            <img src="images/categories/game-design.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/game-design.png" alt="Game Design" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Game Design</h6>
@@ -207,7 +207,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/product-design')}}">
-                            <img src="images/categories/consumer-product.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/consumer-product.png" alt="Product Design" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Consumer Product Design</h6>
@@ -215,7 +215,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/design-social-impact')}}">
-                            <img src="images/categories/design-for-social.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/design-for-social.png" alt="Design For Social Impact" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Design For Social Impact</h6>
@@ -223,7 +223,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/emerging-technologies')}}">
-                            <img src="images/categories/emerging-technologies.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/emerging-technologies.png" alt="Emerging Technologies" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Emerging Technologies</h6>
@@ -231,7 +231,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/education-initiative')}}">
-                            <img src="images/categories/education.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/education.png" alt="Education Initiative" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Design Education Initiative</h6>
@@ -239,7 +239,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/fashion-and-textile')}}">
-                            <img src="images/categories/fashion.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/fashion.png" alt="Fashion and Textile" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Fashion & Textile</h6>
@@ -247,7 +247,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/furniture-and-lighting')}}">
-                            <img src="images/categories/furniture.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/furniture.png" alt="Furniture and Lighting" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Furniture & Lighting</h6>
@@ -255,7 +255,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/product-design')}}">
-                            <img src="images/categories/industry-product.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/industry-product.png" alt="Industry Product Design" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Industrial Product Design</h6>
@@ -263,7 +263,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/packaging')}}">
-                            <img src="images/categories/packaging.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/packaging.png" alt="Packaging Design" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Packaging Design</h6>
@@ -271,7 +271,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/print-and-published-media')}}">
-                            <img src="images/categories/print.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/print.png" alt="Print and Published Media" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Print & Published Media</h6>
@@ -279,7 +279,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/ui-ux')}}">
-                            <img src="images/categories/ui-and-ux.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/ui-and-ux.png" alt="UI/UX Design" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>UI/UX Design</h6>
@@ -287,7 +287,7 @@
                 <div class="plan-item isotope-item">
                     <figure class="box">
                         <a href="{{url('category/visual-communication-design')}}">
-                            <img src="images/categories/VCD.png" alt="image" width="100%" height="auto">
+                            <img src="images/categories/VCD.png" alt="Visual Communication Design" width="100%" height="auto">
                         </a>
                     </figure>
                     <h6>Visual Communication Design</h6>
@@ -306,7 +306,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/farida_batool.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/farida_batool.jpg')}}" alt="Farida Batool" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -327,7 +327,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/imran_hussain.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/imran_hussain.jpg')}}" alt="Imran Hussain" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -348,7 +348,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/faisal_sherjan.png')}}" width="100%">
+                                <img src="{{asset('images/jury/faisal_sherjan.png')}}" alt="Faisal Sherjan" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -369,7 +369,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/shahid_khan.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/shahid_khan.jpg')}}" alt="Shahid Khan" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -390,7 +390,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/suleman.jpeg')}}" width="100%">
+                                <img src="{{asset('images/suleman.jpeg')}}" alt="Suleman Shahid" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
