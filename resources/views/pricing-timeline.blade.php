@@ -27,7 +27,7 @@
                         <h1 class="title">Timeline</h1>
                     </div>
                     <div class="divider"></div>
-                    <img src="{{asset('images/timeline.png')}}">
+                    <img src="{{asset('images/timeline.png')}}" alt="Timeline">
                 </div>
             </div>
         </div>

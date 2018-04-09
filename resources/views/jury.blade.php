@@ -20,7 +20,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/faraz_ahmed.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/faraz_ahmed.jpg')}}" alt="Faraz Ahmed" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -41,7 +41,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/murad_akhter.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/murad_akhter.jpg')}}" alt="Murad Akhter" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -71,7 +71,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/badar_khushnood.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/badar_khushnood.jpg')}}" alt="Badar Khushnood" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -92,7 +92,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/pavan_dadlani.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/pavan_dadlani.jpg')}}" alt="Pavan Dadlani" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -113,7 +113,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/ali_murtaza.jpeg')}}" width="100%">
+                                <img src="{{asset('images/jury/ali_murtaza.jpeg')}}" alt="Ali Murtaza" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -134,7 +134,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/zia_imran.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/zia_imran.jpg')}}" alt="Zia Imran" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -155,7 +155,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/ahmed_shuja.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/ahmed_shuja.jpg')}}" alt="Ahmed Shuja" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -176,7 +176,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/aneeqa_ishaq.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/aneeqa_ishaq.jpg')}}" alt="Aneeqa Ishaq" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -206,7 +206,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/sabahat.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/sabahat.jpg')}}" alt="Sabahat Nawaz" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -226,7 +226,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/maria_butt.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/maria_butt.jpg')}}" alt="Maria Butt" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -247,7 +247,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/yahsir_waheed.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/yahsir_waheed.jpg')}}" alt="Yahsir Waheed" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -277,7 +277,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/suleman.jpeg')}}" width="100%">
+                                <img src="{{asset('images/suleman.jpeg')}}" alt="Suleman Shahid" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -298,7 +298,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/maheen_sohail.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/maheen_sohail.jpg')}}" alt="Maheen Sohail" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -328,7 +328,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/shehzil_malik.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/shehzil_malik.jpg')}}" alt="Shehzil Malik" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -349,7 +349,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/maryam_mohiuddin.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/maryam_mohiuddin.jpg')}}" alt="Maryam Mohiuddin" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -370,7 +370,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/gulraiz_khan.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/gulraiz_khan.jpg')}}" alt="Gulraiz Khan" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -391,7 +391,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/farida_batool.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/farida_batool.jpg')}}" alt="Farida Batool" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -421,7 +421,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/javed_khan.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/javed_khan.jpg')}}" alt="Javed Khan" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -442,7 +442,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/suleman.jpeg')}}" width="100%">
+                                <img src="{{asset('images/suleman.jpeg')}}" alt="Suleman Shahid" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -493,7 +493,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/farwah_tapal.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/farwah_tapal.jpg')}}" alt="Farwah Tapal" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -514,7 +514,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/muhammad_cheema.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/muhammad_cheema.jpg')}}" alt="Muhammad Akmal Cheema" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -544,7 +544,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/shahzad_mughal.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/shahzad_mughal.jpg')}}" alt="Shahzad Mughal" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -565,7 +565,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/naveed_butt.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/naveed_butt.jpg')}}" alt="Naveed Butt" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -595,7 +595,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/faisal_sherjan.png')}}" width="100%">
+                                <img src="{{asset('images/jury/faisal_sherjan.png')}}" alt="Faisal Sherjan" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -619,7 +619,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/sarmad_ali.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/sarmad_ali.jpg')}}" alt="Sarmad Ali" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -640,7 +640,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/muhammad_cheema.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/muhammad_cheema.jpg')}}" alt="Muhammad Akmal Cheema" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -670,7 +670,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/shahid_khan.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/shahid_khan.jpg')}}" alt="Shahid Khan" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -691,7 +691,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/diego_dalia.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/diego_dalia.jpg')}}" alt="Diego Dalia" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -712,7 +712,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/ahmed_shuja.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/ahmed_shuja.jpg')}}" alt="Ahmed Shuja" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -733,7 +733,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/imran_hussain.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/imran_hussain.jpg')}}" alt="Imran Hussain" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -754,7 +754,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/saad_fazil.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/saad_fazil.jpg')}}" alt="Saad Fazil" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -784,7 +784,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/shehzil_malik.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/shehzil_malik.jpg')}}" alt="Shehzil Malik" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -805,7 +805,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/shahzad_nawaz.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/shahzad_nawaz.jpg')}}" alt="Shahzad Nawaz" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -826,7 +826,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/omair_faizullah.jpeg')}}" width="100%">
+                                <img src="{{asset('images/jury/omair_faizullah.jpeg')}}" alt="Omair Faizullah" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -856,7 +856,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/sami_chohan.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/sami_chohan.jpg')}}" alt="Sami Chohan" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>
@@ -877,7 +877,7 @@
                     <div class="col-md-3 wrap-teammember">
                         <div class="teammember">
                             <div class="avatar">
-                                <img src="{{asset('images/jury/anita_kapadia.jpg')}}" width="100%">
+                                <img src="{{asset('images/jury/anita_kapadia.jpg')}}" alt="Anita Kapadia" width="100%">
                                 <div class="info-overlay">
                                     <div class="flat-socials">
                                         <a href="#"><i class="fa fa-facebook"></i><i class="fa fa-facebook"></i></a>

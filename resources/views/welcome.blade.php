@@ -150,7 +150,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="title-section text-center margin-bottom-67">
-                        <h1 class="title fontsize36" style="color: #FEBD21;">Special Awards</h1>
+                        <h1 class="title fontsize36" style="color: #FEBD21;">Special Design Awards</h1>
                     </div>
                 </div>
             </div>
@@ -183,7 +183,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="title-section text-center margin-bottom-67">
-                        <h1 class="title fontsize36" style="color: #FEBD21;">Award Categories</h1>
+                        <h1 class="title fontsize36" style="color: #FEBD21;">Design Awards Categories</h1>
                     </div>
                 </div>
             </div>

@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <img src="{{asset('images/categories-icons.png')}}" class="center-block">
+                    <img src="{{asset('images/categories-icons.png')}}" alt="NDA Categories" class="center-block">
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <img src="{{'images/comingsoon.png'}}" class="center-block">
+                    <img src="{{'images/comingsoon.png'}}" alt="Coming Soon" class="center-block">
                 </div>
             </div>
         </div>

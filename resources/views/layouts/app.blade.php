@@ -9,7 +9,7 @@
     <meta property="og:title" content="National Design Awards Pakistan">
     <meta property="og:image" content="{{asset('images/logo.png')}}">
     <meta property="og:description" content="The awards program aims to increase awareness of the impact of design by drawing attention to ways in which design enriches everyday life.">
-    <meta name="description" content="The awards program aims to increase awareness of the impact of design by drawing attention to ways in which design enriches everyday life.">
+    <meta name="description" content="The annual awards program aims to celebrate design as a vital humanistic tool in shaping the world, and seeks to increase national awareness of the impact of design by drawing national attention to the ways in which design enriches everyday life. The Awards are organized for the recognition of excellence, innovation, and enhancement of the quality of life. They will be launched for the first time at the UXPakistan Conference in 2018 as an official project of UXPakistan in collaboration with NIC.">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -58,7 +58,7 @@
                     <div class="logo-wrap">
                         <div id="logo" class="logo">
                             <a href="{{url('/')}}" rel="home" title="NDA">
-                                <img src="<?php if (request()->is('/')):?>{{asset('images/logo2.png')}}<?php else:?>{{asset('images/logo.png')}}<?php endif;?>" alt="NDA" style="width: 150px;">
+                                <img src="<?php if (request()->is('/')):?>{{asset('images/logo2.png')}}<?php else:?>{{asset('images/logo.png')}}<?php endif;?>" alt="NDA Logo" style="width: 150px;">
                             </a>
                         </div><!-- /.logo -->
                     </div>
@@ -70,10 +70,10 @@
                             <ul>
                                 <li>
                                     @if(Auth::guest())
-                                        <?php if (request()->is('/')):?><img src="{{asset('images/lums.png')}}" style="width: 90px;" class="logo padding-right-10"><img src="{{asset('images/NIC-Logo.png')}}" class="logo padding-top-20" style="width:110px;"><?php else:?><a href="{{url('login')}}">Enter Now</a><?php endif;?>
+                                        <?php if (request()->is('/')):?><img src="{{asset('images/lums.png')}}" style="width: 90px;" class="logo padding-right-10" alt="LUMS Logo"><img src="{{asset('images/NIC-Logo.png')}}" class="logo padding-top-20" style="width:110px;" alt="NIC Logo"><?php else:?><a href="{{url('login')}}">Enter Now</a><?php endif;?>
                                     @else
                                         <?php if (request()->is('/')):?>
-                                            <img src="{{asset('images/lums.png')}}" style="width: 90px;" class="logo padding-right-10"><img src="{{asset('images/NIC-Logo.png')}}" class="logo padding-top-20" style="width:110px;">
+                                            <img src="{{asset('images/lums.png')}}" style="width: 90px;" class="logo padding-right-10" alt="LUMS Logo"><img src="{{asset('images/NIC-Logo.png')}}" class="logo padding-top-20" alt="NIC Logo" style="width:110px;">
                                             <?php else:?>
                                             <a href="{{url('submissions')}}">Participate Now</a>
                                             <?php endif;?>
@@ -136,7 +136,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-6 footer-reponsive">
                         <div class="title-section">
-                            <img src="{{asset('images/logo2.png')}}" width="200">
+                            <img src="{{asset('images/logo2.png')}}" alt="NDA Logo White" width="200">
                             <p>The awards program aims to increase awareness of the impact of design by drawing attention to ways in which design enriches everyday life. We will have various categories for jury selected awards covering multiple disciplines of design.</p>
                         </div><!-- /.widget -->
                     </div><!-- /.col-md-4 -->
