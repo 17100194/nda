@@ -5,11 +5,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Fahad Cheema">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="National Design Awards Pakistan">
     <meta property="og:image" content="{{asset('images/logo.png')}}">
+    <meta property="og:url" content="www.ndapakistan.com">
     <meta property="og:description" content="The awards program aims to increase awareness of the impact of design by drawing attention to ways in which design enriches everyday life.">
     <meta name="description" content="The annual awards program aims to celebrate design as a vital humanistic tool in shaping the world, and seeks to increase national awareness of the impact of design by drawing national attention to the ways in which design enriches everyday life. The Awards are organized for the recognition of excellence, innovation, and enhancement of the quality of life. They will be launched for the first time at the UXPakistan Conference in 2018 as an official project of UXPakistan in collaboration with NIC.">
+    <meta property="twitter:title" content="National Design Awards Pakistan">
+    <meta property="twitter:image" content="{{asset('images/logo.png')}}">
+    <meta property="twitter:site" content="www.ndapakistan.com">
+    <meta property="twitter:description" content="The awards program aims to increase awareness of the impact of design by drawing attention to ways in which design enriches everyday life.">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
