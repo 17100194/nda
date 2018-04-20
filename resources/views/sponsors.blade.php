@@ -34,7 +34,7 @@
                     <div class="title-section text-center">
                         <h1 class="title">Gold Sponsors</h1>
                     </div>
-                    <img src="{{asset('images/NIC-logo.png')}}" alt="NIC" class="center-block img-responsive margin-top-50">
+                    <img src="{{asset('images/NIC-Logo.png')}}" alt="NIC" class="center-block img-responsive margin-top-50">
                 </div>
             </div>
         </div>
